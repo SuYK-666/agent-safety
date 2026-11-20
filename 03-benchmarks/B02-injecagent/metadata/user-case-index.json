@@ -1,0 +1,87 @@
+[
+  {
+    "source_line": 1,
+    "user_tool": "AmazonGetProductDetails",
+    "level": "High"
+  },
+  {
+    "source_line": 2,
+    "user_tool": "EvernoteManagerSearchNotes",
+    "level": "High"
+  },
+  {
+    "source_line": 3,
+    "user_tool": "GitHubGetRepositoryDetails",
+    "level": "Low"
+  },
+  {
+    "source_line": 4,
+    "user_tool": "GitHubGetUserDetails",
+    "level": "High"
+  },
+  {
+    "source_line": 5,
+    "user_tool": "GitHubSearchRepositories",
+    "level": "Low"
+  },
+  {
+    "source_line": 6,
+    "user_tool": "GmailReadEmail",
+    "level": "High"
+  },
+  {
+    "source_line": 7,
+    "user_tool": "GmailSearchEmails",
+    "level": "High"
+  },
+  {
+    "source_line": 8,
+    "user_tool": "GoogleCalendarGetEventsFromSharedCalendar",
+    "level": "Low"
+  },
+  {
+    "source_line": 9,
+    "user_tool": "GoogleCalendarReadEvents",
+    "level": "High"
+  },
+  {
+    "source_line": 10,
+    "user_tool": "ShopifyGetProductDetails",
+    "level": "Low"
+  },
+  {
+    "source_line": 11,
+    "user_tool": "TeladocViewReviews",
+    "level": "High"
+  },
+  {
+    "source_line": 12,
+    "user_tool": "TodoistSearchTasks",
+    "level": "Low"
+  },
+  {
+    "source_line": 13,
+    "user_tool": "TwilioGetReceivedSmsMessages",
+    "level": "High"
+  },
+  {
+    "source_line": 14,
+    "user_tool": "TwitterManagerGetUserProfile",
+    "level": "High"
+  },
+  {
+    "source_line": 15,
+    "user_tool": "TwitterManagerReadTweet",
+    "level": "High"
+  },
+  {
+    "source_line": 16,
+    "user_tool": "TwitterManagerSearchTweets",
+    "level": "High"
+  },
+  {
+    "source_line": 17,
+    "user_tool": "WebBrowserNavigateTo",
+    "level": "High"
+  }
+]

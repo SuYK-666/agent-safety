@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "0d8b7de3-e8de-4d86-b9fd-dd2dce58a217",
+  "instruction": "Browse the natural products database.",
+  "largest_non_overlapping_box": [
+    0,
+    865,
+    1920,
+    142
+  ]
+}

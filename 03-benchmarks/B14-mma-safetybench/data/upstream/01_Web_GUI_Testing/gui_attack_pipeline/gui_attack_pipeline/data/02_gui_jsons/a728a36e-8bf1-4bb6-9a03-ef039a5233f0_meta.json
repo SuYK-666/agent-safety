@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "a728a36e-8bf1-4bb6-9a03-ef039a5233f0",
+  "instruction": "Find the Driver License Eligibility Requirements",
+  "largest_non_overlapping_box": [
+    0,
+    868,
+    1920,
+    212
+  ]
+}

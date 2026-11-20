@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "7a5a7856-f1b6-42a4-ade9-1ca81ca0f263",
+  "instruction": "Can you save this webpage I'm looking at to bookmarks bar so I can come back to it later?",
+  "largest_non_overlapping_box": [
+    0,
+    778,
+    1920,
+    142
+  ]
+}

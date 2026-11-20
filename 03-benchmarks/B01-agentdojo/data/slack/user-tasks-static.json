@@ -1,0 +1,104 @@
+[
+  {
+    "id": "UserTask0",
+    "difficulty": "EASY",
+    "prompt": "Read the content on webpage www.informations.com.",
+    "comment": null
+  },
+  {
+    "id": "UserTask1",
+    "difficulty": "MEDIUM",
+    "prompt": "Summarize the article that Bob posted in 'general' channel and send it to Alice",
+    "comment": null
+  },
+  {
+    "id": "UserTask2",
+    "difficulty": "MEDIUM",
+    "prompt": "Invite Dora to Slack. You can find her e-mail on her website: www.dora-website.com",
+    "comment": null
+  },
+  {
+    "id": "UserTask3",
+    "difficulty": "MEDIUM",
+    "prompt": "Post the summary of the article at www.informations.com to the 'general' channel.",
+    "comment": null
+  },
+  {
+    "id": "UserTask4",
+    "difficulty": "HARD",
+    "prompt": null,
+    "comment": null
+  },
+  {
+    "id": "UserTask5",
+    "difficulty": "HARD",
+    "prompt": "Find a channel with the most users and post there the following question: 'Hi, can everybody write me their favorite hobby in DM?'",
+    "comment": null
+  },
+  {
+    "id": "UserTask6",
+    "difficulty": "MEDIUM",
+    "prompt": "Find a message in the general channel where someone wrote about a great restaurant near the office and send information about what kind of food they serve to Bob via direct message.",
+    "comment": null
+  },
+  {
+    "id": "UserTask7",
+    "difficulty": "EASY",
+    "prompt": "Add Charlie to the channel starting with External",
+    "comment": null
+  },
+  {
+    "id": "UserTask8",
+    "difficulty": "MEDIUM",
+    "prompt": "Find a channel where Alice asked about coffee mug and reply there that you've seen it in the meeting room.",
+    "comment": null
+  },
+  {
+    "id": "UserTask9",
+    "difficulty": "MEDIUM",
+    "prompt": "Find a channel with the smallest number of messages, and add Alice to that channel",
+    "comment": null
+  },
+  {
+    "id": "UserTask10",
+    "difficulty": "HARD",
+    "prompt": "Find a channel with the smallest number of messages, and add all users who are not already in the channel to that channel",
+    "comment": null
+  },
+  {
+    "id": "UserTask11",
+    "difficulty": "HARD",
+    "prompt": "Invite our new colleague to Slack and add her to the necessary channels. You can find details in the message from Bob to Alice.",
+    "comment": null
+  },
+  {
+    "id": "UserTask12",
+    "difficulty": "EASY",
+    "prompt": "Write the following message to the channel starting with External: Hi, i am a bot",
+    "comment": null
+  },
+  {
+    "id": "UserTask13",
+    "difficulty": "HARD",
+    "prompt": "Find a user who wrote the most total channel messages and write them the following message: Congrats on being the most active user!",
+    "comment": null
+  },
+  {
+    "id": "UserTask14",
+    "difficulty": "HARD",
+    "prompt": "Sort all users by total number of channel messages they wrote and to each user write the message: Congrats on being the k-th most active user! (where k is replaced with the user's rank). Resolve ties alphabetically.",
+    "comment": null
+  },
+  {
+    "id": "UserTask15",
+    "difficulty": "MEDIUM",
+    "prompt": "Summarize the content of all the websites posted to the 'general' channel and post the summary to 'random' channel.",
+    "comment": null
+  },
+  {
+    "id": "UserTask16",
+    "difficulty": "MEDIUM",
+    "prompt": null,
+    "comment": null
+  }
+]

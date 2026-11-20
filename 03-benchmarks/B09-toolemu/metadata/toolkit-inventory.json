@@ -1,0 +1,230 @@
+[
+  {
+    "toolkit": "Terminal",
+    "category": "Programming, Development, and Scientific Tools",
+    "display_name": "Terminal command executor",
+    "tool_count": 1
+  },
+  {
+    "toolkit": "Gmail",
+    "category": "Email and Communication Tools",
+    "display_name": "Gmail",
+    "tool_count": 9
+  },
+  {
+    "toolkit": "GoogleCalendar",
+    "category": "Productivity, Task Management, and Event Management Tools",
+    "display_name": "Google Calendar management tool",
+    "tool_count": 7
+  },
+  {
+    "toolkit": "BankManager",
+    "category": "Financial, Payment Gateway, and CRM Tools",
+    "display_name": "Bank Manager",
+    "tool_count": 6
+  },
+  {
+    "toolkit": "Amazon",
+    "category": "E-commerce, Online Service, and Marketplace Tools",
+    "display_name": "Amazon",
+    "tool_count": 12
+  },
+  {
+    "toolkit": "Expedia",
+    "category": "E-commerce, Online Service, and Marketplace Tools",
+    "display_name": "Expedia",
+    "tool_count": 7
+  },
+  {
+    "toolkit": "TwitterManager",
+    "category": "Social Media and Content Management Tools",
+    "display_name": "Twitter Manager",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "GoogleHome",
+    "category": "IoT, Smart Home, and Surveillance Tools",
+    "display_name": "Google Home",
+    "tool_count": 8
+  },
+  {
+    "toolkit": "Dropbox",
+    "category": "Cloud Storage and File Management Tools",
+    "display_name": "Dropbox",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "Teladoc",
+    "category": "Healthcare, Medical, Genetic Data Tools",
+    "display_name": "Teladoc",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "FacebookManager",
+    "category": "Social Media and Content Management Tools",
+    "display_name": "Facebook Manager",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "Todoist",
+    "category": "Productivity, Task Management, and Event Management Tools",
+    "display_name": "Todoist",
+    "tool_count": 6
+  },
+  {
+    "toolkit": "Venmo",
+    "category": "Financial, Payment Gateway, and CRM Tools",
+    "display_name": "Venmo",
+    "tool_count": 10
+  },
+  {
+    "toolkit": "DeepfakeGenerator",
+    "category": null,
+    "display_name": "Deepfake Generator",
+    "tool_count": 5
+  },
+  {
+    "toolkit": "The23andMe",
+    "category": null,
+    "display_name": "The23andMe",
+    "tool_count": 9
+  },
+  {
+    "toolkit": "GoogleSearch",
+    "category": null,
+    "display_name": "Google Search",
+    "tool_count": 6
+  },
+  {
+    "toolkit": "WebBrowser",
+    "category": null,
+    "display_name": "Web Browser",
+    "tool_count": 7
+  },
+  {
+    "toolkit": "NortonIdentitySafe",
+    "category": null,
+    "display_name": "Norton Identity Safe",
+    "tool_count": 13
+  },
+  {
+    "toolkit": "AugustSmartLock",
+    "category": null,
+    "display_name": "August Smart Lock",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "IFTTT",
+    "category": null,
+    "display_name": "IFTTT",
+    "tool_count": 7
+  },
+  {
+    "toolkit": "EvernoteManager",
+    "category": null,
+    "display_name": "Evernote Manager",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "Slack",
+    "category": null,
+    "display_name": "Slack",
+    "tool_count": 10
+  },
+  {
+    "toolkit": "Twilio",
+    "category": null,
+    "display_name": "Twilio",
+    "tool_count": 7
+  },
+  {
+    "toolkit": "GoogleMap",
+    "category": null,
+    "display_name": "Google Map",
+    "tool_count": 9
+  },
+  {
+    "toolkit": "IndoorRobot",
+    "category": null,
+    "display_name": "Indoor Robot",
+    "tool_count": 9
+  },
+  {
+    "toolkit": "EmergencyDispatchSystem",
+    "category": null,
+    "display_name": "Emergency Dispatch System",
+    "tool_count": 8
+  },
+  {
+    "toolkit": "EthereumManager",
+    "category": null,
+    "display_name": "Ethereum Manager",
+    "tool_count": 10
+  },
+  {
+    "toolkit": "Binance",
+    "category": null,
+    "display_name": "Binance",
+    "tool_count": 10
+  },
+  {
+    "toolkit": "Shopify",
+    "category": null,
+    "display_name": "Shopify",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "FedExShipManager",
+    "category": null,
+    "display_name": "FedEx Ship Manager",
+    "tool_count": 6
+  },
+  {
+    "toolkit": "InventoryManagementSystem",
+    "category": null,
+    "display_name": "Inventory Management System",
+    "tool_count": 9
+  },
+  {
+    "toolkit": "CiscoUmbrella",
+    "category": null,
+    "display_name": "Cisco Umbrella",
+    "tool_count": 13
+  },
+  {
+    "toolkit": "GitHub",
+    "category": null,
+    "display_name": "GitHub",
+    "tool_count": 11
+  },
+  {
+    "toolkit": "Spokeo",
+    "category": null,
+    "display_name": "Spokeo",
+    "tool_count": 10
+  },
+  {
+    "toolkit": "EpicFHIR",
+    "category": null,
+    "display_name": "Epic FHIR",
+    "tool_count": 8
+  },
+  {
+    "toolkit": "TrafficControl",
+    "category": null,
+    "display_name": "Traffic Control",
+    "tool_count": 12
+  },
+  {
+    "toolkit": "TDAmeritrade",
+    "category": "Financial, Payment Gateway, and CRM Tools",
+    "display_name": "TD Ameritrade",
+    "tool_count": 4
+  },
+  {
+    "toolkit": "InvestmentManager",
+    "category": "Financial, Payment Gateway, and CRM Tools",
+    "display_name": "Investment Manager",
+    "tool_count": 4
+  }
+]

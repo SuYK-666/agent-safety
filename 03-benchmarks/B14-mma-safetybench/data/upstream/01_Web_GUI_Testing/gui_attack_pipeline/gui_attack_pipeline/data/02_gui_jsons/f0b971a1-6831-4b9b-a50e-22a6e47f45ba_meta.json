@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "f0b971a1-6831-4b9b-a50e-22a6e47f45ba",
+  "instruction": "Please help me find the score record for the 2019 Super Bowl in the NFL website.",
+  "largest_non_overlapping_box": [
+    0,
+    250,
+    1250,
+    183
+  ]
+}

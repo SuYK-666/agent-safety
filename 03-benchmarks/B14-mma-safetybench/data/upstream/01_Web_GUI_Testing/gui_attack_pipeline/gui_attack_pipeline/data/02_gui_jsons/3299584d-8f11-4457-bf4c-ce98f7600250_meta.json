@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "3299584d-8f11-4457-bf4c-ce98f7600250",
+  "instruction": "On my surface pro whenever I launch Chrome it always opens \"funbrain.com.\" I don't want this. I cleared my cache but it still happens. What should I do?",
+  "largest_non_overlapping_box": [
+    0,
+    472,
+    1920,
+    287
+  ]
+}

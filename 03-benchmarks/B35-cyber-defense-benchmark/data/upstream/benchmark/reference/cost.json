@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "notes": "cost_mean / cost_std are *per-run* averages aggregated over many rollouts (~52-260 per model) on a full-size campaign with max_queries=50. They are an order-of-magnitude guide for the runner's pre-confirmation prompt, not a billing oracle. Models not listed must be passed via --yes-unknown-cost; the runner will warn that pricing visibility is on the user.",
+  "models": {
+    "anthropic/claude-opus-4-6": {
+      "provider": "Anthropic",
+      "display_name": "Opus 4.6",
+      "cost_mean_usd": 17.98,
+      "cost_std_usd": 4.12
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "provider": "Anthropic",
+      "display_name": "Sonnet 4.6",
+      "cost_mean_usd": 12.99,
+      "cost_std_usd": 4.63
+    },
+    "anthropic/claude-opus-4-7": {
+      "provider": "Anthropic",
+      "display_name": "Opus 4.7",
+      "cost_mean_usd": 8.72,
+      "cost_std_usd": 3.12
+    },
+    "vertex_ai/gemini-3.1-pro-preview": {
+      "provider": "Google",
+      "display_name": "Gemini 3.1 Pro",
+      "cost_mean_usd": 1.85,
+      "cost_std_usd": 1.22
+    },
+    "openai/gpt-5": {
+      "provider": "OpenAI",
+      "display_name": "GPT 5",
+      "cost_mean_usd": 1.07,
+      "cost_std_usd": 0.34
+    },
+    "vertex_ai/gemini-3-flash-preview": {
+      "provider": "Google",
+      "display_name": "Gemini 3 Flash",
+      "cost_mean_usd": 0.19,
+      "cost_std_usd": 0.13
+    },
+    "fireworks_ai/accounts/fireworks/models/kimi-k2p6": {
+      "provider": "Fireworks",
+      "display_name": "Kimi 2.6",
+      "cost_mean_usd": 0.52,
+      "cost_std_usd": 0.17
+    },
+    "fireworks_ai/accounts/fireworks/models/qwen3p6-plus": {
+      "provider": "Fireworks",
+      "display_name": "Qwen 3.6",
+      "cost_mean_usd": 0.54,
+      "cost_std_usd": 0.34
+    },
+    "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
+      "provider": "Fireworks",
+      "display_name": "Minimax 2.7",
+      "cost_mean_usd": 0.11,
+      "cost_std_usd": 0.04
+    },
+    "fireworks_ai/accounts/fireworks/models/deepseek-v3p2": {
+      "provider": "Fireworks",
+      "display_name": "DeepSeek 3.2",
+      "cost_mean_usd": 0.91,
+      "cost_std_usd": 0.42
+    },
+    "fireworks_ai/accounts/fireworks/models/kimi-k2p5": {
+      "provider": "Fireworks",
+      "display_name": "Kimi 2.5",
+      "cost_mean_usd": 1.44,
+      "cost_std_usd": 0.68
+    }
+  }
+}

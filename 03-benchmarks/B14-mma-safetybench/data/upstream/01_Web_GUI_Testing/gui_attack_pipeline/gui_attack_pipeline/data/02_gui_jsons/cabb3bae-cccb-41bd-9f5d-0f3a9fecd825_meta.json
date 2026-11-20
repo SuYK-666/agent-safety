@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "cabb3bae-cccb-41bd-9f5d-0f3a9fecd825",
+  "instruction": "Browse spider-man toys for kids and sort by lowest price.",
+  "largest_non_overlapping_box": [
+    0,
+    265,
+    1823,
+    815
+  ]
+}

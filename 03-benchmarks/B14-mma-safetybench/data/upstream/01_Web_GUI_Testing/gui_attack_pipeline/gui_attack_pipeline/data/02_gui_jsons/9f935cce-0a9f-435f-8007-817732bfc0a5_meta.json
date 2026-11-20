@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "9f935cce-0a9f-435f-8007-817732bfc0a5",
+  "instruction": "Browse list of Civil Division forms.",
+  "largest_non_overlapping_box": [
+    1233,
+    428,
+    687,
+    542
+  ]
+}

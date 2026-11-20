@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "da46d875-6b82-4681-9284-653b0c7ae241",
+  "instruction": "Book an appointment to apply for a transportation access pass at the Charlie Card store on the first Monday eight months later, 10:15 am, fill in my details (James Smith, james.smith@gmail.com). And do not click \"book\" directly. Let me review it.",
+  "largest_non_overlapping_box": [
+    0,
+    314,
+    1823,
+    162
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "6c4c23a1-42a4-43cc-9db1-2f86ff3738cc",
+  "instruction": "Find flights from Seattle to New York on 5th next month and only show those that can be purchased with miles.",
+  "largest_non_overlapping_box": [
+    741,
+    412,
+    1179,
+    607
+  ]
+}

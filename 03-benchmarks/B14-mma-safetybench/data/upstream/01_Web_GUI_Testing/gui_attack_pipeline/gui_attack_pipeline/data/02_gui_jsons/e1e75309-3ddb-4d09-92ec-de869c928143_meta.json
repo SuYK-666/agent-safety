@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "e1e75309-3ddb-4d09-92ec-de869c928143",
+  "instruction": "Computer, can you turn the webpage I'm looking at into a PDF file, save it to my Desktop with the default filename and set the margins to none?",
+  "largest_non_overlapping_box": [
+    0,
+    156,
+    623,
+    623
+  ]
+}

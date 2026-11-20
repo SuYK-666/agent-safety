@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "note": "Per-1M-token pricing for providers LiteLLM's response_cost does not cover (currently open-weight providers like Fireworks). Used by benchmark.llm_router.compute_fallback_cost.",
+  "pricing": {
+    "fireworks_ai/accounts/fireworks/models/glm-5p1": {
+      "input": 1.4,
+      "cached_input": 0.26,
+      "output": 4.4
+    },
+    "fireworks_ai/accounts/fireworks/models/kimi-k2p5": {
+      "input": 0.6,
+      "cached_input": 0.1,
+      "output": 3.0
+    },
+    "fireworks_ai/accounts/fireworks/models/kimi-k2p6": {
+      "input": 0.95,
+      "cached_input": 0.16,
+      "output": 4.0
+    },
+    "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
+      "input": 0.3,
+      "cached_input": 0.06,
+      "output": 1.2
+    },
+    "fireworks_ai/accounts/fireworks/models/deepseek-v3p2": {
+      "input": 0.56,
+      "cached_input": 0.28,
+      "output": 1.68
+    },
+    "fireworks_ai/accounts/fireworks/models/qwen3p6-plus": {
+      "input": 0.5,
+      "cached_input": 0.1,
+      "output": 3.0
+    }
+  }
+}

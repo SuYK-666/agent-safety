@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "99146c54-4f37-4ab8-9327-5f3291665e1e",
+  "instruction": "Please help me set Chrome to delete my browsing data automatically every time I close the browser.",
+  "largest_non_overlapping_box": [
+    0,
+    472,
+    1920,
+    287
+  ]
+}

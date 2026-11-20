@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "59155008-fe71-45ec-8a8f-dc35497b6aa8",
+  "instruction": "What are the similar names to the name carl",
+  "largest_non_overlapping_box": [
+    0,
+    323,
+    1048,
+    464
+  ]
+}

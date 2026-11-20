@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "fc6d8143-9452-4171-9459-7f515143419a",
+  "instruction": "Find flights from New York–Kennedy Airport to Chicago O'Hare Airport for tomorrow.",
+  "largest_non_overlapping_box": [
+    688,
+    412,
+    1232,
+    530
+  ]
+}

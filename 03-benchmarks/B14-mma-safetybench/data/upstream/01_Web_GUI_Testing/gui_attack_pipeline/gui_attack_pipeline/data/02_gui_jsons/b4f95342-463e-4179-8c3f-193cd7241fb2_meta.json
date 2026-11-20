@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "b4f95342-463e-4179-8c3f-193cd7241fb2",
+  "instruction": "Find the Next Available dates for Diamond.",
+  "largest_non_overlapping_box": [
+    0,
+    362,
+    1920,
+    184
+  ]
+}

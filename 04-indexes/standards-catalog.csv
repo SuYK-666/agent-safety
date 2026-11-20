@@ -1,0 +1,43 @@
+﻿编号,地区,标题,文件性质,评测用途,官方原文及补充
+cn-policy,中国,《智能体规范应用与创新发展实施意见》,三部门专项政策，2026 年印发,分级治理、委托边界、行为管控、可追溯与供应链安全,https://www.cac.gov.cn/2026-05/08/c_1779979789523320.htm
+cn-agent-plan,中国,《智能体应用安全基本要求》20263116-Q-252,强制性国家标准制定计划,按计划号追踪范围与状态,https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=558A5B599E7FC47DE06397BE0A0AB03C | https://www.samr.gov.cn/bzjss/tzgg/art/2026/art_9db398631612424b8d06d57338e2bb66.html
+cn-guide,中国,TC260-PG-20266A《智能体部署使用安全指引》,网安标委实践指南，v1.0,评估、部署、使用、停用的检查点,https://www.tc260.org.cn/tc260/tzgg/202607/98b6f259f8a3428b8fe1cfea3c0fb19e.shtml
+cn-data-plan,中国,《数据安全技术 智能体数据处理安全要求》20264770-T-469,推荐性国家标准制定计划,跟踪数据边界及处理要求,https://std.samr.gov.cn/gb/search/gbDetailed?id=5D5164ECCDDA85C5E06397BE0A0A0F22
+cn-gbz,中国,GB/Z 242—2026《人工智能 智能体技术要求》,国家标准化指导性技术文件,智能体共性技术要求,https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=B47B31E454D05B7C415CADC9FE366127
+cn-gb,中国,GB/T 45654—2025《网络安全技术 生成式人工智能服务安全基本要求》,推荐性国家标准，2025-11-01 实施,生成式 AI 服务的安全底座,https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F67D3F376E0A0A0FF5317FB36B32A30A
+cn-framework,中国,《人工智能安全治理框架》2.0 与 3.0,全国网安标委治理框架,3.0 附件 2 直接覆盖智能体全生命周期,https://www.cac.gov.cn/2025-09/15/c_1759653448369123.htm | https://www.cac.gov.cn/rootimages/uploadimg/1791137114683961/1791137114683961.pdf
+cn-industry,中国,《工业和信息化领域人工智能安全评测框架（2026 版）》,行业评测框架,对象、层级、实施流程与证据方法,https://www.isc.org.cn/article/30754945690365952.html | https://aihub.caict.ac.cn/aiia_activities/766
+cn-group,中国,T/SAIAS 059—2026《智能体评测指标与方法》,团体标准,基础能力、安全可靠、伦理与对齐、应用效能,https://ndls.cnis.ac.cn/standard/detail/249de1efeebed22ac555bb0e1d9a824c
+cn-yd,中国,YD/T 7363—2026《人工智能 关键基础技术 智能体服务应用技术要求》,通信行业标准，官方所列实施日 2026-12-01,应用能力、丰富度与成熟度,https://std.samr.gov.cn/hb/search/stdHBDetailed?id=60607FBFA6CE1E09E06397BE0A0ACF94
+cn-dyn,中国,《智能体全链路动态风险评测方法》,团标研制／征集,调用链、动态行为、协同越权和判定边界,https://www.isc.org.cn/article/30903098106310656.html
+cn-caict,中国,信通院行为安全护栏、长程任务安全评估,专项评估公开资料,观察执行约束与多步风险，端侧 Q1 见基准表,https://aihub.caict.ac.cn/docs/gHJ6JTF6iaYA | https://aihub.caict.ac.cn/docs/NCdQPXYwBaKw
+cn-other,中国,智能体可信登记、清华 AIR 等 L1–L5 安全框架,登记公告、研究白皮书,登记信息或按自主程度的分级参考,https://www.isc.org.cn/article/29637370462859264.html | https://air.tsinghua.edu.cn/info/1007/2568.htm
+nist-rmf,美国,NIST AI RMF 1.0 与 AI 600-1,发布版风险管理框架、生成式 AI 概况,用 Govern、Map、Measure、Manage 梳理组织责任,https://doi.org/10.6028/NIST.AI.100-1 | https://doi.org/10.6028/NIST.AI.600-1
+nist-ssdf,美国,NIST SP 800-218A,发布版 SSDF AI 扩展,开发与供应链安全的过程、工件和可追溯证据,https://csrc.nist.gov/pubs/sp/800/218/a/final
+nist-agents,美国,NIST AI Agent Standards Initiative,持续倡议,互操作、标准和身份专项工作,https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure | https://www.nist.gov/super-intelligence/si-agent-standards-initiative
+nist-id,美国,NCCoE 软件及 AI 代理身份与授权,概念文件初始草案,代理身份、代表关系及授权审计,https://csrc.nist.gov/pubs/other/2026/02/05/accelerating-the-adoption-of-software-and-ai-agent/ipd
+nist-8002,美国,NIST AI 800-2,初始公开草案,定义目标、选择基准、运行、分析和报告,https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations | https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf
+nist-cyber,美国,NIST IR 8596 Cyber AI Profile,初步公开草案,保护 AI、AI 防御及应对 AI 辅助攻击,https://csrc.nist.gov/pubs/ir/8596/iprd
+nist-new,美国,NIST SP 2400-102e2026,初始公开草案,第 4 章代理式系统对抗分类与缓解,https://csrc.nist.gov/pubs/sp/2400-102/e2026/ipd | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.2400-102e2026.ipd.pdf
+nist-evidence,美国,NIST 竞赛合作分析、评测取巧轨迹研究,实证报告,核对 ART 范围、判分缺陷和实验解释,https://www.nist.gov/blogs/caissi-research-blog/insights-ai-agent-security-large-scale-red-teaming-competition | https://www.nist.gov/caissi/cheating-ai-agent-evaluations
+eu-act,欧盟,Regulation (EU) 2024/1689《AI Act》及修订,法规，按用途、角色及适用日期核对,高风险系统第 9、14、15 条，具有系统性风险的 GPAI 模型第 55 条,https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng | https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-15 | https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-55 | https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline
+eu-harm,欧盟,EN 18286:2026,欧盟官方公报引用的协调标准,支持 AI Act 第 17 条质量管理体系,https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal | https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj/eng
+eu-etsi,欧洲,ETSI EN 304 223 V2.1.1,已发布欧洲标准,AI 模型和系统网络安全基线,https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf
+eu-etsi-agent,欧洲,ETSI TS 104 328,工作项,智能体生命周期专项网络安全，正式状态以项目页为准,https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=79428
+eu-code,欧盟,GPAI Code of Practice,自愿实践准则,适用提供者的安全与安保履责路径,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+eu-joint,欧盟／多国,AI Office 参与国际联合测试,实证评估与技术报告,比较泄露、欺诈及网安测试的跨机构配置和局限,https://digital-strategy.ec.europa.eu/en/news/ai-office-contributes-third-joint-testing-exercise-international-network-ai-safety-institutes | https://sgaisi.sg/wp-api/wp-content/uploads/2025/07/International-Joint-Testing-Exercise_3JT-Eval-Report-v2.pdf
+eu-cyber,欧盟,欧委会 AI 与网安行动计划、ENISA 前沿 AI 报告,政策行动与技术研究,理解防御能力和系统性背景,https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence | https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era | https://digital-strategy.ec.europa.eu/en/policies/ai-office | https://www.cencenelec.eu/news-events/news/2026/newsletter/ots-77-etuc
+uk,英国,AI 网络安全实践准则,政府发布的实践准则,开发、部署和维护环节的基线,https://www.gov.uk/government/publications/ai-cyber-security-code-of-practice/code-of-practice-for-the-cyber-security-of-ai
+uk-inspect,英国,Inspect、Inspect Cyber,开源评测框架和专项基础设施,任务配置、环境与可核查报告，AgentHarm 与 ART 见基准表,https://inspect.aisi.org.uk/ | https://www.aisi.gov.uk/blog/inspect-cyber
+sg-mgf,新加坡,IMDA 代理式 AI 模型治理框架,治理指南,识别场景风险、明确人类责任与技术控制,https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf
+adopt,多国,代理式 AI 服务审慎采用指南,多国政府网络安全机构联合指南,分阶段授权、监控、数据流和关停,https://www.cyber.gov.au/publication/careful-adoption-of-agentic-ai-services
+iso-42001,国际,ISO/IEC 42001:2023,正式管理体系标准,组织层治理、记录和持续改进,https://www.iso.org/standard/42001
+iso-23894,国际,ISO/IEC 23894:2023,正式风险管理指南,用情境、影响与风险处理连接评测,https://www.iso.org/standard/77304.html
+iso-impact,国际,ISO/IEC 42005:2025,正式影响评估指南,识别受影响人群、利益相关方和可能影响,https://www.iso.org/standard/42005
+iso-testing,国际,ISO/IEC TS 42119-2:2025,正式技术规范,AI 系统测试方法与过程,https://www.iso.org/standard/84127.html
+ietf-bench,IETF,Security Evaluation Benchmark for AI Agents,Internet-Draft,测评框架，状态和有效期以 Datatracker 为准,https://datatracker.ietf.org/doc/draft-han-bmwg-agent-security-benchmark/
+ietf-profile,IETF,Evaluation Profiles for AI Agent Security Assessment,Internet-Draft,表达测评边界、场景与配置,https://datatracker.ietf.org/doc/draft-hcf-bpm-agent-security-benchmark-profiles/
+owasp,社区,OWASP Agentic Top 10、AISVS、ACS,风险清单、验证要求与控制接口,相应回答常见失效、应验证的控制、运行时接口证据,https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | https://owasp.github.io/www-project-artificial-intelligence-security-verification-standard-aisvs-docs/ | https://genai.owasp.org/resource/agent-control-standard-acs/
+atlas,社区,MITRE ATLAS,威胁知识库,机制标注与归类,https://atlas.mitre.org/
+bsi,行业,BSI AIUC-1 智能体认证,商业认证方案,按证书主体、版本、范围和评估时点解释,https://www.bsigroup.com/en-US/products-and-services/standards/aiuc-agentic-ai-certification/
+protocol,协议,MCP 与 A2A,版本化协议资料,连接工具与代理协作，评测应固定实际协议版本及权限,https://blog.modelcontextprotocol.io/posts/2026-07-28/ | https://a2a-protocol.org/latest/specification/

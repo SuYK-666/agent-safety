@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "82279c77-8fc6-46f6-9622-3ba96f61b477",
+  "instruction": "Find electric cars with a maximum price of $50,000 within 50 miles of 10001.",
+  "largest_non_overlapping_box": [
+    0,
+    91,
+    1542,
+    989
+  ]
+}

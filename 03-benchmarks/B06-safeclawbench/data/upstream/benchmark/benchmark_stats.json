@@ -1,0 +1,23 @@
+{
+  "total_samples": 72,
+  "by_attack_type": {
+    "DPI": 12,
+    "IPI": 12,
+    "TRI": 12,
+    "MPI": 12,
+    "MEX": 12,
+    "ADI": 12
+  },
+  "by_harm_type": {
+    "leak": 28,
+    "action": 28,
+    "persist": 16
+  },
+  "by_difficulty": {
+    "medium": 46,
+    "easy": 9,
+    "hard": 17
+  },
+  "generator_model": "gpt-4.1",
+  "generated_at": "2026-04-01 05:39:10"
+}

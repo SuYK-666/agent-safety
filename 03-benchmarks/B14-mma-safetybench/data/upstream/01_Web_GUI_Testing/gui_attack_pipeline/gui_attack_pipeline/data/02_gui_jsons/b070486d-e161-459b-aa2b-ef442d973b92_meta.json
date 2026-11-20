@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "b070486d-e161-459b-aa2b-ef442d973b92",
+  "instruction": "Show side effects of Tamiflu.",
+  "largest_non_overlapping_box": [
+    0,
+    865,
+    1920,
+    142
+  ]
+}

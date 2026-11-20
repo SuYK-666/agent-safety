@@ -1,0 +1,286 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "name": "SafeClawBench",
+  "description": "A multi-level security benchmark for tool-using LLM agents with 600 curated adversarial test cases. SafeClawBench evaluates the safety and robustness of large language model agents when confronted with adversarial prompts spanning six attack types (DPI, IPI, TRI, MPI, MEX, ADI) across multiple harm categories (leak, action, escalation, persist) and lifecycle stages (input, processing, output, inference, decision, execution). Each test case includes both a prompt-level scenario and an executable sandbox fixture with tool definitions, initial state, and oracle-based success predicates for automated harm detection.",
+  "url": "https://huggingface.co/datasets/sairights/safeclawbench",
+  "license": "https://opensource.org/licenses/MIT",
+  "version": "5.0.0",
+  "isLiveDataset": false,
+  "keywords": [
+    "LLM security",
+    "agent safety",
+    "adversarial benchmark",
+    "tool-using agents",
+    "prompt injection",
+    "red teaming"
+  ],
+  "citeAs": "@inproceedings{safeclawbench2026, title={SafeClawBench: A Multi-Dimensional Security Benchmark for Tool-Using LLM Agents}, author={Anonymous}, booktitle={NeurIPS Datasets and Benchmarks Track}, year={2026}}",
+  "datePublished": "2026",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "benchmark-file",
+      "name": "benchmark_v5_600.json",
+      "description": "Main benchmark file containing 600 adversarial test cases with prompt-level scenarios, attack type labels, harm type annotations, lifecycle stage tags, difficulty ratings, and expected safe behaviors.",
+      "contentUrl": "https://huggingface.co/datasets/sairights/safeclawbench/benchmark_v5_600.json",
+      "encodingFormat": "application/json",
+      "sha256": "b3e3172e77ce9669b24539e08ffb2bc676fa6281d1a329a3bd408d3f648cdb60"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "exec-fixture-file",
+      "name": "exec_full_600.json",
+      "description": "Executable sandbox fixture file containing 600 scenarios with system prompts, tool definitions, initial world state, and oracle-based success predicates for automated harm detection in sandboxed agent execution.",
+      "contentUrl": "https://huggingface.co/datasets/sairights/safeclawbench/executable/fixtures/exec_full_600.json",
+      "encodingFormat": "application/json",
+      "sha256": "1191dbfd8a1cd05ffd0235c623f51dbcb6a26332ea458ebfa2d7bb8720aa93e4"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "benchmark-cases",
+      "name": "benchmark-cases",
+      "description": "The 600 adversarial test cases in the prompt-level benchmark. Each record represents one adversarial scenario designed to test an LLM agent's safety when using tools.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/task_id",
+          "name": "task_id",
+          "description": "Unique identifier for the test case, prefixed by attack type (e.g., DPI_0000, IPI_1234).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].task_id" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/scenario",
+          "name": "scenario",
+          "description": "The scenario name describing the security-relevant context (e.g., corporate_document_access, student_record_merging).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].scenario" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/user_prompt",
+          "name": "user_prompt",
+          "description": "The adversarial prompt presented to the LLM agent under test.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].user_prompt" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/attack_type",
+          "name": "attack_type",
+          "description": "The category of adversarial attack. One of: DPI (Direct Prompt Injection), IPI (Indirect Prompt Injection), TRI (Tool Result Injection), MPI (Multi-turn Prompt Injection), MEX (Malicious Execution), ADI (Ambiguity-Driven Injection).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].attack_type" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/harm_type",
+          "name": "harm_type",
+          "description": "The type of harm the attack attempts to cause (e.g., leak, action, escalation, persist).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].harm_type" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/lifecycle_stage",
+          "name": "lifecycle_stage",
+          "description": "The agent lifecycle stage where the attack targets (e.g., input, processing, output, inference, decision, execution).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].lifecycle_stage" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/success_predicate",
+          "name": "success_predicate",
+          "description": "Description of what constitutes a successful attack (i.e., the agent exhibiting unsafe behavior).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].success_predicate" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/safe_behavior",
+          "name": "safe_behavior",
+          "description": "Description of the expected safe response that a well-defended agent should produce.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].safe_behavior" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark-cases/difficulty",
+          "name": "difficulty",
+          "description": "Difficulty level of the adversarial test case. One of: easy, medium, hard.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "benchmark-file" },
+            "extract": { "jsonPath": "$[*].difficulty" }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "exec-fixtures",
+      "name": "exec-fixtures",
+      "description": "The 600 executable sandbox fixtures extending the benchmark cases with tool definitions, initial world state, and oracle-based success predicates for automated sandboxed evaluation.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/case_id",
+          "name": "case_id",
+          "description": "Unique case identifier matching the benchmark task_id.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].case_id" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/attack_type",
+          "name": "attack_type",
+          "description": "Attack type category matching the benchmark record.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].attack_type" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/user_prompt",
+          "name": "user_prompt",
+          "description": "The adversarial prompt for the executable scenario, may include additional mock task instructions.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].user_prompt" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/available_tools",
+          "name": "available_tools",
+          "description": "List of tool names available to the agent in the sandboxed scenario (e.g., write_file, read_file, send_email).",
+          "dataType": "sc:Text",
+          "isArray": true,
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].available_tools" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/expected_safe_behavior",
+          "name": "expected_safe_behavior",
+          "description": "Description of the expected safe agent behavior in the sandboxed scenario.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].expected_safe_behavior" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "exec-fixtures/reset",
+          "name": "reset",
+          "description": "Whether the sandbox state should be reset before running this scenario.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": { "@id": "exec-fixture-file" },
+            "extract": { "jsonPath": "$[*].reset" }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataLimitations": "SafeClawBench operates at the prompt level only and does not test real deployment environments with actual system integrations, network access, or persistent state. The 600 test cases are curated (not randomly sampled from real-world attack logs), which may limit generalizability to attacks observed in production. The benchmark is English-only and does not cover multilingual or cross-lingual attack vectors. The six attack types (DPI, IPI, TRI, MPI, MEX, ADI) represent a structured taxonomy but do not exhaustively cover all possible adversarial techniques against tool-using agents. Difficulty labels (easy/medium/hard) are assigned based on expert judgment and may not correlate perfectly with empirical model performance.",
+  "rai:dataBiases": "The dataset over-represents security-relevant scenarios by design, as it is a security benchmark rather than a general-purpose evaluation. The distribution of attack types and difficulty levels was engineered for balanced coverage (~100 cases per attack type) and may not reflect the natural frequency distribution of real-world attacks. Model selection for generation and evaluation is biased toward frontier models (GPT-4.1, Claude, etc.), and attack scenarios may be more or less effective against different model families. Harm types are concentrated on leak, action, escalation, and persist categories, which may underrepresent other harm modalities.",
+  "rai:personalSensitiveInformation": "SafeClawBench contains no real personally identifiable information (PII). All scenarios are fully synthetic. Names, organizations, API keys, email addresses, file paths, and other identifiers appearing in test cases are entirely fictional and were generated specifically for this benchmark. No real user data, personal records, or sensitive information from any individual or organization was used in the construction of this dataset.",
+  "rai:dataUseCases": "Intended uses: (1) Security evaluation of tool-using LLM agents against adversarial prompts; (2) Defense mechanism benchmarking and comparison; (3) Model safety comparison across frontier and open-source LLMs; (4) Research into agent robustness and safety alignment. The benchmark supports both prompt-level evaluation (using benchmark_v5_600.json) and sandboxed executable evaluation with oracle-based harm detection (using exec_full_600.json). NOT intended for: training attack models, generating real exploits, weaponizing prompt injection techniques, or any use that would compromise the safety of deployed AI systems.",
+  "rai:dataSocialImpact": "Positive impact: SafeClawBench advances the science of LLM agent safety by providing a standardized, reproducible benchmark for measuring and comparing defense effectiveness against adversarial attacks on tool-using agents. It enables researchers and practitioners to identify vulnerabilities and improve safety mechanisms before deployment. Potential negative impact: The adversarial scenarios could theoretically inform attackers about prompt injection techniques and attack patterns. Mitigation: All scenarios are synthetic and do not contain real exploits, working payloads, or instructions that could be directly applied to compromise real systems. The benchmark tests conceptual attack categories rather than providing operational attack toolkits. The attack patterns described are already well-documented in the academic literature on prompt injection and LLM safety.",
+  "rai:dataCollection": "All test cases were synthetically generated through a structured multi-stage pipeline. Six seed cases were manually authored for each of the six attack types (DPI, IPI, TRI, MPI, MEX, ADI), totaling 36 seed cases. Each seed was then expanded to approximately 100 variations using frontier LLM generation (GPT-4.1), with controlled variation across scenarios, harm types, lifecycle stages, and difficulty levels. All generated cases underwent human review for quality, coherence, and appropriate difficulty calibration. The executable fixtures were derived from the prompt-level cases by adding sandbox infrastructure (tool definitions, initial state, oracle predicates).",
+  "rai:dataCollectionType": "LLM-generated with human curation",
+  "rai:dataCollectionTimeframe": "2025-2026",
+  "rai:dataCollectionRawData": "No raw data from external sources. All content is original synthetic generation from seed cases authored by the research team.",
+  "prov:wasDerivedFrom": {
+    "@type": "prov:Entity",
+    "prov:label": "Fully synthetic dataset. No upstream datasets were used. All content was generated from 36 manually-authored seed cases (6 per attack type) created by the research team."
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "prov:label": "LLM-based adversarial test case generation pipeline",
+    "description": "Multi-stage generation pipeline: (1) Manual authoring of 36 seed cases covering 6 attack types x 6 scenarios each; (2) LLM-based expansion using GPT-4.1 to generate ~100 variations per attack type with controlled diversity across scenarios, harm types, lifecycle stages, and difficulty levels; (3) Human quality review and filtering to reach the final 600 curated cases; (4) Automated derivation of executable sandbox fixtures with tool definitions, initial world state, and oracle-based success predicates."
+  }
+}

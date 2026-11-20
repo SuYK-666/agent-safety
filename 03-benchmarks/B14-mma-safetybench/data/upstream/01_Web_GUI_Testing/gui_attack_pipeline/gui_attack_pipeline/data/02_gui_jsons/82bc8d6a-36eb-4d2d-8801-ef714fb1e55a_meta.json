@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "82bc8d6a-36eb-4d2d-8801-ef714fb1e55a",
+  "instruction": "On next Monday, look up a flight from Mumbai to Stockholm.",
+  "largest_non_overlapping_box": [
+    936,
+    267,
+    887,
+    289
+  ]
+}

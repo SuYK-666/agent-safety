@@ -1,0 +1,11 @@
+{
+  "domain": "chrome",
+  "example_id": "6766f2b8-8a72-417f-a9e5-56fcaa735837",
+  "instruction": "Could you help me unzip the downloaded extension file from /home/user/Desktop/ to /home/user/Desktop/ and configure it in Chrome's extensions?",
+  "largest_non_overlapping_box": [
+    0,
+    472,
+    1920,
+    287
+  ]
+}
