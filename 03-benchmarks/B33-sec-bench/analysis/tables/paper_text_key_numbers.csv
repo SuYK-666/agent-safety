@@ -1,0 +1,5 @@
+﻿Item,Value,Source
+Seed instances / verified,898 / 200 (22.3%),Table 1
+Best full-set patch success,34.0%,Sec.3.2
+Best full-set PoC success,18.0%,Sec.3.2
+"Repeatability (SWE-agent + o3-mini, 5 runs)",30.0% +- 7.9%,Sec.3.2

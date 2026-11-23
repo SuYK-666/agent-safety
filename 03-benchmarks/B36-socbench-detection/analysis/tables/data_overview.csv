@@ -1,0 +1,11 @@
+﻿item,value
+flow records,757641
+columns,16
+malicious (Label=1),282595
+benign (Label=0),475046
+malicious share %,37.299
+sources,8
+attack labels,6
+distinct src_ip,15857
+distinct dst_ip,662845
+cic2018-mini sample rows,72

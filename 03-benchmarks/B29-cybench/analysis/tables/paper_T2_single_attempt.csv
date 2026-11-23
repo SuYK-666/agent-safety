@@ -1,0 +1,9 @@
+﻿Model,Unguided perf,Unguided highest FST,Subtask-guided perf,Subtask perf,Subtask-guided highest FST,Weighted unguided,Weighted subtask-guided
+Claude 3.5 Sonnet,17.5%,11 min,15.0%,43.9%,11 min,8.38%,7.04%
+GPT-4o,12.5%,11 min,17.5%,28.7%,52 min,6.47%,9.61%
+Claude 3 Opus,10.0%,11 min,12.5%,36.8%,11 min,4.61%,6.59%
+OpenAI o1-preview,10.0%,11 min,10.0%,46.8%,11 min,4.61%,4.44%
+Llama 3.1 405B Instruct,7.5%,9 min,15.0%,20.5%,11 min,3.05%,6.66%
+Mixtral 8x22b Instruct,7.5%,9 min,5.0%,15.2%,7 min,3.05%,1.72%
+Gemini 1.5 Pro,7.5%,9 min,5.0%,11.7%,6 min,3.76%,1.62%
+Llama 3 70b Chat,5.0%,9 min,7.5%,8.2%,11 min,1.88%,3.18%

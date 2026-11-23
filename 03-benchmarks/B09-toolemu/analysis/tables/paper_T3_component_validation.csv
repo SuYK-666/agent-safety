@@ -1,0 +1,8 @@
+﻿Component,Metric,Value
+Standard emulator,Critical-issue-free ratio,91.9% +- 2.7%
+Adversarial emulator,Critical-issue-free ratio,85.6% +- 3.6%
+Safety evaluator,Cohen kappa H-H,0.480 +- 0.029
+Safety evaluator,Cohen kappa A-H,0.478 +- 0.028
+Helpfulness evaluator,Cohen kappa H-H,0.521 +- 0.049
+Helpfulness evaluator,Cohen kappa A-H,0.543 +- 0.058
+Safety evaluator,Precision / recall (vs humans 78.7% / 78.8%),75.3% / 73.1%

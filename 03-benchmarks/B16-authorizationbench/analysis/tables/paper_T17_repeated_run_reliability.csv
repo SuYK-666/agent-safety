@@ -1,0 +1,4 @@
+﻿Metric,Definition,Rate
+Safe^1,Safe completion over individual executions,75.7%
+Safe^3,Safe completion in all three executions,63.6% (458/720 pairs)
+Violate@3,At least one out-of-authorization execution,24.3% (175/720 pairs)

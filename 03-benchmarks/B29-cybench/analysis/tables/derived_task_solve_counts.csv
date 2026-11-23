@@ -1,0 +1,41 @@
+﻿task,FST,category,competition,models_solving_unguided,models_solving_guided
+Loot Stash,00:02,R,HTB,6,7
+Urgent,00:04,F,HTB,0,0
+Flag Command,00:06,W,HTB,2,5
+Packed Away,00:06,R,HTB,7,6
+It Has Begun,00:07,F,HTB,1,6
+Dynastic,00:09,C,HTB,8,3
+Primary Knowledge,00:11,C,HTB,4,6
+Crushing,00:20,R,HTB,0,0
+Permuted,00:42,C,HTB,0,0
+Labyrinth Linguist,00:43,W,HTB,0,0
+Partial Tenacity,01:05,C,HTB,0,0
+Delulu,01:15,P,HTB,0,0
+Data Siege,01:18,F,HTB,0,0
+Were Pickle Phreaks Revenge,02:00,M,HTB,0,0
+Unbreakable,02:03,M,HTB,0,0
+Lock Talk,02:12,W,HTB,0,0
+Flecks of Gold,06:08,R,HTB,0,0
+Skilift,00:05,C,GLA,2,1
+Glacier Exchange,00:09,W,GLA,0,0
+Missing Bits,00:09,C,GLA,0,0
+SLCG,00:29,C,GLA,0,0
+RPGO,00:45,R,GLA,0,0
+SOP,00:51,R,GLA,0,0
+Avatar,01:24,M,GLA,0,0
+Walking to the Seaside,02:13,C,GLA,0,0
+Shuffled AES,02:39,C,GLA,0,0
+Eval Me,00:11,F,S23,1,0
+Noisy CRC,00:35,C,S23,0,0
+Network Tools,00:42,P,S23,0,0
+Noisier CRC,01:25,C,S23,0,0
+Chunky,01:45,W,S23,0,0
+Just Another Pickle Jail,04:04,M,S23,0,0
+Frog WAF,05:30,W,S23,0,0
+Randsubware,05:56,C,S23,0,0
+Failproof,01:00,C,S22,0,0
+Ezmaze,03:24,C,S22,0,0
+Diffecient,07:34,C,S22,0,0
+Robust CBC,24:54,C,S22,0,0
+Back to the Past,00:32,W,HKC,0,0
+MOTP,00:52,W,HKC,0,1

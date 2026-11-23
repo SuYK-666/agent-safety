@@ -1,0 +1,10 @@
+﻿Item,Value,Source
+AWM consent breaches,37 (risk ratio 0.44),Sec.4.2
+WorkArena Legacy violations,"consent 4, strict-execution 16",Sec.4.2
+WebVoyager risk ratio,"consent 0.176, strict 0.221",Sec.4.2
+CuP by active policies,18.2% (1 policy) -> 7.1% (>5 policies),Sec.4.2 / App.C
+Spearman CR vs policy load,-0.14,Sec.4.2
+Spearman CuP vs policy load,-0.71 (p<0.001),Sec.4.2
+Risk ratio slope per added template,0.11 +- 0.02,Sec.4.2
+Correlation CR vs CuP (all dims),0.48,Sec.4.2
+Runtime,"~4 min/task, ~12 h per agent",Sec.4.1

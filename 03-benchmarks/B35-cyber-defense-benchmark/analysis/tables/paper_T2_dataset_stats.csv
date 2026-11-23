@@ -1,0 +1,14 @@
+﻿Statistic,Value
+Total procedures,106
+Total raw log records,"774,218"
+Average records per procedure,"7,304"
+Record range (min-max),"68-9,896"
+"Unique (Channel, EventID) pairs",303
+Unique schema field keys,507
+MITRE ATT&CK sub-techniques,93
+MITRE tactics covered,12
+Parent-technique coverage,38% (87 of 231)
+Total malicious event flags,"23,268"
+Average flags per procedure,219.5
+Flag range per procedure,"11-3,068"
+Campaigns (seeds),"26 (flags per campaign 1,539-6,713, mean ~2,765)"

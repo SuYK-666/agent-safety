@@ -1,0 +1,13 @@
+﻿domain,split,tasks
+airline,train,30
+airline,test,20
+airline,base,50
+intake,base,200
+retail,train,74
+retail,test,40
+retail,base,114
+telecom,small,20
+telecom,train,74
+telecom,test,40
+telecom,full,2285
+telecom,base,114

@@ -1,0 +1,10 @@
+﻿item,value
+trajectories,1000
+safe / unsafe,503 / 497
+avg agent turns,4.49
+max agent turns,31
+avg trajectory chars,11345
+avg tools available per trajectory,3.16
+distinct tool names,2084
+tools with injected/modified description (_original_description present),122
+ATBench500 previous release,500

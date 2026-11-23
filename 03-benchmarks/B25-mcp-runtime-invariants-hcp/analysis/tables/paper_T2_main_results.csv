@@ -1,0 +1,6 @@
+﻿Mode,Description,Attack success,Prevented,Uncertain,Attack audit,Benign done,Benign audit
+B0,"direct execution, no control",18/18,0/18,0/18,0/18,25/25,0/25
+B1,connection-level controls,11/18,7/18,0/18,14/18,24/25,19/25
+B1-decline,B1 + blanket decline of approval prompts,3/18,14/18,1/18,13/18,14/25,19/25
+B2,HCP runtime,0/18,18/18,0/18,18/18,25/25,21/25
+B3,gateway/server ACL with same invariants,0/18,18/18,0/18,18/18,25/25,25/25

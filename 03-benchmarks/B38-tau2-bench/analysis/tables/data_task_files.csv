@@ -1,0 +1,12 @@
+﻿domain,file,tasks,avg_reference_actions
+airline,tasks.json,50,2.84
+airline,tasks_voice.json,2,
+banking_knowledge,tasks.json,97,9.85
+banking_knowledge,tasks_voice.json,2,
+intake,tasks.json,200,
+retail,tasks.json,114,4.82
+retail,tasks_voice.json,2,
+telecom,tasks.json,2285,5.78
+telecom,tasks_full.json,2285,5.78
+telecom,tasks_small.json,20,1.35
+telecom,tasks_voice.json,2,

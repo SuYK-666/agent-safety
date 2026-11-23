@@ -1,0 +1,5 @@
+﻿file,attack,setting,cases,unique_user_tools,unique_attacker_instructions,modified_attacker_cases,avg_tool_response_chars
+test_cases_dh_base,direct_harm,base,510,17,30,187,263.9
+test_cases_dh_enhanced,direct_harm,enhanced,510,17,30,187,359.9
+test_cases_ds_base,data_stealing,base,544,17,32,153,298.9
+test_cases_ds_enhanced,data_stealing,enhanced,544,17,32,153,394.9

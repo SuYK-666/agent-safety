@@ -1,0 +1,10 @@
+﻿Category,Judge,Unsafe agreement,Unsafe P,Unsafe R,Unsafe F1,Completed agreement,Completed P,Completed R,Completed F1
+Misuse,GPT-4.1,70%,100%,63%,78%,82%,50%,67%,57%
+Misuse,o4-mini,64%,96%,59%,73%,82%,50%,22%,31%
+Misuse,Claude 3.7 Sonnet,66%,100%,59%,74%,82%,50%,56%,53%
+Injection,GPT-4.1,88%,80%,67%,73%,84%,78%,91%,84%
+Injection,o4-mini,90%,89%,67%,76%,84%,94%,70%,80%
+Injection,Claude 3.7 Sonnet,88%,75%,75%,75%,80%,78%,78%,78%
+Misbehavior,GPT-4.1,94%,100%,62%,77%,88%,79%,88%,83%
+Misbehavior,o4-mini,88%,100%,25%,40%,80%,80%,50%,62%
+Misbehavior,Claude 3.7 Sonnet,92%,83%,62%,71%,82%,72%,76%,74%

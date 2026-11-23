@@ -1,0 +1,10 @@
+﻿risk_category,count,share_%
+Spread unsafe information / misinformation,250,12.5
+Lead to property loss,250,12.5
+Leak sensitive data / information,250,12.5
+Compromise availability,250,12.5
+Contribute to harmful / vulnerable code,250,12.5
+Violate law or ethics / damage society,250,12.5
+Lead to physical harm,250,12.5
+Produce unsafe information / misinformation,250,12.5
+TOTAL,2000,100.0

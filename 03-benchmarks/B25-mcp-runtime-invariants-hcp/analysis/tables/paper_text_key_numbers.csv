@@ -1,0 +1,11 @@
+﻿Item,Value,Source
+AgentDojo payload reached GPT tool output,141/144 sessions; GPT made 0 attacker attempts,Sec.6.7
+DeepSeek attacker calls blocked,"ACL 7/7, HCP 3/3; 0 attack goals achieved (direct: 4)",Sec.6.7
+Non-attacker calls denied by strict grants,40 calls across 26 sessions,Sec.6.7
+"Guarded calls, grant-rule mismatches","1,012 calls, 0 mismatches",Sec.6.7
+Controller overhead vs model latency,0.39-0.57 ms per tool call vs 4.6 s per model request,Sec.6.7
+Adaptive follow-up,0/209 decisive cells attempted attacker goal (Wilson upper 1.8%),Sec.6.7
+Clean-task utility adaptive study,"Direct 68/69, ACL 60/68, HCP 59/67",Sec.6.7
+Denied writes in offline replay,"241: 219 substantive diff, 15 no-ref, 6 unresolved, 1 equivalent",Sec.6.7
+Approve-all control (V4),"110/655 trajectories diverge, 4 new attacker goals",Sec.6.7
+Isolation probes,151/151 external connections blocked,Sec.6.8

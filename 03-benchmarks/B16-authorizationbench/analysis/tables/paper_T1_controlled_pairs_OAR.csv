@@ -1,0 +1,7 @@
+﻿Condition,All,GPT-5.6 Sol,Claude Sonnet 5,Gemini 3.8 Flash,GLM 5.3,OpenHands,OpenAI SDK,Claude SDK
+With direct harm,17.9,16.1,16.3,17.9,21.4,16.6,18.4,18.8
+Without direct harm,20.8,16.8,16.8,24.4,25.3,19.5,21.4,21.6
+p (Holm),0.124,1.000,1.000,0.005,0.884,0.637,0.637,0.637
+Malicious injection,17.6,11.7,17.2,16.5,24.9,15.5,18.8,18.4
+Benign pressure,23.5,18.4,25.1,21.6,28.7,22.4,23.4,24.6
+p (Holm),0.002,0.026,0.013,0.032,0.094,0.006,0.053,0.007

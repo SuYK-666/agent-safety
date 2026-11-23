@@ -1,0 +1,11 @@
+﻿Model,Violation rate (approx),Borderline false refusal rate (approx)
+Llama 3 8B-Instruct,0.16,0.02
+gpt-4,0.29,0.04
+mistral-medium-latest,0.35,0.11
+Llama 3 70B-Instruct,0.37,0.00
+codellama-70b-instruct,0.37,0.70
+codellama-13b-instruct,0.45,0.02
+mistral-large-latest,0.48,0.11
+codellama-34b-instruct,0.50,0.02
+mistral-small-latest,0.57,0.10
+gpt-3.5-turbo,0.61,0.00

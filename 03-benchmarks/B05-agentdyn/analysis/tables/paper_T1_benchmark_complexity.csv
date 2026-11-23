@@ -1,0 +1,5 @@
+﻿Benchmark,Avg tools per task,Avg trajectory length,Avg apps per task
+InjecAgent,2,1,1
+ASB,3,1,1
+AgentDojo,19.87,3.49,1.38
+AgentDyn,33.33,7.10,3.17

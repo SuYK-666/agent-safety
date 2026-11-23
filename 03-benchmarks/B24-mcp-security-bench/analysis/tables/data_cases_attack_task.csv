@@ -1,0 +1,7 @@
+﻿attack_task,count,share_%
+obtain_remote_control_authority,400,20.0
+obtain_data_information,400,20.0
+modify_data,400,20.0
+kill_process,400,20.0
+obtain_agent_interaction_data,400,20.0
+TOTAL,2000,100.0

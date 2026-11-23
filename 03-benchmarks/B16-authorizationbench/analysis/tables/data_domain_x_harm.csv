@@ -1,0 +1,12 @@
+﻿domain,direct_harm,no_direct_harm,TOTAL
+e-commerce,26,8,34
+education,19,8,27
+entertainment,19,7,26
+finance,14,14,28
+healthcare_medical,16,10,26
+legal,18,6,24
+office_work,20,18,38
+personal_life,16,9,25
+software_development,18,14,32
+travel,19,7,26
+TOTAL,185,101,286

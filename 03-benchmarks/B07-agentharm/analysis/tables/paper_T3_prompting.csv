@@ -1,0 +1,7 @@
+﻿Model,Attack,Standard score,Standard refusal,CoT score,CoT refusal,ReAct score,ReAct refusal,Refusal-prompt score,Refusal-prompt refusal
+GPT-4o,None,48.4%,48.9%,49.2%,47.7%,32.8%,61.7%,16.6%,82.6%
+Sonnet 3.5,None,13.5%,85.2%,11.7%,87.1%,6.6%,93.2%,4.6%,95.1%
+Mistral Large 2,None,82.2%,1.1%,81.4%,3.8%,72.3%,10.6%,69.1%,32.7%
+GPT-4o,Template,72.7%,13.6%,72.7%,12.9%,72.6%,13.3%,9.5%,89.4%
+Sonnet 3.5,Template,68.7%,16.7%,60.0%,27.3%,73.1%,13.3%,29.4%,67.0%
+Mistral Large 2,Template,80.5%,0.0%,81.6%,0.0%,80.8%,0.0%,79.5%,0.0%

@@ -1,0 +1,9 @@
+﻿variant,entries,avg_sensitive_items,avg_essential_items,avg_toolkits
+ess12_sen12/formatted_entry,122,12.0,12.0,4.43
+ess1_sen1/formatted_entry,122,1.0,1.0,2.85
+ess2_sen2/formatted_entry,122,2.0,2.0,3.08
+ess4_sen4/formatted_entry,122,4.0,4.0,3.57
+ess4_sen4/formatted_entry_intentional,122,4.0,4.0,3.57
+ess4_sen4/formatted_entry_unintentional,122,4.0,4.0,3.57
+ess6_sen6/formatted_entry,122,6.0,6.0,3.87
+ess8_sen8/formatted_entry,122,8.0,8.0,4.21

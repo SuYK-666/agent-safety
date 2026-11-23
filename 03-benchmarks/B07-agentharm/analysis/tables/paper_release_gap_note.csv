@@ -1,0 +1,6 @@
+﻿Item,Paper,Public release (computed)
+Harmful public test behaviors,264 (= 66 base x 4 variants per Table 1 accounting),176 (44 base x 4)
+Harm categories in public files,11,"8 (Self-harm, Violence, Terrorism absent)"
+Harmful validation behaviors,44,32 (8 base x 4)
+Benign public test behaviors,-,176
+Chat-only public test prompts,-,44

@@ -1,0 +1,10 @@
+﻿risk_source,fairness_equity_and_allocative_harm,financial_and_economic_harm,functional_and_opportunity_harm,info_ecosystem_and_societal_harm,physical_and_health_harm,privacy_and_confidentiality_harm,psychological_and_emotional_harm,public_service_and_resource_harm,reputational_and_interpersonal_harm,security_and_system_integrity_harm,TOTAL
+corrupted_tool_feedback,6,6,6,3,2,3,3,7,1,7,44
+direct_prompt_injection,2,4,3,6,1,9,3,3,3,5,39
+indirect_prompt_injection,7,6,8,7,4,8,2,9,5,21,77
+inherent_agent_failures,10,16,14,9,11,18,5,8,6,38,135
+malicious_tool_execution,1,0,1,2,3,5,4,4,2,3,25
+malicious_user_instruction_or_jailbreak,6,8,5,1,5,8,2,5,4,17,61
+tool_description_injection,5,2,4,10,4,7,2,4,5,9,52
+unreliable_or_misinformation,5,3,11,5,10,4,4,2,7,13,64
+TOTAL,42,45,52,43,40,62,25,42,33,113,497

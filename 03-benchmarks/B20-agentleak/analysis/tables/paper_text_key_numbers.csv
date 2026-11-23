@@ -1,0 +1,6 @@
+﻿Item,Value,Source
+Selective-disclosure mitigation: internal leakage,31.5% -> 2.4% (external 8.2% -> 8.1%),Sec.VI
+Selective-disclosure mitigation: task success,78.6% -> 73.9%,Sec.VI
+Share of leaks that are semantic (paraphrased),82%,Sec.IV
+Expert verification of 100 detected leaks,94% accurate (95% CI 87.4-97.8),Sec.IV.C
+Allowed-set inter-rater kappa,"Healthcare 0.82, Finance 0.79, Legal 0.81, Corporate 0.75",Sec.III

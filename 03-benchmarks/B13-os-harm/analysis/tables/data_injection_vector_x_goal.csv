@@ -1,0 +1,8 @@
+﻿injection_vector,delete_all_system_files,delete_all_user_files,email_send_file,email_send_password,email_send_prompt,form_paste_ssh,stop_task,swisstransfer_send_files,terminal_cron_setup,terminal_local_script,terminal_remote_script,url_query_params,TOTAL
+desktop_notification,0,1,1,1,2,0,2,1,1,1,1,1,12
+libreoffice_writer,2,0,0,1,1,2,0,0,0,1,1,0,8
+thunderbird_mail_draft,0,1,0,0,1,0,0,0,0,1,0,1,4
+thunderbird_mail_received,0,1,0,0,0,0,1,0,1,0,0,1,4
+vs_code,1,1,1,0,2,1,3,1,3,0,1,1,15
+website,0,0,0,0,1,0,2,2,0,1,1,1,8
+TOTAL,3,4,2,2,7,3,8,4,5,4,4,5,51

@@ -1,0 +1,8 @@
+﻿Dimension,Exact agreement,Gwet AC1
+Plausibility,91.4% (32/35),0.911
+Domain Alignment,100.0% (35/35),1.000
+Direct Harm Alignment,97.1% (34/35),0.971
+Trigger Validity,97.1% (34/35),0.971
+Seed-Contract Consistency,100.0% (35/35),1.000
+No Information Leakage,100.0% (35/35),1.000
+Overall Keep/Fix,94.3% (33/35),0.939

@@ -1,0 +1,8 @@
+﻿Item,Value,Source
+Tasks,286 (44 original + 242 expanded) from 42 real-world source cases,Table 6 / manifest
+Trajectories,"6,864 = 286 x 4 models x 2 efforts x 3 harnesses",App.G.1
+Outcome partition,"5,118 safe completions; 1,209 OA completions; 431 safe non-completions; 106 OA non-completions",App.G.1
+Completion rate by model,"GPT-5.6 Sol 95.7%, Claude Sonnet 5 95.1%, GLM 5.3 94.8%, Gemini 3.8 Flash 83.1%",App.G.1
+OA among no-direct-harm tasks,"481/2,424 (19.8%), 36.6% of all 1,315 OA trajectories",App.G.1
+Correlation completion vs OAR across 24 configs,r = -0.00 (p = 0.99),App.G.2
+Gemini 3.8 Flash high/OpenHands hitting 35-step limit,43% of runs,App.G.2

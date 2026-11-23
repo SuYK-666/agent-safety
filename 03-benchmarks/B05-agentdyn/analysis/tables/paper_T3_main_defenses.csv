@@ -1,0 +1,42 @@
+﻿defense,model,utility_no_attack,utility_under_attack,ASR
+None,GPT-4o,53.33,55.52,37.80
+None,Gemini-2.5 Pro,51.67,56.95,20.61
+None,Claude-Sonnet-3.5,60.00,55.43,11.89
+None,Llama 3.3 70B,10.00,6.15,11.91
+Prompt Sandwiching,GPT-4o,63.33,56.13,31.17
+Prompt Sandwiching,Gemini-2.5 Pro,51.67,49.08,23.94
+Prompt Sandwiching,Claude-Sonnet-3.5,56.67,55.67,11.26
+Prompt Sandwiching,Llama 3.3 70B,5.00,7.35,9.96
+Spotlighting,GPT-4o,55.00,52.24,27.61
+Spotlighting,Gemini-2.5 Pro,58.33,52.61,16.87
+Spotlighting,Claude-Sonnet-3.5,58.33,57.09,3.80
+Spotlighting,Llama 3.3 70B,10.00,6.78,14.85
+ProtectAI,GPT-4o,0.00,0.56,0.85
+ProtectAI,Gemini-2.5 Pro,1.67,0.74,0.69
+ProtectAI,Claude-Sonnet-3.5,1.67,1.11,0.00
+ProtectAI,Llama 3.3 70B,1.67,1.11,0.56
+PIGuard,GPT-4o,10.00,1.46,1.67
+PIGuard,Gemini-2.5 Pro,11.67,2.17,1.83
+PIGuard,Claude-Sonnet-3.5,11.67,2.93,1.33
+PIGuard,Llama 3.3 70B,3.33,0.00,0.67
+PromptGuard2,GPT-4o,60.00,20.80,27.15
+PromptGuard2,Gemini-2.5 Pro,58.33,17.18,14.50
+PromptGuard2,Claude-Sonnet-3.5,56.67,27.69,8.20
+PromptGuard2,Llama 3.3 70B,8.33,6.44,11.07
+Meta-SecAlign,Meta SecAlign    Meta SecAlign 70B,55.00,53.35,8.98
+Tool Filter,GPT-4o,8.33,4.91,4.22
+Tool Filter,Gemini-2.5 Pro,1.67,0.93,0.00
+Tool Filter,Claude-Sonnet-3.5,1.67,0.50,0.00
+Tool Filter,Llama 3.3 70B,5.00,4.65,2.52
+CaMeL,GPT-4o,0.00,0.00,0.00
+CaMeL,Gemini-2.5 Pro,0.00,0.00,0.00
+CaMeL,Claude-Sonnet-3.5,0.00,0.00,0.00
+CaMeL,Llama 3.3 70B,0.00,0.00,0.00
+Progent,GPT-4o,6.67,5.83,1.69
+Progent,Gemini-2.5 Pro,25.00,16.06,1.59
+Progent,Claude-Sonnet-3.5,13.33,10.63,0.00
+Progent,Llama 3.3 70B,3.33,2.28,0.52
+DRIFT,GPT-4o,30.00,27.09,0.83
+DRIFT,Gemini-2.5 Pro,36.67,33.04,1.09
+DRIFT,Claude-Sonnet-3.5,33.33,34.00,3.09
+DRIFT,Llama 3.3 70B,11.67,8.96,5.89

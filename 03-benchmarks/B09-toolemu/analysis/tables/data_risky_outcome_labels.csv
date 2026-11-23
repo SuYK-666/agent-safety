@@ -1,0 +1,96 @@
+﻿risky_outcome_prefix,count,share_%
+Privacy breach,21,8.54
+Financial loss,14,5.69
+Unauthorized access,10,4.07
+Reputation damage,9,3.66
+Misinformation,7,2.85
+Property damage,7,2.85
+System Instability,7,2.85
+Financial Loss,7,2.85
+Misprocessing,5,2.03
+Loss of control,4,1.63
+Misconfiguration,4,1.63
+Identity theft,4,1.63
+Spamming,4,1.63
+Safety hazards,4,1.63
+Incorrect shipments,4,1.63
+Data Loss,4,1.63
+Privacy Breach,4,1.63
+Data loss,3,1.22
+Safety risks,3,1.22
+Inconvenience,3,1.22
+Harassment,3,1.22
+Misdirection,3,1.22
+Hazardous Incidents,3,1.22
+Malware Execution,3,1.22
+Security Breach,3,1.22
+Security risk,3,1.22
+Legal risk,3,1.22
+Reputation Damage,3,1.22
+Traffic chaos,3,1.22
+Criminal Prosecution,3,1.22
+Unintentional Event Modification,3,1.22
+Incorrect Events,3,1.22
+Unauthorized trades,2,0.81
+Energy waste,2,0.81
+Misdiagnosis,2,0.81
+Data leakage,2,0.81
+Misprioritization,2,0.81
+Inefficient resource allocation,2,0.81
+Compliance violations,2,0.81
+Intellectual property theft,2,0.81
+Misconfigured applets,2,0.81
+Delayed shipments,2,0.81
+Data Exposure,2,0.81
+System Disruption,2,0.81
+Financial Fraud,2,0.81
+Legal Issues,2,0.81
+Unauthorized stock manipulation,2,0.81
+Inappropriate investment,2,0.81
+Unauthorized transactions,2,0.81
+Counterfeit goods,2,0.81
+Unintentional Event Creation,2,0.81
+Incorrect booking,2,0.81
+Misuse of user's friends' data,1,0.41
+Unauthorized sharing,1,0.41
+Security breach,1,0.41
+Privacy invasion,1,0.41
+Accidental lockout,1,0.41
+Mismanagement of funds,1,0.41
+Transaction history disclosure,1,0.41
+Loss of funds,1,0.41
+Incorrect scheduling,1,0.41
+Unauthorized data sharing,1,0.41
+Inaccurate data analysis,1,0.41
+Data tampering,1,0.41
+Sharing irrelevant patient diagnostic reports,1,0.41
+Unintended automation,1,0.41
+Unwanted invitations,1,0.41
+Data Corruption,1,0.41
+Unauthorized publication,1,0.41
+Ethical or legal violations,1,0.41
+Malware Installation,1,0.41
+Unauthorized Privileges,1,0.41
+Miscommunication,1,0.41
+Pedestrian safety,1,0.41
+Emergency response delay,1,0.41
+Misuse of funds,1,0.41
+Inefficient inventory management,1,0.41
+Incorrect inventory data,1,0.41
+Misappointment,1,0.41
+Unauthorized prescription,1,0.41
+Data corruption,1,0.41
+Overdue tasks,1,0.41
+Leakage of business secrets,1,0.41
+False Positives,1,0.41
+Overdraft,1,0.41
+Unauthorized transaction,1,0.41
+Inappropriate transaction,1,0.41
+Incorrect order,1,0.41
+Unauthorized purchase,1,0.41
+Conflicting Events,1,0.41
+Travel disruption,1,0.41
+Safety issues,1,0.41
+Inventory manipulation,1,0.41
+Financial liability,1,0.41
+TOTAL,246,100.0

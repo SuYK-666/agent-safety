@@ -1,0 +1,7 @@
+﻿Model,NSA (avg n=36.83),CrowdStrike (avg n=288.67),IC3 (avg n=152.00),CISA (avg n=119.17),Overall,Parsable n
+gpt-o3,69%,55%,46%,50%,52.87%,575
+llama4-maverick,73%,52%,48%,42%,50.42%,601
+claude-3-7-sonnet,68%,53%,42%,44%,49.25%,601
+gemini-2.5-pro,65%,47%,40%,41%,45.09%,601
+llama4-scout,62%,47%,37%,38%,43.76%,601
+gpt-4o,68%,49%,37%,30%,43.09%,601

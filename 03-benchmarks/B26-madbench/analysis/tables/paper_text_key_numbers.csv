@@ -1,0 +1,8 @@
+﻿Item,Value,Source
+Source tasks,"356 (100 SealQA, 100 StrategyQA, 56 AgentDojo workspace, 100 JailbreakBench)",Sec.4
+Test cases,"3,958",Sec.4
+Default MAD config,"n=5 debaters, 1 orchestrator, R=1, f=3, gpt-4o",Sec.4
+Implementation,~20k LoC on AutoGen AgentChat 0.7.5,Sec.4
+M2 amplifies ASR/IRW/cost,11 of 12 comparisons,Sec.4.1
+Max honest-agent switch to wrong answer,3.26%,Sec.4.2
+Public dataset,none,README

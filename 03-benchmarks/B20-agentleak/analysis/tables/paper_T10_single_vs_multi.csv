@@ -1,0 +1,5 @@
+﻿Comparison,Single,Multi,Ratio,p
+C1 leakage (fair comparison),43.2%,27.2%,0.63x,<0.001
+Any leak C1/C2/C5 (total surface),43.2%,68.9%,1.60x,<0.001
+C2-only incremental contribution,-,+41.7%,-,-
+C5-only incremental contribution,-,+0.0%,-,-

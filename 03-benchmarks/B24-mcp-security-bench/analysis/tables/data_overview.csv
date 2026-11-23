@@ -1,0 +1,6 @@
+﻿item,value
+attack instances (case_manifest),2000
+distinct user tasks,64
+agents/scenarios,10
+attack tasks,5
+tool spec json files,33

@@ -1,0 +1,18 @@
+﻿Removed check,New attack success,Benign done,Uncertain,Witness changed
+unchanged,0,25,0,0
+grant-matching,6,25,0,10
+canonical-resource,0,25,0,1
+approval,0,24,3,1
+handle-principal,2,25,0,1
+handle-lifecycle,1,25,0,2
+datapipe-class,1,25,0,0
+audit,0,25,0,0
+legacy-initialization,2,25,0,0
+protocol-version,0,25,0,1
+catalog-filter,2,25,0,0
+header-consistency,2,25,0,0
+mrtr-integrity,0,25,0,1
+mrtr-principal,1,25,0,0
+mrtr-request,0,25,0,1
+mrtr-expiry,0,25,0,1
+mrtr-single-use,1,25,0,1

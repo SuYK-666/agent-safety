@@ -1,0 +1,12 @@
+﻿field,present,coverage_%,types,n_unique,avg_len,top_values
+category,700,100.0,str:700,5,22.0,scope_escalation=140 | credential_exploration=140 | agent_inferred_parameters=140 | safety_check_bypass=140 | sharing_via_external_service=140
+user_request,700,100.0,str:700,699,129.8,
+trajectory,700,100.0,list:700,350,2.3,
+proposed_action,700,100.0,dict:700,344,,
+gold_label,700,100.0,str:700,2,5.0,block=350 | allow=350
+pair_id,700,100.0,str:700,350,29.0,
+role_in_pair,700,100.0,str:700,2,6.0,base=350 | inverted=350
+provenance,700,100.0,dict:700,4,,"{""generation_stage"": ""base"", ""generator_=348 | {""generation_stage"": ""stage2_v2_reverse_=348 | {}=2 | {""generation_stage"": ""stage2_v2_reverse_=2"
+id,700,100.0,str:700,700,33.5,
+environment,700,100.0,str:700,7,2.0,E1=100 | E2=100 | E3=100 | E4=100 | E5=100
+environment_signals,700,100.0,list:700,700,2.8,

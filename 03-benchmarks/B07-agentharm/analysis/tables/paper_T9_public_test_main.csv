@@ -1,0 +1,46 @@
+﻿Model,Attack,Harm score,Refusals,Non-refusal harm score,Benign non-refusal score
+GPT-3.5 Turbo,None,62.2%,0.8%,62.7%,67.7%
+GPT-4o mini,None,62.5%,22.0%,77.5%,79.9%
+GPT-4o,None,48.4%,48.9%,90.1%,89.9%
+Claude 3 Haiku,None,11.1%,83.7%,61.7%,67.7%
+Claude 3 Sonnet,None,20.7%,76.1%,79.7%,73.6%
+Claude 3 Opus,None,14.4%,85.2%,72.2%,66.8%
+Claude 3.5 Sonnet,None,13.5%,85.2%,91.0%,82.0%
+Mistral Small 2,None,72.0%,7.2%,75.8%,71.8%
+Mistral Large 2,None,82.2%,1.1%,83.0%,77.7%
+Gemini 1.0 Pro,None,7.4%,75.5%,29.3%,39.7%
+Gemini 1.5 Flash,None,20.7%,69.2%,65.2%,60.8%
+Gemini 1.5 Pro,None,15.7%,78.4%,69.5%,64.6%
+Llama-3.1 8B,None,3.1%,93.9%,40.6%,42.7%
+Llama-3.1 70B,None,14.0%,70.45%,45.7%,44.3%
+Llama-3.1 405B,None,4.3%,91.2%,33.2%,38.6%
+GPT-3.5 Turbo,Forced tool call,63.2%,1.1%,63.9%,67.7%
+GPT-4o mini,Forced tool call,68.4%,15.5%,77.1%,79.9%
+GPT-4o,Forced tool call,57.7%,40.5%,85.4%,89.9%
+Claude 3 Haiku,Forced tool call,33.9%,63.3%,72.3%,67.7%
+Claude 3 Sonnet,Forced tool call,42.8%,63.1%,80.0%,73.6%
+Claude 3 Opus,Forced tool call,29.5%,84.5%,84.0%,66.8%
+Claude 3.5 Sonnet,Forced tool call,26.9%,80.3%,87.5%,82.0%
+Mistral Small 2,Forced tool call,73.7%,6.0%,76.1%,71.8%
+Mistral Large 2,Forced tool call,80.9%,3.4%,83.0%,77.7%
+Gemini 1.0 Pro,Forced tool call,-,-,-,39.7%
+Gemini 1.5 Flash,Forced tool call,-,-,-,60.8%
+Gemini 1.5 Pro,Forced tool call,-,-,-,64.6%
+Llama-3.1 8B,Forced tool call,-,-,-,42.7%
+Llama-3.1 70B,Forced tool call,-,-,-,44.3%
+Llama-3.1 405B,Forced tool call,-,-,-,38.6%
+GPT-3.5 Turbo,Template,62.0%,0.4%,61.9%,67.7%
+GPT-4o mini,Template,68.8%,2.3%,69.8%,79.9%
+GPT-4o,Template,72.7%,13.6%,84.2%,89.9%
+Claude 3 Haiku,Template,6.6%,90.5%,68.1%,67.7%
+Claude 3 Sonnet,Template,52.8%,25.7%,70.4%,73.6%
+Claude 3 Opus,Template,45.7%,41.7%,77.1%,66.8%
+Claude 3.5 Sonnet,Template,68.7%,16.7%,81.9%,82.0%
+Mistral Small 2,Template,72.7%,0.8%,73.0%,71.8%
+Mistral Large 2,Template,80.5%,0.0%,80.5%,77.7%
+Gemini 1.0 Pro,Template,23.3%,42.3%,39.0%,39.7%
+Gemini 1.5 Flash,Template,56.6%,1.8%,57.5%,60.8%
+Gemini 1.5 Pro,Template,56.1%,3.5%,58.1%,64.6%
+Llama-3.1 8B,Template,27.5%,33.3%,39.1%,42.7%
+Llama-3.1 70B,Template,15.0%,63.2%,40.3%,44.3%
+Llama-3.1 405B,Template,4.3%,92.0%,41.5%,38.6%

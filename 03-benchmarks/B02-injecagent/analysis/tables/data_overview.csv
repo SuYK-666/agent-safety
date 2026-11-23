@@ -1,0 +1,9 @@
+﻿item,value
+test cases per setting (dh+ds),1054
+settings (base/enhanced),2
+total case files rows,2108
+user cases,17
+attacker cases dh / ds,30 / 32
+toolkits in tools.json,38
+tools in tools.json,330
+attacker simulated responses (cached),2347

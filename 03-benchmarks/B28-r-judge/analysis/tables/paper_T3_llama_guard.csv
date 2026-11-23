@@ -1,0 +1,5 @@
+﻿Model,F1,Recall,Spec
+Llama-2-7b-chat-hf,24.14,18.67,59.85
+LlamaGuard-7b,0.66,0.33,100.00
+Meta-Llama-3-8B-Instruct,55.81,53.67,56.88
+Meta-Llama-Guard-2-8B,71.84,74.00,64.31

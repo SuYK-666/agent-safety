@@ -1,0 +1,3 @@
+﻿Test,Pairs,OAR with harm,OAR no harm,p
+Scenario-level Wilcoxon (main),91,17.9,20.8,0.124
+Run-level McNemar,91,17.9,20.8,0.002

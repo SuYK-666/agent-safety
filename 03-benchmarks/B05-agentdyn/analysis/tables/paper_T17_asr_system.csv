@@ -1,0 +1,49 @@
+﻿defense,model,overall,shopping,github,dailylife
+Tool Filter,GPT-4o mini,6.15,0.56,3.89,14.00
+Tool Filter,GPT-4o,4.22,0.56,1.11,11.00
+Tool Filter,GPT-5.1,0.00,0.00,0.00,0.00
+Tool Filter,GPT-5-mini,0.00,0.00,0.00,0.00
+Tool Filter,Gemini-2.5 Pro,0.00,0.00,0.00,0.00
+Tool Filter,Gemini-2.5 Flash,0.00,0.00,0.00,0.00
+Tool Filter,Claude-Sonnet-3.5,0.00,0.00,0.00,0.00
+Tool Filter,Claude-Sonnet-4.5,0.00,0.00,0.00,0.00
+Tool Filter,Qwen3 235B-A22B,0.33,0.00,0.00,1.00
+Tool Filter,Llama 3.3 70B,2.52,0.56,0.00,7.00
+Tool Filter,Qwen3-Coder,3.13,2.22,1.67,5.50
+Tool Filter,Kimi-K2.5,0.00,0.00,0.00,0.00
+CaMeL,GPT-4o mini,0.00,0.00,0.00,0.00
+CaMeL,GPT-4o,0.00,0.00,0.00,0.00
+CaMeL,GPT-5.1,0.00,0.00,0.00,0.00
+CaMeL,GPT-5-mini,0.00,0.00,0.00,0.00
+CaMeL,Gemini-2.5 Pro,0.00,0.00,0.00,0.00
+CaMeL,Gemini-2.5 Flash,0.00,0.00,0.00,0.00
+CaMeL,Claude-Sonnet-3.5,0.00,0.00,0.00,0.00
+CaMeL,Claude-Sonnet-4.5,0.00,0.00,0.00,0.00
+CaMeL,Qwen3 235B-A22B,0.00,0.00,0.00,0.00
+CaMeL,Llama 3.3 70B,0.00,0.00,0.00,0.00
+CaMeL,Qwen3-Coder,0.00,0.00,0.00,0.00
+CaMeL,Kimi-K2.5,0.00,0.00,0.00,0.00
+Progent,GPT-4o mini,10.33,3.33,6.67,21.00
+Progent,GPT-4o,1.69,0.56,0.00,4.50
+Progent,GPT-5.1,1.22,0.56,1.11,2.00
+Progent,GPT-5-mini,0.00,0.00,0.00,0.00
+Progent,Gemini-2.5 Pro,1.59,1.11,1.67,2.00
+Progent,Gemini-2.5 Flash,2.24,0.00,2.22,4.50
+Progent,Claude-Sonnet-3.5,0.00,0.00,0.00,0.00
+Progent,Claude-Sonnet-4.5,0.19,0.00,0.56,0.00
+Progent,Qwen3 235B-A22B,13.59,4.44,8.33,28.00
+Progent,Llama 3.3 70B,0.52,0.00,0.56,1.00
+Progent,Qwen3-Coder,11.22,5.00,6.67,22.00
+Progent,Kimi-K2.5,0.19,0.00,0.56,0.00
+DRIFT,GPT-4o mini,3.39,1.11,0.56,8.50
+DRIFT,GPT-4o,0.83,0.00,0.00,2.50
+DRIFT,GPT-5.1,0.00,0.00,0.00,0.00
+DRIFT,GPT-5-mini,0.00,0.00,0.00,0.00
+DRIFT,Gemini-2.5 Pro,1.09,1.11,1.67,0.50
+DRIFT,Gemini-2.5 Flash,2.82,3.89,0.56,4.00
+DRIFT,Claude-Sonnet-3.5,3.09,1.67,1.11,6.50
+DRIFT,Claude-Sonnet-4.5,0.19,0.00,0.56,0.00
+DRIFT,Qwen3 235B-A22B,9.07,7.78,4.44,15.00
+DRIFT,Llama 3.3 70B,5.89,5.00,1.67,11.00
+DRIFT,Qwen3-Coder,0.69,0.00,0.56,1.50
+DRIFT,Kimi-K2.5,0.00,0.00,0.00,0.00

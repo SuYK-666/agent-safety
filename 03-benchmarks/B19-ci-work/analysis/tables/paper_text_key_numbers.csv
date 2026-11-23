@@ -1,0 +1,6 @@
+﻿Item,Value,Source
+Seeds,125 (25 human + 100 augmented) per paper; 122 released,Sec.3 / data
+Violation rate range,15.80% (DeepSeek-R1) to 50.87% (Grok-3),Sec.5.1
+Inter-annotator Fleiss kappa (norm alignment),0.685; pairwise Cohen up to 0.77,App.C
+Correlation CR vs LR / VR,r=0.40 (p=0.006) / r=0.39 (p=0.008),App.E
+User pressure (GPT-5),explicit pressure roughly doubles baseline violation rate,Sec.5.3 / Fig.5

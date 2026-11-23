@@ -1,0 +1,12 @@
+﻿agent,Disruptive Attack,Stealthy Attack,TOTAL
+academic_search_agent,20,20,40
+aerospace_engineer_agent,20,20,40
+autonomous_driving_agent,20,20,40
+ecommerce_manager_agent,20,20,40
+education_consultant_agent,20,20,40
+financial_analyst_agent,20,20,40
+legal_consultant_agent,20,20,40
+medical_advisor_agent,20,20,40
+psychological_counselor_agent,20,20,40
+system_admin_agent,20,20,40
+TOTAL,200,200,400

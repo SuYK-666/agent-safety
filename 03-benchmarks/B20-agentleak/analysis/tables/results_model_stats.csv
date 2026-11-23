@@ -1,0 +1,6 @@
+﻿model,n,C1_%,C2_%,C5_%,any_leak_%,H1_%
+anthropic/claude-3.5-sonnet,996,3.31,28.11,22.49,28.11,24.8
+meta-llama/llama-3.3-70b-instruct,996,26.91,67.77,29.22,89.86,41.27
+mistralai/mistral-large-2512,996,47.49,96.18,68.17,99.3,48.69
+openai/gpt-4o,996,17.17,76.81,55.02,77.61,59.64
+openai/gpt-4o-mini,995,41.21,75.28,58.59,76.28,34.17

@@ -1,0 +1,7 @@
+﻿item,value
+sample campaign seed,176
+"sample log file size (MB, uncompressed)",355.9
+kill chains in campaign,3
+steps across chains,18
+ground-truth flags (malicious event timestamps),3912
+tactics covered,Execution; Persistence; Privilege Escalation; Defense Evasion; Credential Access; Discovery; Collection; Exfiltration; Command and Control

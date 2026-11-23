@@ -1,0 +1,6 @@
+﻿Attack goal,M1 jailbreak ASR,M2 workspace ASR,M2 IRW,M2 Cost,M3 QA-fact ASR,M3 IRW,M3 Cost,M4 QA-fact ASR,M4 IRW,M4 Cost
+Harmful answer,0.88,-,-,-,-,-,-,-,-,-
+Accuracy,-,1.05,1.75,1.29,0.74,inf,0.97,0.87,inf,0.92
+Cost,-,1.60,3.00,1.47,0.91,inf,0.91,2.00,inf,0.89
+Unauth. read,-,3.09,1.93,1.03,0.46,1.05,0.69,0.00,1.02,0.68
+Unauth. write,-,1.07,1.22,0.72,0.89,1.41,0.64,0.96,0.58,0.62

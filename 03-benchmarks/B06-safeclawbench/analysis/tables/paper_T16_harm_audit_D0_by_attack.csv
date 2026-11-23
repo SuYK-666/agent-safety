@@ -1,0 +1,8 @@
+﻿Attack,CoreFail,AuditRows,TextHarm,AccessHarm,ActionHarm,PersistHarm,HarmEvidence,SemOnly,Null
+DPI,104,104,6,26,49,30,55,49,0
+IPI,80,80,5,0,9,6,15,65,0
+TRI,67,67,19,21,40,9,52,15,0
+MPI,272,272,0,1,65,251,251,21,0
+MEX,272,272,121,1,0,0,121,151,0
+ADI,45,45,1,7,6,1,10,35,0
+Total,840,840,152,56,169,297,504,336,0

@@ -1,0 +1,5 @@
+﻿Path / target policy,HCP write,ACL write
+pipe-reject-pii,No,No
+pipe-accept-pii,Yes,Yes
+peek-ordinary-parameter,Yes,Yes
+ordinary-missing-grant,No,No

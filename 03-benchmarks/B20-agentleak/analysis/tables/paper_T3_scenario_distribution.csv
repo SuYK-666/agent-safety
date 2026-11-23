@@ -1,0 +1,7 @@
+﻿Dimension,Category,Count,Pct
+Agent topology,Single-agent,400,40%
+Agent topology,Multi-agent (coordinator-worker),600,60%
+Threat level,Benign (A0),500,50%
+Threat level,Weak attack (A1),250,25%
+Threat level,Strong attack (A2),250,25%
+Total,,1000,100%

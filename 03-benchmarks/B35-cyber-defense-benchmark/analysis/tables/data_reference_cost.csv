@@ -1,0 +1,12 @@
+﻿model,provider,display_name,cost_mean_usd,cost_std_usd
+anthropic/claude-opus-4-6,Anthropic,Opus 4.6,17.98,4.12
+anthropic/claude-sonnet-4-6,Anthropic,Sonnet 4.6,12.99,4.63
+anthropic/claude-opus-4-7,Anthropic,Opus 4.7,8.72,3.12
+vertex_ai/gemini-3.1-pro-preview,Google,Gemini 3.1 Pro,1.85,1.22
+openai/gpt-5,OpenAI,GPT 5,1.07,0.34
+vertex_ai/gemini-3-flash-preview,Google,Gemini 3 Flash,0.19,0.13
+fireworks_ai/accounts/fireworks/models/kimi-k2p6,Fireworks,Kimi 2.6,0.52,0.17
+fireworks_ai/accounts/fireworks/models/qwen3p6-plus,Fireworks,Qwen 3.6,0.54,0.34
+fireworks_ai/accounts/fireworks/models/minimax-m2p7,Fireworks,Minimax 2.7,0.11,0.04
+fireworks_ai/accounts/fireworks/models/deepseek-v3p2,Fireworks,DeepSeek 3.2,0.91,0.42
+fireworks_ai/accounts/fireworks/models/kimi-k2p5,Fireworks,Kimi 2.5,1.44,0.68

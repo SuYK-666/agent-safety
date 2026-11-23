@@ -1,0 +1,8 @@
+﻿group,count,share_%
+Live (crowd-sourced),1351,28.76
+Non-live single-turn,1150,24.48
+Hallucination,1140,24.27
+Multi-turn,800,17.03
+Agentic,255,5.43
+Format sensitivity,1,0.02
+TOTAL,4697,100.0

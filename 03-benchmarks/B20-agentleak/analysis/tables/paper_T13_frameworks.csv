@@ -1,0 +1,5 @@
+﻿Framework,C2 rate,95% CI,Primary vulnerability
+CrewAI v0.83.x,33%,26.7-39.9,Inter-agent messages unsanitized
+AutoGPT v0.5.x,35%,27.5-43.2,No memory access control
+LangChain v0.1.x,29%,22.9-35.8,Full context to tools
+MetaGPT v0.8.x,28%,19.6-37.7,Role messages visible

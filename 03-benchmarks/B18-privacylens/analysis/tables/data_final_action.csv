@@ -1,0 +1,6 @@
+﻿final_action,count,share_%
+MessengerSendMessage,243,49.29
+GmailSendEmail,174,35.29
+SlackSendMessage,43,8.72
+FacebookManagerCreatePost,33,6.69
+TOTAL,493,100.0

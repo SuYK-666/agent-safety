@@ -1,0 +1,8 @@
+﻿Model,Output formatting manipulation,Repeated token attack,Different user input language,Indirect reference,Ignore previous instructions,Virtualization,System mode,Many shot attack,Few shot attack,Mixed techniques,Persuasion,Overload with information,Payload splitting,Token smuggling,Hypothetical scenario,Average
+Mixtral 8x22B,0.56,0.56,0.56,0.25,0.56,0.31,0.38,0.31,0.25,0.31,0.25,0.38,0.25,0.19,0.12,0.35
+Llama 3 70B,0.25,0.50,0.31,0.38,0.25,0.56,0.25,0.38,0.44,0.19,0.25,0.06,0.00,0.06,0.00,0.26
+Llama 3 405B,0.25,0.31,0.38,0.44,0.31,0.19,0.19,0.12,0.31,0.12,0.06,0.25,0.12,0.06,0.12,0.22
+Qwen2 72B Instruct,0.31,0.25,0.44,0.25,0.19,0.06,0.12,0.19,0.19,0.19,0.25,0.12,0.31,0.06,0.00,0.20
+Llama 3 8B,0.12,0.38,0.31,0.38,0.19,0.19,0.25,0.12,0.12,0.19,0.19,0.19,0.06,0.06,0.06,0.19
+Gemini Pro,0.44,0.31,0.19,0.19,0.25,0.12,0.25,0.06,0.25,0.19,0.06,0.12,0.19,0.00,0.12,0.18
+GPT-4 Turbo,0.62,0.31,0.25,0.50,0.12,0.00,0.12,0.12,0.06,0.12,0.00,0.00,0.12,0.12,0.00,0.17

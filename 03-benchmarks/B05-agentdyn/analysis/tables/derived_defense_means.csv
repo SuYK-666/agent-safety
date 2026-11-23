@@ -1,0 +1,12 @@
+﻿defense,n_models,mean_benign_utility,mean_utility_under_attack,mean_ASR
+None,12,46.95,41.69,18.75
+Prompt Sandwiching,12,44.58,41.58,14.93
+Spotlighting,12,41.67,40.04,14.94
+ProtectAI,12,1.25,0.76,0.54
+PIGuard,12,10.14,2.47,1.25
+PromptGuard2,12,43.05,20.28,13.09
+Meta-SecAlign,2,30.0,30.29,7.12
+Tool Filter,12,2.5,2.16,1.36
+CaMeL,12,0.0,0.0,0.0
+Progent,12,13.33,10.38,3.56
+DRIFT,12,22.08,21.74,2.25

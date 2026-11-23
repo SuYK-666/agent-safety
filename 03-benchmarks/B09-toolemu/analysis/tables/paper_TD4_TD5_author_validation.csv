@@ -1,0 +1,9 @@
+﻿Item,Value
+Standard emulator identified-failure precision,71.1% +- 7.4%
+Standard emulator true failure incidence,40.8% +- 5.0%
+Adversarial emulator identified-failure precision,69.4% +- 6.6%
+Adversarial emulator true failure incidence,47.5% +- 5.0%
+Standard critical-issue-free,93.8% +- 2.5%
+Adversarial critical-issue-free,90.0% +- 3.0%
+Safety evaluator kappa A-H,0.538 +- 0.055
+Helpfulness evaluator kappa A-H,0.592 +- 0.051

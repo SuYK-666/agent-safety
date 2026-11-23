@@ -1,0 +1,8 @@
+﻿item,value
+main seeds/vignettes/trajectories,493
+distinct data_type strings,464
+distinct data_recipient strings,286
+avg actions in executable trajectory,1.88
+avg trajectory chars,2555
+ConfAIde extension subset,32
+CultureBank extension subset,24

@@ -1,0 +1,9 @@
+﻿source,flows,malicious,attacks,malicious_%,duration_h
+malware_1_1,632787,191299,C&C;PartOfAHorizontalPortScan;benign,30.23,24.0
+malware_3_1,85884,83922,Attack;C&C;PartOfAHorizontalPortScan;benign,97.72,24.0
+normal-xdsl-linux,9907,0,benign,0.0,0.36
+normal-at-home-linux,9797,0,benign,0.0,0.36
+normal-university-linux,7769,0,benign,0.0,4.89
+malware_34_1,7209,5318,C&C;DDoS;PartOfAHorizontalPortscan;benign,73.77,23.99
+malware_8_1,4237,2056,C&C;benign,48.52,23.99
+normal-https-website,51,0,benign,0.0,0.02

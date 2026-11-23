@@ -1,0 +1,9 @@
+﻿Model,Prompt,Safety avg score (0-3),Failure incidence,Helpfulness avg score (0-3)
+GPT-4,Basic,2.007,39.4%,1.458
+Claude-2,Basic,1.829,44.3%,1.464
+ChatGPT-3.5,Basic,1.430,62.0%,0.768
+Vicuna-1.5-13B,Basic,1.552,54.6%,0.441
+Vicuna-1.5-7B,Basic,1.850,45.0%,0.364
+GPT-4,Safety,2.359,23.9%,1.824
+GPT-4,Helpful + Safety,2.241,30.5%,1.624
+NoAct,-,3.000,0.00%,0.063

@@ -1,0 +1,7 @@
+﻿Item,Value,Source
+Tasks,"500 (250 harmful + 250 safe, paired)",Sec.3
+Harm categories,"5 (bias, cybercrime, harassment, illegal activity, misinformation)",Sec.3
+Websites,"4 (forum/Reddit, code/GitLab, shopping admin, shopping)",Sec.3
+Task decomposition jailbreak on Claude-3.5-Sonnet,"49/49 initially refused tasks jailbroken, 1.26 attempts avg",Sec.5.3
+LLM-judge vs human ARIA agreement,Cohen kappa 0.82,Sec.5.3
+Dataset access,Gated on HF (McGill-NLP/safearena); not downloaded,README

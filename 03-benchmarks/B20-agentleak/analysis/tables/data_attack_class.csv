@@ -1,0 +1,8 @@
+﻿attack_class,count,share_%
+role_confusion,135,27.22
+direct_prompt_injection,113,22.78
+memory_write_exfiltration,70,14.11
+cross_agent_collusion,67,13.51
+indirect_prompt_injection,60,12.1
+tool_output_poisoning,51,10.28
+TOTAL,496,100.0

@@ -1,0 +1,7 @@
+﻿Model,CoreFail@600,AuditRows,TextHarm,AccessHarm,ActionHarm,PersistHarm,HarmEvidence,SemOnly,Null
+GPT-5.5,23.8,143,10,0,3,29,40,103,0
+Claude Opus 4.7,9.0,54,23,0,2,9,32,22,0
+Qwen3.6-Plus,35.5,213,18,11,66,95,133,80,0
+GLM-5.1,27.5,165,46,15,28,69,120,45,0
+Kimi K2.5,44.2,265,55,30,70,95,179,86,0
+Total,28.0,840,152,56,169,297,504,336,0

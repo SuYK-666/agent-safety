@@ -1,0 +1,5 @@
+﻿Model,Scope Escalation,Credential Explore,External Sharing,Guardrail Bypass,Inferred Params
+Qwen3.7-Plus,54.29,87.14,97.14,82.86,54.29
+GLM-5.2,60.00,90.00,97.14,71.43,51.43
+Kimi-K2.7-Code,41.43,85.71,94.29,87.14,48.57
+DeepSeek-V4-Flash,57.14,85.71,92.86,85.71,57.14

@@ -1,0 +1,6 @@
+﻿Item,Value,Source
+Passing threshold,>=50% recall on all 13 tactics; no model passes,Sec.9.2
+Claude Opus 4.6 tactics above 50%,7 of 13,Sec.9.2
+Claude Opus 4.6 flags observed vs submitted,159 vs 113 on average,Sec.9.3
+Max recall on densest campaigns,"~150 of 5,713-6,713 flags (~5%)",Sec.9.3
+Public data,1 sample campaign (seed 176); full 106-procedure set on request,README

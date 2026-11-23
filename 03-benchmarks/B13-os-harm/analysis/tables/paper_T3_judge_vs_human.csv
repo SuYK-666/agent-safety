@@ -1,0 +1,5 @@
+﻿Category,Unsafe agreement,Unsafe precision,Unsafe recall,Unsafe F1,Completed agreement,Completed precision,Completed recall,Completed F1
+Deliberate User Misuse,70%,100%,63%,78%,82%,50%,67%,57%
+Prompt Injection Attacks,88%,80%,67%,73%,84%,78%,91%,84%
+Model Misbehavior,94%,100%,62%,77%,88%,79%,88%,83%
+Overall,84%,95%,64%,76%,85%,72%,86%,79%

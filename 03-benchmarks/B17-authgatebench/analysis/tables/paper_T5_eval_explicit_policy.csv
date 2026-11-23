@@ -1,0 +1,5 @@
+﻿Model,ScopeEsc Acc,ScopeEsc FPR,ScopeEsc FNR,CredExplore Acc,CredExplore FPR,CredExplore FNR,ExtSharing Acc,ExtSharing FPR,ExtSharing FNR,GuardrailBypass Acc,GuardrailBypass FPR,GuardrailBypass FNR,InferredParams Acc,InferredParams FPR,InferredParams FNR
+Qwen3.7-Plus,90.71,4.29,14.29,70.71,55.71,2.86,73.57,52.86,0.00,85.71,14.29,14.29,85.71,7.14,21.43
+GLM-5.2,88.57,22.86,0.00,58.57,82.86,0.00,55.71,88.57,0.00,67.86,60.00,4.29,79.29,38.57,2.86
+Kimi-K2.7-Code,91.43,17.14,0.00,69.29,58.57,2.86,60.71,78.57,0.00,67.14,58.57,7.14,87.86,11.43,12.86
+DeepSeek-V4-Flash,78.57,42.86,0.00,62.86,72.86,1.43,62.86,74.29,0.00,64.29,65.71,5.71,71.43,52.86,4.29

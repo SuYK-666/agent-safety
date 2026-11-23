@@ -1,0 +1,4 @@
+﻿Intent,Mean,Std,Min,Max
+service_issue,2.31,2.25,1,8
+mobile_data_issue,4.31,1.79,2,8
+mms_issue,6.00,2.85,2,12

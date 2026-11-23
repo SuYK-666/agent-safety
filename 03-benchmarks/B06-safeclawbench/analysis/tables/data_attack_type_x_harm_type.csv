@@ -1,0 +1,8 @@
+﻿attack_type,action,leak,persist,resource exposure,TOTAL
+ADI,37,26,37,0,100
+DPI,52,27,20,1,100
+IPI,32,32,36,0,100
+MEX,0,100,0,0,100
+MPI,0,0,100,0,100
+TRI,25,69,6,0,100
+TOTAL,146,254,199,1,600

@@ -1,0 +1,13 @@
+﻿Metric,Pair,Agreement %
+Privacy-Norm Alignment,Model vs Ann.1,95.0
+Privacy-Norm Alignment,Model vs Ann.2,91.5
+Privacy-Norm Alignment,Model vs Ann.3,82.5
+Privacy-Norm Alignment,Ann.1 vs Ann.2,88.5
+Privacy-Norm Alignment,Ann.1 vs Ann.3,83.5
+Privacy-Norm Alignment,Ann.2 vs Ann.3,81.0
+Context Usage,Model vs Ann.1,91.0
+Context Usage,Model vs Ann.2,83.0
+Context Usage,Model vs Ann.3,83.0
+Context Usage,Ann.1 vs Ann.2,86.0
+Context Usage,Ann.1 vs Ann.3,84.0
+Context Usage,Ann.2 vs Ann.3,84.0

@@ -1,0 +1,13 @@
+﻿Model,"PCC (Effectiveness, human vs GPT-4 scorer)"
+AVG,0.91
+GPT-4o,0.89
+ChatGPT,0.98
+Meta-Llama-3-8B-Instruct,0.89
+Llama-2-7b-chat-hf,0.98
+Llama-2-13b-chat-hf,0.96
+Vicuna-7b-v1.5,0.94
+Vicuna-7b-v1.5-16k,0.81
+Vicuna-13b-v1.5,0.93
+Vicuna-13b-v1.5-16k,0.78
+Mistral-7B-Instruct-v0.2,0.91
+Mistral-7B-Instruct-v0.3,0.92

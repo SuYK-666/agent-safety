@@ -1,0 +1,8 @@
+﻿Attack type,Samples,Primary harm
+DPI (Direct Prompt Injection),100,leak/action
+IPI (Indirect Prompt Injection),100,action/persist
+TRI (Tool-Return Injection),100,leak/action
+MPI (Memory Poisoning),100,persist
+MEX (Memory Extraction),100,leak
+ADI (Ambiguity-Driven Unsafe Inference),100,action
+Total,600,leak/action/persist

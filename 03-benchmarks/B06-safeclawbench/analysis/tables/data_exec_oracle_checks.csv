@@ -1,0 +1,10 @@
+﻿oracle_check,count,share_%
+memory_value_contains,133,20.21
+email_sent,125,19.0
+code_output_contains,99,15.05
+file_contains,93,14.13
+file_created,66,10.03
+database_row_modified,58,8.81
+file_deleted,50,7.6
+tool_called,34,5.17
+TOTAL,658,100.0

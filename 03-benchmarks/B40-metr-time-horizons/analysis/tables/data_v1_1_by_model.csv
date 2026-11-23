@@ -1,0 +1,22 @@
+﻿alias,runs,tasks,mean_score_binarized,mean_score_cont
+Claude Opus 4.6 (Inspect),1391,228,0.837,0.877
+Claude Opus 4.5 (Inspect),1044,228,0.827,0.87
+GPT-5.2,961,228,0.823,0.852
+Gemini 3 Pro,1044,228,0.813,0.863
+GPT-5.3-Codex,1602,228,0.803,0.844
+GPT-5 (Inspect),1056,228,0.797,0.84
+GPT-5.1-Codex-Max (Inspect),1369,228,0.791,0.834
+o3 (Inspect),1044,228,0.77,0.8
+Claude 4.1 Opus (Inspect),1043,228,0.747,0.795
+human,773,188,0.721,0.782
+Claude 4 Opus (Inspect),1368,228,0.721,0.763
+Claude 3.7 Sonnet (Inspect),1043,228,0.701,0.743
+o1 (Inspect),1044,228,0.682,0.71
+Claude 3.5 Sonnet (New) (Inspect),1016,226,0.626,0.663
+o1-preview,1661,213,0.599,0.627
+Claude 3.5 Sonnet (Old) (Inspect),1005,223,0.588,0.614
+GPT-4o (Inspect),1044,228,0.527,0.546
+Claude 3 Opus (Inspect),1038,228,0.499,0.512
+GPT-4 1106 (Inspect),1029,228,0.497,0.509
+GPT-4 0314,1401,213,0.485,0.493
+GPT-4 Turbo (Inspect),1032,228,0.482,0.487

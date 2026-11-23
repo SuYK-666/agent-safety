@@ -1,0 +1,10 @@
+﻿Metric,Value
+Detailed base behaviors,110
+Total behaviors (incl. augmentations),440
+Validation set,44
+Public test set,264
+Private test set,132
+Harm categories,11
+Unique functions,104
+Average functions per behavior,3.53
+Typical token consumption,0.5M-1.5M

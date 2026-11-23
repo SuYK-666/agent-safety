@@ -1,0 +1,19 @@
+﻿Model,Provider,Challenge ASR %
+Llama 3.3 70B,Meta,6.7
+Pixtral Large,Mistral,6.1
+Llama 3.1 405B,Meta,5.9
+o3 Mini:High,OpenAI,4.9
+Nova Lite v1,Amazon,4.5
+Nova Micro v1,Amazon,4.4
+Grok 2,xAI,4.4
+o3 Mini,OpenAI,4.3
+Nova Pro v1,Amazon,3.9
+Command-R,Cohere,3.8
+o3,OpenAI,2.9
+GPT 4.5,OpenAI,2.7
+o1,OpenAI,2.7
+GPT 4o,OpenAI,2.5
+3.5 Haiku,Anthropic,2.4
+3.5 Sonnet,Anthropic,1.9
+3.7 Sonnet,Anthropic,1.7
+3.7 Sonnet:Thinking,Anthropic,1.5

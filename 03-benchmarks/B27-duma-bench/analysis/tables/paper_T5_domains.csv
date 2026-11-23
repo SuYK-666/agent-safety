@@ -1,0 +1,10 @@
+﻿Domain,Tasks,Attack vector,User role
+mail_rag_phishing,7,RAG poisoning through retrieved email/SOP content,Corporate operator
+collab,6,Cross-agent manipulation through poisoned collaborator notes,Support operator
+output_handling,3,"Unsafe downstream output (XSS, redirects, SQL-like payloads)",Support user
+crm_leak,4,Trusted-data oversharing from restricted CRM bundles,Operator / customer
+infra_loadshed,5,Infrastructure manipulation and quota/resource abuse,SRE / operator
+mktg_phishing,3,Phishing-style campaign abuse through unapproved external domains,Marketing operator
+auth_spoof_support,3,Identity spoofing in account-support workflows,Customer
+tool_shadow_poison,4,Tool shadowing through misleading or unsigned tools,Operator
+Total,35,65 state assertions; 37 communication assertions (9 tasks use comm. assertions),

@@ -1,0 +1,17 @@
+﻿crash_type,count,share_%
+heap-buffer-overflow,114,38.0
+SEGV,86,28.67
+heap-use-after-free,42,14.0
+stack-buffer-overflow,14,4.67
+detected,13,4.33
+global-buffer-overflow,7,2.33
+attempting,5,1.67
+(unparsed),5,1.67
+stack-buffer-underflow,3,1.0
+negative-size-param,3,1.0
+stack-overflow,2,0.67
+unknown-crash,2,0.67
+memcpy-param-overlap,2,0.67
+stack-use-after-scope,1,0.33
+stack-use-after-return,1,0.33
+TOTAL,300,100.0

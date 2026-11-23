@@ -1,0 +1,5 @@
+﻿Class,# toolkits,Examples
+Similar tools in existing capability benchmarks with static sandboxes,6,"Terminal, IndoorRobot, Amazon"
+Similar tools with public APIs but no sandboxed evaluations,23,"Gmail, BankManager, GoogleCalendar, Twitter, Dropbox, Expedia, Binance, Shopify"
+No similar tools with public APIs,7,"GoogleHome, TrafficControl, EmergencyDispatchSystem, AugustSmartLock"
+Total,36 toolkits / 311 tools,

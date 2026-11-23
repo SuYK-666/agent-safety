@@ -1,0 +1,19 @@
+﻿Item,Value,Source
+Competition period,2025-03-08 to 2025-04-06 (4 waves),Sec.2.1
+Deployment scenarios / behaviors,44,Sec.2.1
+Behavior categories,"4 (Confidentiality, Conflicting objectives, Prohibited info, Prohibited actions)",Sec.2.1
+Models in competition,22 frontier LLMs,Sec.2.1
+Attack attempts,"~1,800,000",Sec.2.2
+Participants,"~2,000",Sec.2.2
+Successful policy violations,">62,000",Sec.2.2
+Behavior-level ASR in competition,100% for every model,Sec.2.2
+Prize pool,"$171,800",Sec.2.1
+ART benchmark size,"4,700 attacks / 44 behaviors (<=5 per behavior x model)",Sec.2.3
+Models evaluated on ART,"19 (incl. unseen Gemini 2.5 Pro, o4-mini)",Sec.2.3
+ART ASR at k=1 query,20%-60% of behaviors,Fig.4
+ART ASR at k=10 queries,approaches ~100% for most models,Fig.4
+Universal attack (Attacker 4) single-turn ASR,"Gemini 1.5 Flash 58%, Gemini 2.0 Flash 50%, Gemini Pro 1.5 45%, Command-R 33%, Llama 3.3 70B 33%",Sec.3.2
+Correlation transfer ASR vs GPQA,-0.31,Fig.6 right
+Universal cluster criteria,">=5 behaviors, >=2 models, cosine>0.9",Fig.6
+Judge model in evaluation,o4-mini; transfer experiments cost ~$1000,App.B.1
+Public dataset,none (ART kept as private leaderboard),Sec.2.3

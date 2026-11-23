@@ -1,0 +1,11 @@
+﻿Metric,Value
+Raw agreement (attack_success),96.1%
+Cohen kappa (attack_success),0.871
+Safety score Pearson r,0.904
+Safety score Spearman rho,0.889
+kappa DPI,0.875
+kappa IPI,0.864
+kappa TRI,0.780
+kappa MPI,0.933
+kappa MEX,0.751
+kappa ADI,0.805

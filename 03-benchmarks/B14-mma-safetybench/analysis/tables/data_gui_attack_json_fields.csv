@@ -1,0 +1,13 @@
+﻿field,count,share_%
+task_id,209,100.0
+example_id,209,100.0
+instruction,209,100.0
+bait_content,209,100.0
+current_observation_path,209,100.0
+bbox,209,100.0
+attack_type,209,100.0
+payload_category,209,100.0
+poisoned_image_path,209,100.0
+malicious_bbox,209,100.0
+attack_logic,209,100.0
+TOTAL,2299,100.0

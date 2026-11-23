@@ -1,0 +1,9 @@
+﻿n_target_functions,benign_test_public,benign_validation,harmful_test_public,harmful_validation,TOTAL
+2,24,8,24,8,64
+3,68,20,68,16,172
+4,43,4,44,8,99
+5,29,0,28,0,57
+6,4,0,4,0,8
+7,4,0,4,0,8
+8,4,0,4,0,8
+TOTAL,176,32,176,32,416

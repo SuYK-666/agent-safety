@@ -1,0 +1,7 @@
+﻿Attribute,Mean,Max
+Issue text length (words),921.1,4406
+Codebase files (non-test),563.6,3015
+Codebase lines (non-test),482K,2.02M
+Gold patch lines edited,17.3,650
+Gold patch files edited,1.3,11
+Gold patch functions edited,1.6,11

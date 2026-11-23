@@ -1,0 +1,5 @@
+﻿Metric,Colluding f=1,Colluding f=2,Colluding f=3,Independent f=1,Independent f=2,Independent f=3,Inconsistent f=3
+ASR %,14.81,16.98,28.30,7.55,11.32,11.32,5.66
+IRW %,58.00,60.00,49.00,53.00,59.00,52.00,74.00
+Cost % (attacked/clean token median),95.77,83.24,73.08,96.65,87.02,73.83,75.85
+C2W % (honest correct -> wrong),2.14,0.75,3.26,1.60,1.42,0.00,1.06

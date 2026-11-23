@@ -1,0 +1,6 @@
+﻿Condition,Scanner,GPT-5.4,GPT-4.1,GLM-5,GPT-4o,Avg Harness-ASR,Avg tools,OK/Error
+Single-turn baseline,prefilter,70.0,85.0,25.0,60.0,60.0,0.00,80/0
+Native Tool-Use,prefilter,65.0,75.0,25.0,55.0,55.0,0.80,80/0
+ReAct,prefilter,45.0,50.0,10.0,50.0,38.8,0.03,80/0
+HERMES,native,65.0,80.0,20.0,55.0,55.0,0.00,80/0
+HERMES,off,70.0,75.0,10.0,65.0,55.0,0.04,80/0

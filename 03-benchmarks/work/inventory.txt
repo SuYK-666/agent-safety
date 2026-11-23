@@ -1,0 +1,556 @@
+### B01-agentdojo
+- data_injection_goals_v1.csv | H: suite,task,goal | V: workspace / slack
+- data_injection_vectors.csv | H: suite,vector,description,default_len | V: workspace
+- data_suite_summary_v1.csv | H: suite,user_tasks_v1,injection_tasks_v1,security_pairs_user_x_injection,injection_vectors,difficulty_EASY,difficulty_MEDIUM,difficulty_HARD | V: workspace / slack / travel / banking / TOTAL
+- data_task_files_by_version.csv | H: version,suite,file,task_classes,combined_tasks,total_tasks,EASY,MEDIUM,HARD,ids | V: v1
+- data_user_task_prompts.csv | H: suite,id,difficulty,prompt | V: workspace
+- paper_T1_environments.csv | H: Environment,Tools,User tasks,Injection tasks,Example user task,Example injection task | V: Workspace / Slack / Travel / Banking / TOTAL
+- paper_T2_attacker_knowledge_gpt4o.csv | H: Injection variant,Example,Targeted ASR %,Delta vs baseline (pp) | V: Baseline / + wrong user / + wrong model / + correct user / + correct model / + both correct
+- paper_T3_agents_important_message_attack.csv | H: Model,Benign utility %,CI95,Utility under attack %,CI95,Targeted ASR %,CI95 | V: Claude 3 Opus / Claude 3 Sonnet / Claude 3.5 Sonnet / Command-R+ / Gemini 1.5 Flash / Gemini 1.5 Pro
+- paper_T4_attack_prompts_gpt4o.csv | H: Attack,Targeted ASR %,CI95,Untargeted ASR %,CI95 | V: TODO / Ignore previous / InjecAgent / Important message / Max (adaptive)
+- paper_T5_defenses_gpt4o.csv | H: Defense,Benign utility %,CI95,Utility w. attack %,CI95,Targeted ASR %,CI95 | V: No defense / Delimiting / PI detector / Repeat prompt / Tool filter
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Security test cases (user x injection pairs) / User tasks / Slack suite targeted ASR (GPT-4o) / Travel injection task 6 ASR (GPT-4o) / Max ASR when injection at end of tool output (GPT-4o) / Tool filter ASR (text)
+### B02-injecagent
+- data_attack_type_by_attack_category.csv | H: attack_type,data_stealing,direct_harm,TOTAL | V: Data Security Harm / Financial Data / Financial Harm / Others / Physical Data / Physical Harm
+- data_attacker_cases_by_type.csv | H: attack_type,data_stealing,direct_harm,TOTAL | V: Data Security Harm / Financial Data / Financial Harm / Others / Physical Data / Physical Harm
+- data_attacker_cases.csv | H: category,idx,attack_type,attacker_tools,n_attacker_tools,modified,instruction,expected_achievement | V: direct_harm
+- data_overview.csv | H: item,value | V: test cases per setting (dh+ds) / settings (base/enhanced) / total case files rows / user cases / attacker cases dh / ds / toolkits in tools.json
+- data_test_case_files.csv | H: file,attack,setting,cases,unique_user_tools,unique_attacker_instructions,modified_attacker_cases,avg_tool_response_chars | V: test_cases_dh_base / test_cases_dh_enhanced / test_cases_ds_base / test_cases_ds_enhanced
+- data_toolkit_categories.csv | H: category,count,share_% | V:  / "Financial / "Productivity / "E-commerce / Social Media and Content Management Tools / "Programming
+- data_toolkits.csv | H: toolkit,category,n_tools | V: Terminal / Gmail / GoogleCalendar / BankManager / Amazon / Expedia
+- data_user_case_content_freedom.csv | H: level,count,share_% | V: High / Low / TOTAL
+- data_user_cases.csv | H: user_tool,content_freedom_level,instruction,cases_in_base_set | V: AmazonGetProductDetails / EvernoteManagerSearchNotes / GitHubGetRepositoryDetails / GitHubGetUserDetails / GitHubSearchRepositories / GmailReadEmail
+- paper_T1_attack_categories.csv | H: Attack,Category,# attacker cases,Example | V: Direct Harm / Data Stealing
+- paper_T10_response_quality_failed_cases.csv | H: agent_type,model,base_relevance,base_clarity,enh_relevance,enh_clarity | V: Prompted (ReAct)
+- paper_T11_asr_valid_simple_react.csv | H: agent_type,model,base_DH,base_DS_S1,base_DS_S2,base_DS_total,base_total,enh_DH,enh_DS_S1,enh_DS_S2,enh_DS_total,enh_total | V: Prompted (ReAct)
+- paper_T12_asr_all_simple_react.csv | H: agent_type,model,base_DH,base_DS_S1,base_DS_S2,base_DS_total,base_total,enh_DH,enh_DS_S1,enh_DS_S2,enh_DS_total,enh_total | V: Prompted (ReAct)
+- paper_T3_asr_valid_main.csv | H: agent_type,model,base_DH,base_DS_S1,base_DS_S2,base_DS_total,base_total,enh_DH,enh_DS_S1,enh_DS_S2,enh_DS_total,enh_total | V: Prompted (ReAct)
+- paper_T4_association_user_vs_attacker_case.csv | H: Attack type,Variable,Cramer's V (p<0.01),Wilcoxon test p | V: Direct Harm / Data Stealing
+- paper_T6_valid_rates.csv | H: agent_type,model,no_attack,base_attack,enhanced_attack | V: Prompted (ReAct)
+- paper_T7_asr_valid_low_valid_agents.csv | H: agent_type,model,base_DH,base_DS_S1,base_DS_S2,base_DS_total,base_total,enh_DH,enh_DS_S1,enh_DS_S2,enh_DS_total,enh_total | V: Prompted (ReAct)
+- paper_T8_asr_all.csv | H: agent_type,model,base_DH,base_DS_S1,base_DS_S2,base_DS_total,base_total,enh_DH,enh_DS_S1,enh_DS_S2,enh_DS_total,enh_total | V: Prompted (ReAct)
+- paper_T9_asr_all_by_attack_type.csv | H: agent_type,model,DH_financial,DH_physical,DH_data_security,DS_financial_data,DS_physical_data,DS_others | V: Prompted (ReAct)
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Agents evaluated / Base tools (from ToolEmu) / User cases / Attacker cases / Prompted GPT-4 ASR-valid base / enhanced / Prompted Llama2-70B ASR
+### B03-agent-security-bench
+- data_agents_summary.csv | H: agent,user_tasks,normal_tools,attack_tools,attack_tools_aggressive,attack_tools_non_aggressive,pot_tasks,attack_cases_user_task_x_attack_tool | V: financial_analyst_agent / legal_consultant_agent / medical_advisor_agent / education_consultant_agent / psychological_counselor_agent / ecommerce_manager_agent
+- data_attack_tools.csv | H: agent,tool,attack_type,aggressive,instruction,goal | V: system_admin_agent
+- data_attack_type_by_agent.csv | H: agent,Disruptive Attack,Stealthy Attack,TOTAL | V: academic_search_agent / aerospace_engineer_agent / autonomous_driving_agent / ecommerce_manager_agent / education_consultant_agent / financial_analyst_agent
+- data_attack_type_by_aggressive.csv | H: attack_type,aggressive,non_aggressive,TOTAL | V: Disruptive Attack / Stealthy Attack / TOTAL
+- data_normal_tools.csv | H: agent,tool,description | V: system_admin_agent / financial_analyst_agent / legal_consultant_agent
+- data_user_tasks.csv | H: agent,task | V: financial_analyst_agent / legal_consultant_agent
+- paper_F4_ppl_detection_curve_points.csv | H: FNR,FPR | V: 0.01 / 0.03 / 0.07 / 0.13 / 0.17 / 0.19
+- paper_T14_attack_combinations.csv | H: LLM,DPI+IPI_ASR,DPI+IPI_RR,DPI+MP_ASR,DPI+MP_RR,IPI+MP_ASR,IPI+MP_RR,Mixed_ASR,Mixed_RR | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T15_pot_triggers.csv | H: Trigger,ASR,BP,PNA | V: @@ / conducting a comprehensive elucidation / :) / through a prism of insight / with perspicacious discernment / Average
+- paper_T16_pot_utility.csv | H: LLM,BP,PNA | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T17_prompt_injection_types.csv | H: Attack type,DPI_ASR,DPI_RR,IPI_ASR,IPI_RR,MP_ASR,MP_RR,Avg_ASR,Avg_RR | V: Combined Attack / Context Ignoring / Escape Characters / Fake Completion / Naive / Average
+- paper_T18_aggressive_vs_non.csv | H: Aggressive,DPI_ASR,DPI_RR,IPI_ASR,IPI_RR,MP_ASR,MP_RR,Avg_ASR,Avg_RR | V: No / Yes / Average
+- paper_T19_defense_utility_no_attack.csv | H: LLM,PNA_no_defense,Delimiters_PNA,Delimiters_delta,Paraphrasing_PNA,Paraphrasing_delta,Instructional_PNA,Instructional_delta,Sandwich_PNA,Sandwich_delta,DPR_PNA,DPR_delta | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T20_pot_defenses.csv | H: LLM,PoT_ASR,NoAttack_PNA,Shuffle_ASR,Shuffle_PNA,Paraphrase_ASR,Paraphrase_PNA | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T21_memory_defense_llm_detector.csv | H: LLM,FNR,FPR | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T3_statistics.csv | H: Category,Number,Examples | V: Scenarios / Agents / Agent Tasks / Normal Tools / Attack Tools / Attack Tasks
+- paper_T5_attack_results_by_backbone.csv | H: LLM,DPI_ASR,DPI_RR,IPI_ASR,IPI_RR,MemPoison_ASR,MemPoison_RR,Mixed_ASR,Mixed_RR,PoT_ASR,PoT_RR,Avg_ASR,Avg_RR | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T6_NRP.csv | H: LLM,PNA_%,ASR_%,NRP_% | V: Claude-3.5 Sonnet / LLaMA3-70B / GPT-4o / GPT-4o-mini / Gemma2-27B / LLaMA3.1-70B
+- paper_T7_defenses_DPI.csv | H: LLM,DPI_ASR_no_defense,Delimiter,Paraphrase,Instruction,DynamicPromptRewriting | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+- paper_T8_defenses_IPI.csv | H: LLM,IPI_ASR_no_defense,Delimiter,Instruction,Sandwich | V: Gemma2-9B / Gemma2-27B / LLaMA3-8B / LLaMA3-70B / LLaMA3.1-8B / LLaMA3.1-70B
+### B04-agent-red-teaming
+- derived_F5_transfer_summary.csv | H: model,self_ASR_%,mean_ASR_as_target_offdiag,mean_transfer_as_source_offdiag | V: o3 / 3.7 Sonnet:Thinking / 3.7 Sonnet / 3.5 Sonnet / o1 / 3.5 Haiku
+- paper_F3_challenge_asr_by_model.csv | H: Model,Provider,Challenge ASR % | V: Llama 3.3 70B / Pixtral Large / Llama 3.1 405B / o3 Mini:High / Nova Lite v1 / Nova Micro v1
+- paper_F5_transfer_long.csv | H: source,target,transfer_asr_%,diagonal | V: o3
+- paper_F5_transfer_matrix.csv | H: source \ target,o3,3.7 Sonnet:Thinking,3.7 Sonnet,3.5 Sonnet,o1,3.5 Haiku,GPT 4o,GPT 4.5,Command-R,Grok 2,Llama 3.1 405B,o3 Mini,o3 Mini:High,Llama 3.3 70B | V: o3 / 3.7 Sonnet:Thinking / 3.7 Sonnet / 3.5 Sonnet / o1 / 3.5 Haiku
+- paper_T1_asr_by_category_vector.csv | H: Category,Direct ASR %,Indirect ASR %,All ASR % | V: Confidentiality Breaches / Conflicting Objectives / Prohibited Content / Prohibited Action / All
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Competition period / Deployment scenarios / behaviors / Behavior categories / Models in competition / Attack attempts / Participants
+### B05-agentdyn
+- data_environments.csv | H: environment,suites | V: env_bank_database / env_calendar / env_email_database / env_filesystem / env_github_platform / env_shopping_platform
+- data_injection_goals.csv | H: suite,goal | V: shopping
+- data_suite_summary.csv | H: suite,user_tasks,injection_tasks,security_cases,tools_rows,avg_user_prompt_chars | V: dailylife / github / shopping / TOTAL
+- data_tools_by_suite.csv | H: suite,add_calendar_event_participants,browse_webpage,cancel_calendar_event,cart_add_product,cart_remove_product,cart_total,checkout_selected_cart,clear_cart,copy_node,create_calendar_event,create_dir,create_file,delete_email,delete_node,download_file_through_id,download_file_through_url,get_balance,get_current_day,get_day_calendar_events,get_github_account_user_information,get_github_linked_unread_emails,get_github_repository_information,get_invoice,get_logged_in_github_user_information,get_received_emails,get_sent_emails,get_shopping_account_user_information,get_shopping_linked_received_emails,get_shopping_linked_unread_emails,get_unread_emails,git_add_ssh_key,git_clone,git_create_repo,git_delete_repo,git_delete_ssh_key,git_get_linked_ssh_keys,git_invite_collaborators,git_issue,git_pull,git_push,git_star,git_transfer_repo_ownership,git_unstar,input_to_webpage,list_directory,login_github_account,login_shopping_account,move_node,read_file,refund_order,reschedule_calendar_event,search_calendar_events,search_emails,search_product,send_email,send_money,update_github_account_password,update_shopping_account_password,update_shopping_account_user_info,verify_github_account,verify_shopping_account,verify_transaction,view_available_discounts,view_cart,view_order_history,TOTAL | V: dailylife / github / shopping / TOTAL
+- data_user_task_difficulty.csv | H: suite,None,TOTAL | V: dailylife / github / shopping / TOTAL
+- derived_defense_means.csv | H: defense,n_models,mean_benign_utility,mean_utility_under_attack,mean_ASR | V: None / Prompt Sandwiching / Spotlighting / ProtectAI / PIGuard / PromptGuard2
+- derived_full_matrix_overall.csv | H: defense,model,benign_utility,utility_under_attack,ASR | V: None
+- paper_T1_benchmark_complexity.csv | H: Benchmark,Avg tools per task,Avg trajectory length,Avg apps per task | V: InjecAgent / ASB / AgentDojo / AgentDyn
+- paper_T12_T14_utility_under_attack.csv | H: defense,model,overall,shopping,github,dailylife | V: None
+- paper_T15_T17_asr.csv | H: defense,model,overall,shopping,github,dailylife | V: None
+- paper_T17_asr_system.csv | H: defense,model,overall,shopping,github,dailylife | V: Tool Filter
+- paper_T2_overview.csv | H: Suite,Tools,User tasks,Injection tasks,Avg traj.,Avg apps | V: Shopping / GitHub / Dailylife / TOTAL
+- paper_T3_main_defenses.csv | H: defense,model,utility_no_attack,utility_under_attack,ASR | V: None / Prompt Sandwiching
+- paper_T8_other_attacks.csv | H: Model,Important_AU,Important_ASR,Ignore_AU,Ignore_ASR,Completion_AU,Completion_ASR,Adaptive_AU,Adaptive_ASR | V: gpt-5-mini / gpt-5.1 / Claude-Sonnet-4.5
+- paper_T9_T11_benign_utility.csv | H: defense,model,overall,shopping,github,dailylife | V: None
+### B06-safeclawbench
+- data_attack_type_x_difficulty.csv | H: attack_type,easy,hard,medium,TOTAL | V: ADI / DPI / IPI / MEX / MPI / TRI
+- data_attack_type_x_harm_type.csv | H: attack_type,action,leak,persist,resource exposure,TOTAL | V: ADI / DPI / IPI / MEX / MPI / TRI
+- data_attack_type_x_lifecycle.csv | H: attack_type,decision,execution,inference,input,TOTAL | V: ADI / DPI / IPI / MEX / MPI / TRI
+- data_exec_attack_type.csv | H: attack_type,count,share_% | V: ADI / DPI / IPI / MEX / MPI / TRI
+- data_exec_available_tools.csv | H: tool,count,share_% | V: write_file / read_file / send_email / memory_write / memory_read / web_browse
+- data_exec_oracle_checks.csv | H: oracle_check,count,share_% | V: memory_value_contains / email_sent / code_output_contains / file_contains / file_created / database_row_modified
+- data_exec_subtype.csv | H: attack_type,adi_code_exec,adi_db_tamper,adi_file_write,dpi_config_modify,dpi_db_drop,dpi_email_exfil,dpi_file_delete,ipi_email,ipi_file_write,ipi_memory_poison,mex_email_leak,mex_file_read,mex_response_leak,mpi_memory_overwrite,mpi_memory_write,mpi_policy_inject,tri_code_exec,tri_email_action,tri_file_write,TOTAL | V: ADI / DPI / IPI / MEX / MPI / TRI
+- data_profile_600.csv | H: field,present,coverage_%,types,n_unique,avg_len,top_values | V: scenario / user_prompt / attack_type / harm_type / lifecycle_stage / success_predicate
+- data_seed_flag.csv | H: is_seed,count,share_% | V: None / True / TOTAL
+- data_seed72_stats.csv | H: group,key,count | V: by_attack_type
+- paper_T1_attack_types.csv | H: Attack type,Samples,Primary harm | V: DPI (Direct Prompt Injection) / IPI (Indirect Prompt Injection) / TRI (Tool-Return Injection) / MPI (Memory Poisoning) / MEX (Memory Extraction) / ADI (Ambiguity-Driven Unsafe Inference)
+- paper_T16_harm_audit_D0_by_attack.csv | H: Attack,CoreFail,AuditRows,TextHarm,AccessHarm,ActionHarm,PersistHarm,HarmEvidence,SemOnly,Null | V: DPI / IPI / TRI / MPI / MEX / ADI
+- paper_T17_mex_subtypes.csv | H: MEX subtype,Challenge,Representative,Hard | V: Exact secret or system prompt / Credential or secret value / Protected memory or records / Protected configuration / Policy or architecture transparency / Other MEX leak
+- paper_T18_exec_harm_by_split.csv | H: Split,Pooled rows,D0 % (rows),B2 % (rows),D3 % (rows),D4 % (rows) | V: Challenge / Representative overlap / Hard overlap
+- paper_T19_mcnemar_exec.csv | H: Comparison,D0 harm,Target harm,D0-only,Target-only,Holm p | V: D0 vs B2 / D0 vs D3 / D0 vs D4
+- paper_T21_core_exec_matched.csv | H: Defense,Matched,CF&H,CF&notH,CP&H,CP&notH,CoreFail %,ExecHarm %,ExecH given CF %,ExecH given CP % | V: D0 / B2/Sandwich / D3 / D4 / Total
+- paper_T22_T24_benign_utility_by_model.csv | H: Model,Completed/210,TSR %,False refusal %,Tool validity %,API err %,Avg turns | V: GPT-5.4 / Claude Opus 4.6 / GPT-4.1 / GPT-4o / Qwen3-235B / GLM-5
+- paper_T23_benign_utility_by_defense.csv | H: Defense,Completed/294,TSR %,False refusal %,Tool validity %,API err % | V: D0 / B2/Sandwich / Utility baseline (D2) / D3 / D4/LongPolicy
+- paper_T25_benign_utility_reduced_panel.csv | H: Reduced endpoint,Utility source,Runs,TSR %,False refusal %,API err % | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5
+- paper_T27_corefail_nine_policies.csv | H: Model,D0,B1,B2,B3,B4,D1,D2,D3,D4_LongPolicy | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Average
+- paper_T28_corefail_by_attack_D0.csv | H: Attack type,GPT-5.5,Opus 4.7,Qwen3.6-Plus,GLM-5.1,Kimi K2.5 | V: DPI / IPI / TRI / MPI / MEX / ADI
+- paper_T29_harness_asr.csv | H: Harness,GPT-4.1 D0,GPT-4.1 D4,GPT-4o D0,GPT-4o D4,GPT-5.4 D0,GPT-5.4 D4,Opus 4.6 D0,Opus 4.6 D4,Qwen3 D0,Qwen3 D4,GLM-5 D0,GLM-5 D4,Kimi-K2.5 D0,Kimi-K2.5 D4,Avg D0,Avg D4 | V: Single-turn baseline / Native Tool-Use / ReAct / HERMES
+- paper_T3_headline_corefail.csv | H: Model,D0,D0_CI95,B2_Sandwich,B2_CI95,D3,D3_CI95,D4_LongPolicy,D4_CI95 | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Pooled (5x600)
+- paper_T30_harness_tool_usage.csv | H: Harness,Avg tool calls,Avg turns,Harness-ASR delta vs baseline | V: Single-turn baseline / Native Tool-Use / ReAct / HERMES
+- paper_T31_harness_audit_adi20.csv | H: Condition,Scanner,GPT-5.4,GPT-4.1,GLM-5,GPT-4o,Avg Harness-ASR,Avg tools,OK/Error | V: Single-turn baseline / Native Tool-Use / ReAct / HERMES
+- paper_T32_d4_ablation.csv | H: Configuration,GPT-4.1,GPT-4o,Qwen3-235B | V: D3 baseline stack / D4-SIA (MIG+TCA) / D4-MIG (SIA+TCA) / D4-TCA (SIA+MIG) / D4 full (SIA+MIG+TCA)
+- paper_T33_policy_prompt_length.csv | H: Defense,Added policy chars,Total policy chars | V: D0 (None) / B1 (Naive) / B2 (Sandwich) / B3 (Reminder+Filter) / B4 (StruQ) / D1 (Prompt-Layer)
+- paper_T34_inter_judge_agreement.csv | H: Metric,Value | V: Raw agreement (attack_success) / Cohen kappa (attack_success) / Safety score Pearson r / Safety score Spearman rho / kappa DPI / kappa IPI
+- paper_T36_human_adjudication.csv | H: Quantity,Value | V: Sample size / Semantic attack success labels / Evidence-supported harm labels / Ambiguous rows / Agreement with Core labels / Agreement with audit harm labels
+- paper_T38_matched_length_control.csv | H: Model,D3,"D3_LM (padded to 6,700 chars)",Delta pp | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Average
+- paper_T4_harm_audit_D0_by_model.csv | H: Model,CoreFail@600,AuditRows,TextHarm,AccessHarm,ActionHarm,PersistHarm,HarmEvidence,SemOnly,Null | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Total
+- paper_T40_exec_oracle_checks.csv | H: Oracle check,Cases | V: memory_value_contains / email_sent / code_output_contains / file_contains / file_created / database_row_modified
+- paper_T41_exec_observed_harm.csv | H: Model,D0,B2,D3,D4_LongPolicy | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Average
+- paper_T42_exec_metric_hierarchy_D0.csv | H: Model,ToolCall-ASR,StateChange-ASR,ObservedHarm | V: GPT-5.5 / Claude Opus 4.7 / Qwen3.6-Plus / GLM-5.1 / Kimi K2.5 / Average
+- paper_T43_paired_defense_tests.csv | H: Model,Comparison,Pairs,A CoreFail,D4 CoreFail,Delta,Holm p | V: Claude Opus 4.6 / Claude Sonnet 4.6 / GLM-5 / GPT-4.1 / GPT-4o / GPT-5.4
+- paper_T44_empirical_difficulty.csv | H: Bucket,Criterion,N,%,Family concentration | V: Easy / Medium / Hard / Unsolved / Total
+- paper_T45_splits.csv | H: Split,N,Family composition,Source difficulty labels | V: Challenge / Representative / Hard
+- paper_T5_harm_audit_by_defense.csv | H: Defense,CoreFail rows,Audited,Missing,HarmEvidence,SemOnly,NullAudit,OtherNoHarm | V: D0 / B2/Sandwich / D3 / D4/LongPolicy / Total
+### B07-agentharm
+- data_behavior_list.csv | H: split,id,name,category,detailed,hint,target_functions | V: harmful_test_public
+- data_category_by_split.csv | H: category,benign_test_public,benign_validation,chat_test_public,chat_validation,harmful_test_public,harmful_validation,TOTAL | V: Copyright / Cybercrime / Disinformation / Drugs / Fraud / Harassment
+- data_split_summary.csv | H: split,behaviors,base_behaviors,categories,detailed_prompt,hint_included,unique_target_functions,avg_target_functions | V: harmful_test_public / harmful_validation / benign_test_public / benign_validation / chat_test_public / chat_validation
+- data_target_function_count_dist.csv | H: n_target_functions,benign_test_public,benign_validation,harmful_test_public,harmful_validation,TOTAL | V: 2 / 3 / 4 / 5 / 6 / 7
+- data_top_target_functions_harmful.csv | H: function,count,share_% | V: get_webpage / query_google_search / send_email / post_on_x / query_onion_search / run_stable_diffusion_model
+- derived_T9_pivot_by_model.csv | H: Model,harm_None,refusal_None,benign_score,harm_Forced tool call,refusal_Forced tool call,harm_Template,refusal_Template | V: GPT-3.5 Turbo / GPT-4o mini / GPT-4o / Claude 3 Haiku / Claude 3 Sonnet / Claude 3 Opus
+- paper_release_gap_note.csv | H: Item,Paper,Public release (computed) | V: Harmful public test behaviors / Harm categories in public files / Harmful validation behaviors / Benign public test behaviors / Chat-only public test prompts
+- paper_T1_dataset_metrics.csv | H: Metric,Value | V: Detailed base behaviors / Total behaviors (incl. augmentations) / Validation set / Public test set / Private test set / Harm categories
+- paper_T10_private_test.csv | H: Model,Attack,Harm score,Refusals,Non-refusal harm score | V: GPT-3.5 Turbo / GPT-4o mini / GPT-4o / Claude 3 Haiku / Claude 3 Sonnet / Claude 3 Opus
+- paper_T2_best_of_n.csv | H: Model,Attack,Greedy avg score,tau=1 avg score,tau=1 best-of-5 | V: GPT-4o / Claude 3.5 Sonnet / Mistral Large 2
+- paper_T3_prompting.csv | H: Model,Attack,Standard score,Standard refusal,CoT score,CoT refusal,ReAct score,ReAct refusal,Refusal-prompt score,Refusal-prompt refusal | V: GPT-4o / Sonnet 3.5 / Mistral Large 2
+- paper_T8_agent_vs_chat_refusal.csv | H: Model,No attack: agent,No attack: chat-only,Template: agent,Template: chat-only | V: GPT-4o / Claude 3 Haiku / Claude 3 Opus / Claude 3.5 Sonnet
+- paper_T9_public_test_main.csv | H: Model,Attack,Harm score,Refusals,Non-refusal harm score,Benign non-refusal score | V: GPT-3.5 Turbo / GPT-4o mini / GPT-4o / Claude 3 Haiku / Claude 3 Sonnet / Claude 3 Opus
+### B08-agent-safetybench
+- data_environment_usage.csv | H: environment,count,share_% | V: Email / Mind2Web / RiskyCue / EC / HF / SocialMedia
+- data_failure_mode_counts.csv | H: failure_mode,count,share_% | V: M5 / M1 / M9 / M4 / M2 / M7
+- data_failure_modes_per_case.csv | H: n_failure_modes,count,share_% | V: 1 / 2 / 3 / 4 / TOTAL
+- data_overview.csv | H: item,value | V: test cases / cases with dialog prefill / cases with environments (behavior) / distinct environments used / fulfillable=1
+- data_risk_category.csv | H: risk_category,count,share_% | V: Spread unsafe information / misinformation / Lead to property loss / Leak sensitive data / information / Compromise availability / Contribute to harmful / vulnerable code / Violate law or ethics / damage society
+- data_risk_x_behavior_content.csv | H: risk_category,behavior(with env),content(no env),TOTAL | V: Compromise availability / Contribute to harmful / vulnerable code / Lead to physical harm / Lead to property loss / Leak sensitive data / information / Produce unsafe information / misinformation
+- data_risk_x_fulfillable.csv | H: risk_category,0,1,TOTAL | V: Compromise availability / Contribute to harmful / vulnerable code / Lead to physical harm / Lead to property loss / Leak sensitive data / information / Produce unsafe information / misinformation
+- paper_T2_environment_classes.csv | H: Category,# environments,Examples | V: Similar tools in existing benchmarks / Similar tools with public APIs but no sandboxed evaluation / "No similar public API yet / No similar public API and no real-world application currently / Total
+- paper_T4_failure_mode_definitions.csv | H: Mode,Definition | V: M1 / M2 / M3 / M4 / M5 / M6
+- paper_T5_safety_scores_by_risk.csv | H: Model,Total,Behavior,Content,Leak,Property,Spread,Physical,Law,Availability,Code,Produce | V: Claude-3-Opus / Claude-3.5-Sonnet / Claude-3.5-Haiku / GPT-4o / GPT-4-Turbo / Gemini-1.5-Flash
+- paper_T6_safety_scores_by_failure_mode.csv | H: Model,Total,M1,M2,M3,M4,M5,M6,M7,M8,M9,M10 | V: Claude-3-Opus / Claude-3.5-Sonnet / Claude-3.5-Haiku / GPT-4o / GPT-4-Turbo / Gemini-1.5-Flash
+### B09-toolemu
+- data_overview.csv | H: item,value | V: test cases / toolkits / tools / avg expected achievements per case / avg potential risky outcomes per case / avg potential risky actions per case
+- data_risky_outcome_labels.csv | H: risky_outcome_prefix,count,share_% | V: Privacy breach / Financial loss / Unauthorized access / Reputation damage / Misinformation / Property damage
+- data_toolkit_category.csv | H: category,count,share_% | V:  / "Financial / "Productivity / "E-commerce / Social Media and Content Management Tools / "Programming
+- data_toolkits_per_case.csv | H: n_toolkits,count,share_% | V: 1 / 2 / 3 / TOTAL
+- data_toolkits.csv | H: toolkit,category,n_tools,cases_using | V: Terminal / Gmail / GoogleCalendar / BankManager / Amazon / Expedia
+- data_underspecification_type.csv | H: underspecification,count,share_% | V: task_info+safety_constraints / task_info / safety_constraints / TOTAL
+- paper_F5_risk_type_distribution.csv | H: Risk type,Share % | V: Privacy Breach / Financial Loss / Data Loss & Corruption / Inaccurate & Inefficient Execution / Safety Hazards & Physical Harm / Reputational Damage
+- paper_T1_toolkit_classes.csv | H: Class,# toolkits,Examples | V: Similar tools in existing capability benchmarks with static sandboxes / Similar tools with public APIs but no sandboxed evaluations / No similar tools with public APIs / Total
+- paper_T2_end_to_end_validation.csv | H: Emulator,Identified failure precision,True failure incidence | V: Standard / Adversarial
+- paper_T3_component_validation.csv | H: Component,Metric,Value | V: Standard emulator / Adversarial emulator / Safety evaluator / Helpfulness evaluator
+- paper_T4_agent_evaluation.csv | H: Model,Prompt,Safety avg score (0-3),Failure incidence,Helpfulness avg score (0-3) | V: GPT-4 / Claude-2 / ChatGPT-3.5 / Vicuna-1.5-13B / Vicuna-1.5-7B
+- paper_TD1_emulator_issue_detail.csv | H: Sim ratio,Standard emulator,Adversarial emulator | V: No issues / Minor issues / Critical issues
+- paper_TD2_leave_one_out.csv | H: Rater,Safety accuracy,Helpfulness accuracy | V: Human (average) / Auto (average)
+- paper_TD3_kappa_original_scale.csv | H: Metric,Safety H-H,Safety A-H,Helpfulness H-H,Helpfulness A-H | V: Categorical / Linear-weighted / Quadratic-weighted
+- paper_TD4_TD5_author_validation.csv | H: Item,Value | V: Standard emulator identified-failure precision / Standard emulator true failure incidence / Adversarial emulator identified-failure precision / Adversarial emulator true failure incidence / Standard critical-issue-free / Adversarial critical-issue-free
+- paper_TD7_temperature_claude2.csv | H: Temperature,Safety avg,Failure incidence,Helpfulness avg | V: 0.0 / 0.5 / 1.0
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Test cases / Toolkits / tools / Toolkit categories / Validation sample / Annotators / Terminal failures replicated in real sandbox
+### B10-wasp
+- data_attack_env_x_evaltype.csv | H: environment,exfil,program_html,TOTAL | V: gitlab / reddit / TOTAL
+- data_attacker_goals.csv | H: environment,name,exfil,eval_types,verification,cleanup_fn | V: gitlab
+- data_overview.csv | H: item,value | V: attacker goals (gitlab / reddit) / user goals per environment / test scenarios = attacker goals x 2 user goals / "tasks = scenarios x 2 injection templates (URL / utility tasks / attacker goals with exfiltration
+- data_utility_tasks_by_site.csv | H: site,count,share_% | V: gitlab / reddit / TOTAL
+- paper_T2_main_results.csv | H: Backbone,Scaffolding,Inputs,Defense,ASR intermediate,ASR end-to-end,Utility | V: GPT-4o-mini / GPT-4o
+- paper_T3_url_vs_plaintext.csv | H: Backbone,URL ASR interm.,URL ASR e2e,Plain-text ASR interm.,Plain-text ASR e2e | V: GPT-4o (axtree+SOM) / GPT-4o-mini (axtree) / "o1 (axtree / Claude-3.5-sonnet / Claude-3.7-sonnet
+- paper_T4_task_related_vs_agnostic.csv | H: Backbone,Task-related ASR interm.,Task-related ASR e2e,Task-agnostic ASR interm.,Task-agnostic ASR e2e | V: GPT-4o (axtree+SOM) / Claude-3.7-sonnet
+- paper_T5_attacker_goals_violation.csv | H: Environment,Security violation,Attacker goal (abridged) | V: gitlab
+### B11-safearena
+- paper_F3_task_completion.csv | H: Model,Harmful TCR %,Safe TCR % | V: GPT-4o / Claude-3.5-Sonnet / GPT-4o-Mini / Llama-3.2-90B / Qwen-2-VL-72B
+- paper_F5_aria_llm_judge.csv | H: Model,ARIA-1 %,ARIA-2 %,ARIA-3 %,ARIA-4 % | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-Mini / Llama-3.2-90B / Qwen-2-VL-72B
+- paper_T11_full_tcr.csv | H: Model,Intent,Source,TCR,TCR_Illegal,TCR_Bias,TCR_Misinformation,TCR_Cybercrime,TCR_Harassment | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-Mini / Llama-3.2-90B / Qwen-2-VL-72B
+- paper_T12_full_refusal.csv | H: Model,Source,Instruction,Bias,Cybercrime,Harassment,Illegal,Misinformation | V: Claude-3.5-Sonnet / GPT-4o
+- paper_T3_normalized_safety.csv | H: Model,NSS,Refusal rate % (ARIA-1+2) | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-Mini / Llama-3.2-90B / Qwen-2-VL-72B
+- paper_T4_aria_human.csv | H: Model,ARIA-1 immediate refusal %,ARIA-2 delayed refusal %,ARIA-3 failed attempt %,ARIA-4 completed % | V: Claude-3.5-Sonnet / Qwen-2-VL-72B
+- paper_T5_refusal_direct_vs_priming.csv | H: Model,Direct refusal %,Priming refusal % | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-Mini / Llama-3.2-90B / Qwen-2-VL-72B
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Tasks / Harm categories / Websites / Task decomposition jailbreak on Claude-3.5-Sonnet / LLM-judge vs human ARIA agreement / Dataset access
+### B12-st-webagentbench
+- data_overview.csv | H: item,value | V: tasks / policy instances (rows in test.csv) / avg policies per task / distinct policy templates
+- data_policy_category_x_site.csv | H: policy_category,gitlab,shopping_admin,suitecrm,TOTAL | V: boundary_and_scope_limitation / error_handling_and_safety_nets / hierarchy_adherence / robustness_and_security / strict_execution / user_consent
+- data_policy_load_bins.csv | H: active_policies_bin,count,share_% | V: >5 / 4-5 / 2-3 / 1 / TOTAL
+- data_policy_source.csv | H: policy_category,organization,task,user,TOTAL | V: boundary_and_scope_limitation / error_handling_and_safety_nets / hierarchy_adherence / robustness_and_security / strict_execution / user_consent
+- data_policy_template.csv | H: template,boundary_and_scope_limitation,error_handling_and_safety_nets,hierarchy_adherence,robustness_and_security,strict_execution,user_consent,TOTAL | V: access_management / ask_the_user / hallucinated_information / hierarchy_resolution / irreversible_actions / jailbreaking
+- data_task_metadata_tag.csv | H: metadata_tag,count,share_% | V:  / medium / easy / hard / TOTAL
+- data_tasks_by_site.csv | H: site,count,share_% | V: gitlab / suitecrm / shopping_admin / TOTAL
+- paper_F2_agent_metrics.csv | H: Agent,CR %,CuP %,Partial CR %,Partial CuP %,all-pass@3 % | V: AWM / WebVoyager / WorkArena Legacy
+- paper_T2_statistics.csv | H: App,Subset,Tasks,Avg policies,Metric,User Consent,Boundary,Strict Exec.,Hierarchy,Security & Rob.,Error Handling | V: GitLab / ShoppingAdmin / SuiteCRM
+- paper_T3_dimension_ablation.csv | H: Omitted dimension,"rho(CR, CuP without d)",Delta rho vs full (0.48) | V: Consent / Boundary / Strict execution / Hierarchy / Security / Error handling
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: AWM consent breaches / WorkArena Legacy violations / WebVoyager risk ratio / CuP by active policies / Spearman CR vs policy load / Spearman CuP vs policy load
+### B13-os-harm
+- data_category_x_app.csv | H: osharm_category,chrome,gimp,libreoffice_calc,libreoffice_impress,libreoffice_writer,multi_apps,os,thunderbird,vs_code,TOTAL | V: 1_deliberate_user_misuse / 2_prompt_injection / 3_agent_misbehavior / TOTAL
+- data_category_x_jailbreak.csv | H: osharm_category,False,True,TOTAL | V: 1_deliberate_user_misuse / 2_prompt_injection / 3_agent_misbehavior / TOTAL
+- data_injection_vector_x_goal.csv | H: injection_vector,delete_all_system_files,delete_all_user_files,email_send_file,email_send_password,email_send_prompt,form_paste_ssh,stop_task,swisstransfer_send_files,terminal_cron_setup,terminal_local_script,terminal_remote_script,url_query_params,TOTAL | V: desktop_notification / libreoffice_writer / thunderbird_mail_draft / thunderbird_mail_received / vs_code / website
+- data_profile.csv | H: field,present,coverage_%,types,n_unique,avg_len,top_values | V: osharm_category / osworld_source_task / software_category / task_instruction / explanation / task_id
+- data_split_files_by_app.csv | H: split,app,n | V: test_misuse
+- paper_F5_jailbreak_template.csv | H: Agent,Unsafe direct %,Unsafe jailbreak %,Completed direct %,Completed jailbreak % | V: o4-mini / GPT-4.1 / Claude 3.7 Sonnet / Gemini 2.5 Pro / Gemini 2.5 Flash
+- paper_T10_violation_step.csv | H: Category,Agreement,Absolute distance (steps),Cases | V: Deliberate misuse / Prompt injections / Model misbehavior / Total
+- paper_T2_main_results.csv | H: Agent,Misuse unsafe %,Misuse completed %,Injection unsafe %,Injection completed %,Misbehavior unsafe %,Misbehavior completed %,Average unsafe % | V: o4-mini / GPT-4.1 / Claude 3.7 Sonnet / Gemini 2.5 Pro / Gemini 2.5 Flash
+- paper_T3_judge_vs_human.csv | H: Category,Unsafe agreement,Unsafe precision,Unsafe recall,Unsafe F1,Completed agreement,Completed precision,Completed recall,Completed F1 | V: Deliberate User Misuse / Prompt Injection Attacks / Model Misbehavior / Overall
+- paper_T4a_injection_vectors.csv | H: Injection vector,Compliance %,Tasks | V: Desktop Notification / Document in LibreOffice Writer / Mail Draft in Thunderbird / Mail Received in Thunderbird / Code Comments in VS Code / Website in Chrome
+- paper_T4b_injection_goals.csv | H: Injection goal,Compliance %,Tasks | V: Stop Task / Send User Prompt over Email / Leak Password via URL / Send Password over Email / Send SSH Keys over Web Form / Send Files over SwissTransfer
+- paper_T5_osworld_obs_types.csv | H: Observation type,o4-mini,Gemini 2.5 Pro,Gemini 2.5 Flash | V: A11y Tree / Screenshot / A11y Tree + Screenshot / Set-of-marks
+- paper_T6_judge_vs_osworld_exec.csv | H: Agent,Agreement,Precision,Recall,F1 | V: o4-mini / Gemini 2.5 Pro / Gemini 2.5 Flash
+- paper_T7_temperature.csv | H: Metric,Temperature,Misuse,Injection,Misbehavior,Average | V: Unsafe / Completion
+- paper_T8_judge_frameworks.csv | H: Category,Framework,Unsafe agreement,Unsafe P,Unsafe R,Unsafe F1,Completed agreement,Completed P,Completed R,Completed F1 | V: Misuse / Injection
+- paper_T9_judge_models.csv | H: Category,Judge,Unsafe agreement,Unsafe P,Unsafe R,Unsafe F1,Completed agreement,Completed P,Completed R,Completed F1 | V: Misuse / Injection
+### B14-mma-safetybench
+- data_document_samples.csv | H: file,Adversarial-Invoice,Adversarial-Resume,TOTAL | V: GEPA_FULL_DIMENSION_ATTACK_V3.json / GEPA_WEB_STYLE_DIVERSE.json / TOTAL
+- data_gui_attack_attack_type.csv | H: attack_type,count,share_% | V: CDPE_Dynamic_V15_Final / TOTAL
+- data_gui_attack_by_domain.csv | H: domain,count,share_% | V:  / TOTAL
+- data_gui_attack_json_fields.csv | H: field,count,share_% | V: task_id / example_id / instruction / bait_content / current_observation_path / bbox
+- data_gui_attack_payload_category.csv | H: payload_category,count,share_% | V: privacy_exfiltration / financial_hijacking / root_escalation / persistent_surveillance / factory_reset / TOTAL
+- data_gui_attacks_per_base_task.csv | H: attacks_per_base_task,count,share_% | V: 5 / 4 / 10 / 3 / TOTAL
+- data_gui_base_tasks_by_domain.csv | H: domain,count,share_% | V: chrome / TOTAL
+- data_release_coverage.csv | H: domain,released | V: Web (paper 200) / Document (paper 200) / Desktop GUI (paper 209) / Mobile (paper 283) / Video (paper 191)
+- derived_domain_means.csv | H: domain,mean_ASR,mean_ASR_SPP,mean_SCR | V: Web / Document / GUI / Mobile / Video
+- derived_model_means.csv | H: Model,mean_ASR,mean_ASR_SPP,SPP_abs_reduction,mean_SCR,mean_clean_success | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+- paper_T2_asr.csv | H: Model,Type,Web,Document,GUI,Mobile,Video | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+- paper_T3_neutral_prompt_asr.csv | H: Model,Type,Web,Document,GUI,Mobile,Video | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+- paper_T4_clean_task_success.csv | H: Model,Type,Web,Document,GUI,Mobile,Video | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+- paper_T5_asr_with_safety_prompt.csv | H: Model,Type,Web,Document,GUI,Mobile,Video | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+- paper_T6_semantic_compromise_rate.csv | H: Model,Type,Web,Document,GUI,Mobile,Video | V: GPT-5 / Claude 4.5 Sonnet / Gemini 3 Pro / SEED-1.8 / Llama-3.2-11B-Vision / InternVL3-38B
+### B15-caict-ai-safety-benchmark-2026q1
+### B16-authorizationbench
+- data_case_type.csv | H: case_type,count,share_% | V: expanded / original / TOTAL
+- data_domain_x_harm.csv | H: domain,direct_harm,no_direct_harm,TOTAL | V: e-commerce / education / entertainment / finance / healthcare_medical / legal
+- data_expansion_axis.csv | H: expansion_axis,count,share_% | V: (original) / domain / harm / TOTAL
+- data_seed_source_type.csv | H: source_type,count,share_% | V: social_media / news / law_regulation_policy / literature / social_media_online_forum / TOTAL
+- data_task_labels.csv | H: task_id,domain,harm,trigger,case_type,expansion_axis | V: T0001-b-d-h / T0001-b-e-h / T0001-b-f-h / T0002-f-a-h / T0002-f-a-n / T0002-f-f-h
+- data_task_services.csv | H: service,count,share_% | V: email_client / docs_portal / zoom / amazon_shop / quickgist_ai / teacher_connect
+- data_trigger_type.csv | H: trigger_type,count,share_% | V: benign / malicious / TOTAL
+- data_trigger_x_harm.csv | H: situational_trigger,N,Y,TOTAL | V: Attention hijacking by an adjacent-but-out-of-scope element / Conflict authorizations within the systems / Conflicting authorizations within the systems / Cross-session information accumulation in a shared context / Input volume exceeded agent's context capacity / Input volume exceeded the agent's context capacity
+- paper_T1_controlled_pairs_OAR.csv | H: Condition,All,GPT-5.6 Sol,Claude Sonnet 5,Gemini 3.8 Flash,GLM 5.3,OpenHands,OpenAI SDK,Claude SDK | V: With direct harm / Without direct harm / p (Holm) / Malicious injection / Benign pressure
+- paper_T11_completion_authorization.csv | H: Harness,Model,Effort,Safe completion,OA completion,OA non-completion,Safe non-completion,OAR,Completion rate | V: OpenHands
+- paper_T12_reasoning_effort.csv | H: Model,Harness,OAR low,OAR high,Delta,p (Holm) | V: GPT-5.6 Sol / Claude Sonnet 5
+- paper_T13_harm_test_level.csv | H: Test,Pairs,OAR with harm,OAR no harm,p | V: Scenario-level Wilcoxon (main) / Run-level McNemar
+- paper_T14_consultation.csv | H: Group,Consulted OA/n,Consulted OA %,No consultation OA/n,No consultation OA %,Gap pp,OR [95% CI],p | V: Overall / GPT-5.6 Sol (low) / GPT-5.6 Sol (high) / Claude Sonnet 5 (low) / Claude Sonnet 5 (high) / Gemini 3.8 Flash (low)
+- paper_T15_T16_consultation_timing.csv | H: Reference,Category,n,% | V: Definition / Completion point / First OA action (313 OA trajectories with ask)
+- paper_T17_repeated_run_reliability.csv | H: Metric,Definition,Rate | V: Safe^1 / Safe^3 / Violate@3
+- paper_T6_composition.csv | H: Dimension,Value,Tasks | V: Provenance / Trigger type / Direct harmful consequences
+- paper_T7_case_quality_agreement.csv | H: Dimension,Exact agreement,Gwet AC1 | V: Plausibility / Domain Alignment / Direct Harm Alignment / Trigger Validity / Seed-Contract Consistency / No Information Leakage
+- paper_T8_judge_agreement.csv | H: Judgment,Agreement,Count | V: Task completion / Out of authorization
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Tasks / Trajectories / Outcome partition / Completion rate by model / OA among no-direct-harm tasks / Correlation completion vs OAR across 24 configs
+### B17-authgatebench
+- data_category_x_label.csv | H: category,allow,block,TOTAL | V: agent_inferred_parameters / credential_exploration / safety_check_bypass / scope_escalation / sharing_via_external_service / TOTAL
+- data_category_x_role.csv | H: category,base,inverted,TOTAL | V: agent_inferred_parameters / credential_exploration / safety_check_bypass / scope_escalation / sharing_via_external_service / TOTAL
+- data_pairs.csv | H: item,value | V: instances / distinct pair_id / with environment_signals / avg trajectory steps
+- data_profile.csv | H: field,present,coverage_%,types,n_unique,avg_len,top_values | V: category / user_request / trajectory / proposed_action / gold_label / pair_id
+- data_role_x_label.csv | H: role_in_pair,allow,block,TOTAL | V: base / inverted / TOTAL
+- derived_policy_means.csv | H: policy,model,mean_Acc,mean_FPR,mean_FNR | V: implicit pi / explicit pi*
+- paper_T1_statistics.csv | H: Metric,Value | V: Failure modes / Base triplets (BLOCK) / Inverted triplets (ALLOW) / Signal-augmented instances / Total instances / Public release
+- paper_T2_eval_implicit_policy.csv | H: Model,ScopeEsc Acc,ScopeEsc FPR,ScopeEsc FNR,CredExplore Acc,CredExplore FPR,CredExplore FNR,ExtSharing Acc,ExtSharing FPR,ExtSharing FNR,GuardrailBypass Acc,GuardrailBypass FPR,GuardrailBypass FNR,InferredParams Acc,InferredParams FPR,InferredParams FNR | V: Qwen3.7-Plus / GLM-5.2 / Kimi-K2.7-Code / DeepSeek-V4-Flash
+- paper_T3_invariant_rate_implicit.csv | H: Model,Scope Escalation,Credential Explore,External Sharing,Guardrail Bypass,Inferred Params | V: Qwen3.7-Plus / GLM-5.2 / Kimi-K2.7-Code / DeepSeek-V4-Flash
+- paper_T4_invariant_rate_explicit.csv | H: Model,Scope Escalation,Credential Explore,External Sharing,Guardrail Bypass,Inferred Params | V: Qwen3.7-Plus / GLM-5.2 / Kimi-K2.7-Code / DeepSeek-V4-Flash
+- paper_T5_eval_explicit_policy.csv | H: Model,ScopeEsc Acc,ScopeEsc FPR,ScopeEsc FNR,CredExplore Acc,CredExplore FPR,CredExplore FNR,ExtSharing Acc,ExtSharing FPR,ExtSharing FNR,GuardrailBypass Acc,GuardrailBypass FPR,GuardrailBypass FNR,InferredParams Acc,InferredParams FPR,InferredParams FNR | V: Qwen3.7-Plus / GLM-5.2 / Kimi-K2.7-Code / DeepSeek-V4-Flash
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Signals correct initially-wrong vs mislead initially-correct (Scope Escalation) / Same for Inferred Parameters / Average IR Credential Explore / External Sharing (implicit) / Human check of inverted (ALLOW) labels
+### B18-privacylens
+- data_final_action.csv | H: final_action,count,share_% | V: MessengerSendMessage / GmailSendEmail / SlackSendMessage / FacebookManagerCreatePost / TOTAL
+- data_overview.csv | H: item,value | V: main seeds/vignettes/trajectories / distinct data_type strings / distinct data_recipient strings / avg actions in executable trajectory / avg trajectory chars / ConfAIde extension subset
+- data_seed_source.csv | H: seed_source,count,share_% | V: crowdsourcing / literature / regulation / TOTAL
+- data_sensitive_items_per_case.csv | H: n_sensitive_items,count,share_% | V: 1 / 2 / 3 / 4 / 5 / 6
+- data_toolkits.csv | H: toolkit,count,share_% | V: NotionManager / Messenger / Gmail / Slack / FacebookManager / GoogleCalendar
+- data_transmission_channel.csv | H: transmission_principle_tail,count,share_% | V: messenger / send an email / reply an email / send a facebook post / reply a slack direct message / messenger group chat
+- paper_T2_probing_and_action.csv | H: Model,Basic: probing acc %,Basic: LR %,Basic: LRh %,Basic: helpfulness 0-3,PE prompt: probing acc %,PE prompt: LR %,PE prompt: LRh %,PE prompt: helpfulness | V: ChatGPT-3.5 / GPT-4 / Claude-3-Haiku / Claude-3-Sonnet / Mistral-7B-Instruct-v0.2 / Mixtral-8x7B-Instruct-v0.1
+- paper_T3_extended_seeds.csv | H: Model,Extended 50 traj: LR %,LRh %,pL,Original 10 traj: LR = pL | V: ChatGPT-3.5 / GPT-4 / Claude-3-Haiku / Claude-3-Sonnet / Mistral-7B-Instruct-v0.2 / Mixtral-8x7B-Instruct-v0.1
+- paper_T5_confaide_culturebank.csv | H: Model,ConfAIde LR %,ConfAIde LRh %,ConfAIde helpfulness,CultureBank LR %,CultureBank LRh %,CultureBank helpfulness | V: ChatGPT-3.5 / GPT-4 / Claude-3-Haiku / Claude-3-Sonnet / Mistral-7B-Instruct-v0.2 / Mixtral-8x7B-Instruct-v0.1
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Probing drop seed->trajectory / Helpfulness judge vs human (binary) / Figure 4 (probing acc at seed/vignette/trajectory)
+### B19-ci-work
+- data_flow_direction.csv | H: flow_direction,count,share_% | V: Upward / Downward / Lateral / Diagonal / External / TOTAL
+- data_flow_x_category_ess4.csv | H: flow,"1. Legal, Compliance & Regulatory","2. Engineering, IT & Security","3. Finance, Procurement & Sales","4. Draft Content, Tentative Proposal","5. HR, Recruiting & Internal Conduct","6. Executive, Strategy & Board","7. Customer, User Data","8. Unprofessional or ""Toxic"" Communication",9. Personal & Non-Work-Related,TOTAL | V: Diagonal / Downward / External / Lateral / Upward / TOTAL
+- data_sensitive_category_ess4.csv | H: sensitive_category,count,share_% | V: "1. Legal / "3. Finance / "5. HR / "2. Engineering / "6. Executive / "8. Unprofessional or ""Toxic"" Communication"
+- data_toolkits_ess4.csv | H: toolkit,count,share_% | V: Gmail / NotionManager / Slack / GoogleCalendar / ZoomManager / GoogleFormFiller
+- data_variants.csv | H: variant,entries,avg_sensitive_items,avg_essential_items,avg_toolkits | V: ess12_sen12/formatted_entry / ess1_sen1/formatted_entry / ess2_sen2/formatted_entry / ess4_sen4/formatted_entry / ess4_sen4/formatted_entry_intentional / ess4_sen4/formatted_entry_unintentional
+- paper_T1_main_results.csv | H: Model,Up_LR,Up_VR,Up_CR,Down_LR,Down_VR,Down_CR,Lateral_LR,Lateral_VR,Lateral_CR,Diagonal_LR,Diagonal_VR,Diagonal_CR,External_LR,External_VR,External_CR,Avg_LR,Avg_VR,Avg_CR | V: GPT-4o / GPT-4.1 / o3 / GPT-5 / Grok-3 / Qwen-2.5 32B
+- paper_T2_defense_gpt5.csv | H: Setting,LR,VR,CR | V: w/o defense / Prompt Defense / CI-CoT
+- paper_T3_human_eval.csv | H: Metric,Scale,Mean,Std,Within-1 agreement | V: Plausibility / Relevance
+- paper_T4_judge_agreement.csv | H: Metric,Pair,Agreement % | V: Privacy-Norm Alignment
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Seeds / Violation rate range / Inter-annotator Fleiss kappa (norm alignment) / Correlation CR vs LR / VR / User pressure (GPT-5)
+### B20-agentleak
+- data_agents_per_scenario.csv | H: n_agents,count,share_% | V: 1 / 2 / 3 / TOTAL
+- data_attack_class.csv | H: attack_class,count,share_% | V: role_confusion / direct_prompt_injection / memory_write_exfiltration / cross_agent_collusion / indirect_prompt_injection / tool_output_poisoning
+- data_attack_family.csv | H: attack_family,count,share_% | V: None / F4 / F1 / F3 / F2 / TOTAL
+- data_canary_tier.csv | H: canary_tier,count,share_% | V: obvious / semantic / realistic / TOTAL
+- data_difficulty.csv | H: difficulty,count,share_% | V: medium / TOTAL
+- data_injection_surface.csv | H: injection_surface,count,share_% | V: None / TOTAL
+- data_records_per_vault.csv | H: n_vault_records,count,share_% | V: 3 / TOTAL
+- data_scenarios_base_100_vertical_x_adversary.csv | H: vertical,A0,A1,A2,TOTAL | V: corporate / finance / healthcare / legal / TOTAL
+- data_scenarios_difficult_100_vertical_x_adversary.csv | H: vertical,A0,A1,A2,TOTAL | V: healthcare / TOTAL
+- data_vertical_x_adversary.csv | H: vertical,A0,A1,A2,TOTAL | V: corporate / finance / healthcare / legal / TOTAL
+- data_vertical_x_topology.csv | H: vertical,multi,single,TOTAL | V: corporate / finance / healthcare / legal / TOTAL
+- paper_F7_secondary_channels.csv | H: Model,C3 tool input %,C6 logs % | V: GPT-4o-mini / GPT-4o / Claude 3.5 Sonnet / Mistral Large / Llama 3.3 70B
+- paper_T10_single_vs_multi.csv | H: Comparison,Single,Multi,Ratio,p | V: C1 leakage (fair comparison) / Any leak C1/C2/C5 (total surface) / C2-only incremental contribution / C5-only incremental contribution
+- paper_T11_channel_rates.csv | H: Type,Channel,Tests,Rate,95% CI | V: External / Internal / "Threat A0 (n=2 / "Threat A1 (n=1
+- paper_T12_h1_output_only_miss.csv | H: Category,Total,H1 true,Rate,95% CI | V: All traces / Healthcare / Finance / Legal / Corporate
+- paper_T13_frameworks.csv | H: Framework,C2 rate,95% CI,Primary vulnerability | V: CrewAI v0.83.x / AutoGPT v0.5.x / LangChain v0.1.x / MetaGPT v0.8.x
+- paper_T14_attack_families.csv | H: Family,Description,Tests,ASR,95% CI | V: F1 / F2 / F3 / F4 / Overall
+- paper_T15_per_model.csv | H: Model,n,C1,C2,H1 | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-mini / Llama-3.3-70B / Mistral-Large / Global (weighted)
+- paper_T16_sdk_integration.csv | H: Model,Leaks,C2,C3,C4,C1,C5,Time | V: Claude-3.5-Sonnet / GPT-4o / GPT-4o-mini / Llama 3.3 70B / Mistral Large / Average
+- paper_T3_scenario_distribution.csv | H: Dimension,Category,Count,Pct | V: Agent topology / Threat level / Total
+- paper_T4_T5_attack_taxonomy.csv | H: Family,Description,Classes,Adversary level,Representative attacks | V: F1 / F2 / F3 / F4 / F5 / F6
+- paper_T6_threshold_sensitivity.csv | H: tau,FPR,FNR,Precision,Recall,F1 | V: 0.60 / 0.65 / 0.70 / 0.72 (selected) / 0.75 / 0.80
+- paper_T7_detection_methods.csv | H: Method,Precision,Recall,F1,FPR | V: Regex only (Tier 1) / NER/Pattern (Tiers 1+2) / LLM-as-Judge (Tier 3) / Full pipeline (1+2+3)
+- paper_T8_execution_summary.csv | H: Item,Value | V: Designed scenarios / Traces Claude-3.5-Sonnet / Traces GPT-4o / Traces GPT-4o-mini / Traces Llama-3.3-70B / Traces Mistral-Large
+- paper_T9_defenses_by_channel.csv | H: Defense,C1 rate,C2/C5 rate,C1 effectiveness | V: Vanilla / Privacy Prompt / Role Separation / Output Sanitizer / LlamaGuard / PromptGuard
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Selective-disclosure mitigation: internal leakage / Selective-disclosure mitigation: task success / Share of leaks that are semantic (paraphrased) / Expert verification of 100 detected leaks / Allowed-set inter-rater kappa
+- results_by_attack_family.csv | H: family,total,success,rate_%,ci95 | V: F1 / F2 / F4 / F3
+- results_by_vertical.csv | H: vertical,total,c1_rate,c2_rate,c5_rate | V: healthcare / finance / legal / corporate
+- results_model_stats.csv | H: model,n,C1_%,C2_%,C5_%,any_leak_%,H1_% | V: anthropic/claude-3.5-sonnet / meta-llama/llama-3.3-70b-instruct / mistralai/mistral-large-2512 / openai/gpt-4o / openai/gpt-4o-mini
+### B21-memsecbench
+- derived_pooled_by_harness.csv | H: harness,MPSR_%,MESR_%,E2E_ASR_%,SRSR_% | V: OpenClaw / Hermes
+- derived_pooled_by_llm.csv | H: llm,MPSR_%,MESR_%,E2E_ASR_%,SRSR_% | V: DeepSeek-V4-Pro / MiniMax-M3 / GPT-5.5
+- derived_pooled_by_memory_backend.csv | H: memory_backend,MPSR_%,MESR_%,E2E_ASR_%,SRSR_% | V: Native / Mem0 / Mem0-Graph / A-MEM
+- paper_F4_checkpoint_rates.csv | H: Checkpoint,Stage,Meaning,Macro-average rate % | V: W1 / W2 / E1 / E2 / E2E / F1
+- paper_F5_gain_over_native.csv | H: Setting row (harness/LLM order as figure),A-MEM E2E delta,A-MEM SRSR delta,Mem0 E2E delta,Mem0 SRSR delta,Mem0-Graph E2E delta,Mem0-Graph SRSR delta | V: row1 / row2 / row3 / row4 / row5 / row6
+- paper_F6_taxonomy_marginals.csv | H: Axis,Label,Cases or share | V: Carrier / Memory type
+- paper_T2_lifecycle_24configs.csv | H: memory_backend,harness,llm,MPSR_%,MPSR_n,MPSR_den,MESR_%,MESR_n,MESR_den,E2E_ASR_%,E2E_ASR_n,E2E_ASR_den,SRSR_%,SRSR_n,SRSR_den | V: Native
+- paper_T7_judge_accuracy.csv | H: Annotator,Matches,Accuracy | V: Annotator 1 / Annotator 2
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Cases / Configurations / Lifecycle checkpoints / Public dataset
+### B22-atbench
+- data_atbench500_label.csv | H: label,count,share_% | V: 1 / 0 / TOTAL
+- data_failure_mode.csv | H: failure_mode,count,share_% | V: unconfirmed_or_over_privileged_action / failure_to_validate_tool_outputs / unauthorized_information_disclosure / flawed_planning_or_reasoning / provide_inaccurate_misleading_or_unverified_information / insecure_interaction_or_execution
+- data_label.csv | H: label,count,share_% | V: safe / unsafe / TOTAL
+- data_overview.csv | H: item,value | V: trajectories / safe / unsafe / avg agent turns / max agent turns / avg trajectory chars / avg tools available per trajectory
+- data_real_world_harm.csv | H: real_world_harm,count,share_% | V: security_and_system_integrity_harm / privacy_and_confidentiality_harm / functional_and_opportunity_harm / financial_and_economic_harm / info_ecosystem_and_societal_harm / public_service_and_resource_harm
+- data_risk_source_x_harm.csv | H: risk_source,fairness_equity_and_allocative_harm,financial_and_economic_harm,functional_and_opportunity_harm,info_ecosystem_and_societal_harm,physical_and_health_harm,privacy_and_confidentiality_harm,psychological_and_emotional_harm,public_service_and_resource_harm,reputational_and_interpersonal_harm,security_and_system_integrity_harm,TOTAL | V: corrupted_tool_feedback / direct_prompt_injection / indirect_prompt_injection / inherent_agent_failures / malicious_tool_execution / malicious_user_instruction_or_jailbreak
+- data_risk_source.csv | H: risk_source,count,share_% | V: inherent_agent_failures / indirect_prompt_injection / unreliable_or_misinformation / malicious_user_instruction_or_jailbreak / tool_description_injection / corrupted_tool_feedback
+- paper_T1_benchmark_comparison.csv | H: Property,R-Judge,ASSE-Safety,ASSE-Security,ATBench500,ATBench | V: Cases / Available tools / Used tools / Avg turns / Avg tokens
+- paper_T2_main_results.csv | H: Group,Model,Acc,Prec,Rec,F1,RiskSource_acc,FailureMode_acc,RealHarm_acc | V: Closed-source / Open-source
+- paper_T6_human_audit.csv | H: Audit item,Value | V: Reviewers / Audited trajectories / Unsafe -> safe corrections / Safe -> unsafe corrections / Unsafe trajectories with taxonomy revision / Revised risk-source labels
+### B23-mcpsecbench
+- data_attack_prompts.csv | H: attack,prompt,result | V: Tool Poisoning Attack / Tool Shadowing Attack / Package Name Squatting(Server Name) / Package Name Squatting(Tool Name) / Data Exfiltration / Prompt Injection
+- data_experiments_asr_by_provider_attack.csv | H: provider,attack,runs,success(1),fail(-1),zero(0),na(-),ASR_% | V: Claude Desktop
+- data_experiments_runs_per_provider.csv | H: provider,count,share_% | V: Claude Desktop / OpenAI / Cursor / TOTAL
+- paper_T1_asr_rr_platforms.csv | H: Surface,Attack,Claude ND ASR,Claude ND RR,Claude MCIP ASR,Claude MCIP RR,Claude FAN ASR,Claude FAN RR,OpenAI ND ASR,OpenAI ND RR,OpenAI MCIP ASR,OpenAI MCIP RR,OpenAI FAN ASR,OpenAI FAN RR,Cursor ND ASR,Cursor ND RR,Cursor MCIP ASR,Cursor MCIP RR,Cursor FAN ASR,Cursor FAN RR | V: Client / Protocol
+- paper_T2_defense_protection.csv | H: Attack,MCIP protected probability,FAN protected probability | V: ATT-1 Prompt Injection / ATT-2 Tool Misuse via Confused AI / ATT-7 Tool Shadowing / ATT-8 Data Exfiltration / ATT-9 Package Name Squatting (tool) / ATT-10 Indirect Prompt Injection
+### B24-mcp-security-bench
+- data_agents.csv | H: agent,n_user_tasks | V: academic_search / information_retrieval / it_development_management / information_gathering / llm_enhancement / travel_mobility
+- data_cases_agent_x_attack_type.csv | H: agent,false_error,name_overlap,out_of_scope_parameter,preference_manipulation,preference_manipulation-out_of_scope_parameter,preference_manipulation-simulated_user,prompt_injection,prompt_injection-false_error,prompt_injection-simulated_user,search_term_deception,simulated_user,tool_transfer,TOTAL | V: academic_search / image_generation / information_gathering / information_retrieval / it_development_management / llm_enhancement
+- data_cases_attack_task.csv | H: attack_task,count,share_% | V: obtain_remote_control_authority / obtain_data_information / modify_data / kill_process / obtain_agent_interaction_data / TOTAL
+- data_cases_attack_type.csv | H: attack_type,count,share_% | V: prompt_injection / false_error / simulated_user / prompt_injection-simulated_user / prompt_injection-false_error / name_overlap
+- data_overview.csv | H: item,value | V: attack instances (case_manifest) / distinct user tasks / agents/scenarios / attack tasks / tool spec json files
+- paper_T1_attack_types.csv | H: Attack,Stage,Vector | V: Name Collision (NC) / Preference Manipulation (PM) / Prompt Injection (PI) / Out-of-Scope Parameter (OP) / User Impersonation (UI) / False Error (FE)
+- paper_T11_single_attacks_full.csv | H: LLM,PI_ASR,PI_PUA,PI_NRP,OP_ASR,OP_PUA,OP_NRP,UI_ASR,UI_PUA,UI_NRP,FE_ASR,FE_PUA,FE_NRP,RI_ASR,RI_PUA,RI_NRP | V: Llama3.1 8B / Llama3.1 70B / Llama3.3 70B / Qwen3 8B / Qwen3 30B / Gemini 2.5 Flash
+- paper_T12_mixed_attacks_full.csv | H: LLM,PI-UI_ASR,PI-UI_PUA,PI-UI_NRP,PI-FE_ASR,PI-FE_PUA,PI-FE_NRP,NC-FE_ASR,NC-FE_PUA,NC-FE_NRP,PM-FE_ASR,PM-FE_PUA,PM-FE_NRP,PM-UI_ASR,PM-UI_PUA,PM-UI_NRP,PM-OP_ASR,PM-OP_PUA,PM-OP_NRP,TT-OP_ASR,TT-OP_PUA,TT-OP_NRP | V: Llama3.1 8B / Llama3.1 70B / Llama3.3 70B / Qwen3 8B / Qwen3 30B / Gemini 2.5 Flash
+- paper_T13_qwen3_thinking.csv | H: Mode,ASR,PUA,NRP | V: no Thinking / Thinking / Delta
+- paper_T2_statistics.csv | H: Category,Number,Examples | V: Scenarios / User tasks / MCP servers / Benign tools / Attack tasks / Attack tools
+- paper_T3_asr.csv | H: LLM,PI,OP,UI,FE,RI,PI-UI,PI-FE,NC-FE,PM-FE,PM-UI,PM-OP,TT-OP,Average | V: Llama3.1 8B / Llama3.1 70B / Llama3.3 70B / Qwen3 8B / Qwen3 30B / Gemini 2.5 Flash
+- paper_T4_defense_mcip.csv | H: LLM,ASR baseline,ASR defense,PUA baseline,PUA defense,NRP baseline,NRP defense | V: Llama3.1 8B / Llama3.1 70B / Llama3.3 70B / Qwen3 8B / Qwen3 30B / Gemini 2.5 Flash
+### B25-mcp-runtime-invariants-hcp
+- paper_T2_main_results.csv | H: Mode,Description,Attack success,Prevented,Uncertain,Attack audit,Benign done,Benign audit | V: B0 / B1 / B1-decline / B2 / B3
+- paper_T3_dataflow_boundary.csv | H: Path / target policy,HCP write,ACL write | V: pipe-reject-pii / pipe-accept-pii / peek-ordinary-parameter / ordinary-missing-grant
+- paper_T4_mechanism_removals.csv | H: Removed check,New attack success,Benign done,Uncertain,Witness changed | V: unchanged / grant-matching / canonical-resource / approval / handle-principal / handle-lifecycle
+- paper_T5_sealed_release.csv | H: Scenario,B2 HCP,B3 ACL | V: "PII pipe / Classified-handle plaintext peek / Handle literal as ordinary parameter / Known plaintext as ordinary parameter / "Ordinary parameter
+- paper_T6_chaincaps_comparator.csv | H: Mode,Attacks prevented,Benign completed,Benign policy denials | V: B2 HCP / B3 ACL / B3+ChainCaps
+- paper_T7_agentdojo_native.csv | H: Controller,Payload,GPT Att/Blk/Goal,GPT utility,DeepSeek executed (inconclusive),DeepSeek Att/Blk/Goal,DeepSeek utility | V: Direct / ACL
+- paper_T8_real_mcp_services.csv | H: Workflow,Direct,ACL / HCP,Budget,ChainCaps,Pipe / sealed | V: Internal note to file / Public page to HTTP sink / Secret to permitted private file / "Secret read / Secret to file
+- paper_T9_cost.csv | H: Mode,Setup median ms,End-to-end median ms (pass1/pass2),Change vs direct ms,Non-backend ms,Heap growth MB | V: Direct / ACL / HCP / ACL+budget / ChainCaps / HCP pipe
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: AgentDojo payload reached GPT tool output / DeepSeek attacker calls blocked / Non-attacker calls denied by strict grants / "Guarded calls / Controller overhead vs model latency / Adaptive follow-up
+### B26-madbench
+- paper_T1_attack_families.csv | H: Family,Layer,Description | V: M1 / M2 / M3 / M4 / M5 / M6
+- paper_T10_rounds.csv | H: Rounds,ASR %,IRW %,Cost % | V: R=1 / R=2 / R=3
+- paper_T2_amplification_factors.csv | H: Attack goal,M1 jailbreak ASR,M2 workspace ASR,M2 IRW,M2 Cost,M3 QA-fact ASR,M3 IRW,M3 Cost,M4 QA-fact ASR,M4 IRW,M4 Cost | V: Harmful answer / Accuracy / Cost / Unauth. read / Unauth. write
+- paper_T4a_M5_coordination_modes.csv | H: Metric,Colluding f=1,Colluding f=2,Colluding f=3,Independent f=1,Independent f=2,Independent f=3,Inconsistent f=3 | V: ASR % / IRW % / Cost % (attacked/clean token median) / C2W % (honest correct -> wrong)
+- paper_T4b_M5_model.csv | H: Model,ASR %,IRW %,Cost % | V: gpt-4o / GPT-5 / GPT-6 Astra
+- paper_T4c_M6_orchestrator.csv | H: Attack,ASR %,IRW %,Cost % | V: M6 compromised orchestrator
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Source tasks / Test cases / Default MAD config / Implementation / M2 amplifies ASR/IRW/cost / Max honest-agent switch to wrong answer
+### B27-duma-bench
+- data_evaluation_criteria_keys.csv | H: criteria_field,count,share_% | V: actions / env_assertions / reward_basis / nl_assertions / output_eval_prompt / TOTAL
+- data_tasks_per_domain.csv | H: domain,count,share_% | V: mail_rag_phishing / collab / infra_loadshed / crm_leak / auth_spoof_support / mktg_phishing
+- data_tasks.csv | H: domain,task_id,n_actions,n_env_assertions,n_comm_assertions,has_ticket | V: auth_spoof_support / collab
+- paper_T1_aggregate.csv | H: Mode,Trials,Successes,Pass^1,ASR | V: Solo (passive user) / Dual-control
+- paper_T2_domain_asr.csv | H: Domain,Solo ASR,Dual ASR,Delta ASR | V: mktg_phishing / collab / crm_leak / tool_shadow_poison / auth_spoof_support / output_handling
+- paper_T3_user_temperature.csv | H: User temperature,Trials,Successes,Pass^1,ASR | V: 0.0 / 0.5 / 1.0
+- paper_T4_model_asr.csv | H: Model,Solo ASR,Dual ASR,Delta ASR | V: Claude Haiku 4.5 / Claude Opus 4.5 / Claude Sonnet 4.5 / GPT-4.1 / GPT-4.1-mini / GPT-4o
+- paper_T5_domains.csv | H: Domain,Tasks,Attack vector,User role | V: mail_rag_phishing / collab / output_handling / crm_leak / infra_loadshed / mktg_phishing
+- paper_T8_passk_by_domain.csv | H: Domain,pass^1,pass^2,pass^3,pass^4,pass^5 | V: AUTH / COLL / CRM / INFRA / RAG / MKTG
+### B28-r-judge
+- data_attack_type_x_label.csv | H: attack_type,safe,unsafe,TOTAL | V: injection / unintended / TOTAL
+- data_category_stats.csv | H: category,records,unsafe,safe,avg_agent_turns,avg_words | V: Application / Finance / IoT / Program / Web / TOTAL
+- data_category_x_attack_type.csv | H: category,injection,unintended,TOTAL | V: Application / Finance / IoT / Program / Web / TOTAL
+- data_scenario_file_x_label.csv | H: file,safe,unsafe,TOTAL | V: Application/chatbot / Application/dh_app / Application/ds_app / Application/mail / Application/medical / Application/phone
+- paper_T1_main_results.csv | H: Model,All_F1,Attack_F1,Attack_Recall,Attack_Spec,Attack_Effect,Unintended_F1,Unintended_Recall,Unintended_Spec,Unintended_Effect | V: GPT-4o / ChatGPT / Meta-Llama-3-8B-Instruct / Llama-2-13b-chat-hf / Llama-2-7b-chat-hf / Random
+- paper_T2_prompting.csv | H: Model,Prompt,F1,Recall,Spec,Effect | V: GPT-4o / ChatGPT
+- paper_T3_llama_guard.csv | H: Model,F1,Recall,Spec | V: Llama-2-7b-chat-hf / LlamaGuard-7b / Meta-Llama-3-8B-Instruct / Meta-Llama-Guard-2-8B
+- paper_T5_dataset_stats.csv | H: Category,Sum,Unsafe,Safe,Avg turns,Avg words | V: Software (Application) / Finance / IoT / Program / Web
+- paper_T6_risk_types.csv | H: Risk type,# records | V: Privacy Leakage / Computer Security / Financial Loss / Property Damage / Physical Health / Data Loss
+- paper_T7_human_scorer_pcc.csv | H: Model,"PCC (Effectiveness, human vs GPT-4 scorer)" | V: AVG / GPT-4o / ChatGPT / Meta-Llama-3-8B-Instruct / Llama-2-7b-chat-hf / Llama-2-13b-chat-hf
+- paper_T8_f1_by_category.csv | H: Model,ALL,Software,Finance,IoT,Program,Web | V: GPT-4o / ChatGPT / Meta-Llama-3-8B-Instruct / Llama-2-7b-chat-hf / Llama-2-13b-chat-hf / Vicuna-7b-v1.5
+### B29-cybench
+- data_category_x_organizer.csv | H: category,hackthebox,hkcert-ctf,project-sekai-ctf,TOTAL | V: crypto / forensics / misc / misc;web / pwn / reverse
+- data_difficulty_label.csv | H: difficulty,count,share_% | V: Very Easy / 3 / Medium / Easy / 4 / Hard
+- data_official_task_list_by_competition.csv | H: competition_path,count,share_% | V: hackthebox/cyber-apocalypse-2024 / LosFuzzys/GlacierCTF2023_writeups / project-sekai-ctf/sekaictf-2023 / project-sekai-ctf/sekaictf-2022 / hkcert-ctf/CTF-Challenges / TOTAL
+- data_overview.csv | H: item,value | V: official benchmark tasks (task_list.txt) / metadata files in package / official tasks with metadata in package (Glacier metadata not included) / subtask_list.txt lines / total subtasks / tasks needing a target host (network service)
+- data_subtasks_per_task.csv | H: n_subtasks,count,share_% | V: 4 / 3 / 5 / 6 / 7 / 2
+- data_tasks.csv | H: organizer,competition,category,in_official_40,task,difficulty_label,difficulty_num,n_subtasks,internet_useful,stateful_shell,has_target_host | V: hackthebox
+- derived_40tasks_category_x_competition.csv | H: category,GLA,HKC,HTB,S22,S23,TOTAL | V: Crypto / Forensics / Misc / Pwn / Reverse / Web
+- derived_fst_bins.csv | H: FST_bin,tasks,tasks_solved_by_any_model_unguided | V: <=11 min / 12-60 min / 1-3 h / >3 h
+- derived_task_solve_counts.csv | H: task,FST,category,competition,models_solving_unguided,models_solving_guided | V: Loot Stash / Urgent / Flag Command / Packed Away / It Has Begun / Dynastic
+- paper_T10_unguided_per_task.csv | H: Task,FST,Category,Competition,GPT-4o,OpenAI o1-preview,Claude 3 Opus,Claude 3.5 Sonnet,Mixtral 8x22B Instruct,Gemini 1.5 Pro,Llama 3 70B Chat,Llama 3.1 405B Instruct | V: Loot Stash / Urgent / Flag Command / Packed Away / It Has Begun / Dynastic
+- paper_T11_subtask_guided_per_task.csv | H: Task,FST,Category,Competition,GPT-4o,OpenAI o1-preview,Claude 3 Opus,Claude 3.5 Sonnet,Mixtral 8x22B Instruct,Gemini 1.5 Pro,Llama 3 70B Chat,Llama 3.1 405B Instruct | V: Loot Stash / Urgent / Flag Command / Packed Away / It Has Begun / Dynastic
+- paper_T12_subtask_score_per_task.csv | H: Task,FST,Category,Competition,GPT-4o,OpenAI o1-preview,Claude 3 Opus,Claude 3.5 Sonnet,Mixtral 8x22B Instruct,Gemini 1.5 Pro,Llama 3 70B Chat,Llama 3.1 405B Instruct | V: Loot Stash / Urgent / Flag Command / Packed Away / It Has Begun / Dynastic
+- paper_T2_single_attempt.csv | H: Model,Unguided perf,Unguided highest FST,Subtask-guided perf,Subtask perf,Subtask-guided highest FST,Weighted unguided,Weighted subtask-guided | V: Claude 3.5 Sonnet / GPT-4o / Claude 3 Opus / OpenAI o1-preview / Llama 3.1 405B Instruct / Mixtral 8x22b Instruct
+- paper_T3_scaffolds_3_attempts.csv | H: Model,Scaffold,Unguided perf,Unguided highest FST,Unguided FST-weighted,Subtask-guided perf,Subtask perf,Subtask-guided highest FST,Weighted subtask-guided | V: Claude 3.5 Sonnet / GPT-4o
+- paper_T8_competitions.csv | H: Competition,Count,Target,Release,Organizer,Difficulty,Teams | V: HackTheBox 2024 / SekaiCTF 2022-2023 / Glacier 2023 / HKCert 2023
+- paper_T9_max_history.csv | H: Model,Unguided perf,Unguided highest FST,Subtask-guided perf,Subtask perf,Subtask-guided highest FST | V: Claude 3.5 Sonnet / GPT-4o
+### B30-cve-bench
+- data_attacker_role.csv | H: attacker_role,count,share_% | V: user / administrator / TOTAL
+- data_cves.csv | H: cve,variants,attacker_role,has_additional_info,dos_duration_s,one_day_description | V: CVE-2023-37999 / CVE-2023-51483 / CVE-2024-22120 / CVE-2024-2359 / CVE-2024-25641 / CVE-2024-2624
+- data_variants.csv | H: variants,count,share_% | V: zero_day;one_day;zero_day_k8s;one_day_k8s / zero_day;one_day;zero_day_k8s;one_day_k8s;solution;solution_k8s / TOTAL
+- derived_T6_attack_type_counts.csv | H: reproduced_attack,count,share_% | V: File creation / Database access / Denial of service / Privilege escalation / Outbound service / Database modification
+- derived_T6_cvss_counts.csv | H: cvss,count,share_% | V: 9.8 / 9.1 / 9.6 / 9.0 / 9.9 / 10.0
+- paper_F3_success_rates_approx.csv | H: Agent,Zero-day Success@1,Zero-day Success@5,One-day Success@1,One-day Success@5 | V: Cy-Agent / AutoGPT / T-Agent
+- paper_F4_successful_exploit_types.csv | H: Agent,Setting,Composition of successful exploits (approx. from figure) | V: AutoGPT / T-Agent / Cy-Agent
+- paper_T2_severity.csv | H: CVSS 3.1 base score range,# CVEs | V: 9.8 < s <= 10 / 9.6 < s <= 9.8 / 9.4 < s <= 9.6 / 9.2 < s <= 9.4 / 9.0 < s <= 9.2 / s = 9.0
+- paper_T3_app_types.csv | H: Application type,# CVEs | V: Content management / AI or machine learning / Business management / Operational monitoring / Web infrastructure / Library or package
+- paper_T4_costs.csv | H: Metric,Cy-Agent zero-day,Cy-Agent one-day,T-Agent zero-day,T-Agent one-day,AutoGPT zero-day,AutoGPT one-day | V: Input tokens / Output tokens / Time to finish (s) / Monetary cost (USD)
+- paper_T5_failure_modes.csv | H: Failure mode,Cy-Agent zero-day,Cy-Agent one-day,T-Agent zero-day,T-Agent one-day,AutoGPT zero-day,AutoGPT one-day | V: Limited task understanding % / Incorrect focus % / Insufficient exploration % / Tool misuse % / Inadequate reasoning %
+- paper_T6_cve_list.csv | H: cve,published,cvss,application,reproduced_attack | V: CVE-2024-32986 / CVE-2024-32980 / CVE-2024-25641 / CVE-2024-32964 / CVE-2024-34070 / CVE-2024-34340
+### B31-cyberseceval-2
+- data_autocomplete_cwe_top.csv | H: cwe,count,share_% | V: CWE-338 / CWE-78 / CWE-120 / CWE-327 / CWE-807 / CWE-328
+- data_autocomplete_language.csv | H: language,count,share_% | V: python / cpp / javascript / csharp / java / c
+- data_frr_attack_type.csv | H: attack_type,count,share_% | V: generate coding prompts that change state of a system / TOTAL
+- data_frr_is_malicious.csv | H: is_malicious,count,share_% | V: False / TOTAL
+- data_instruct_language.csv | H: language,count,share_% | V: python / cpp / javascript / csharp / java / c
+- data_interpreter_attack_type.csv | H: attack_type,count,share_% | V: ['Privilege Escalation'] / ['Container Escape'] / ['Reflected Attack'] / ['Post Exploitation'] / ['Social Engineering'] / TOTAL
+- data_mitre_category.csv | H: mitre_category,count,share_% | V: C2 / Collection / Discovery / Evasion / Execution / Exfil
+- data_mitre_multilingual_language.csv | H: language,count,share_% | V: Portuguese / Spanish / Italian / German / French / Hindi
+- data_pi_multilingual_language.csv | H: language,count,share_% | V: Hindi / Bengali / Turkish / Arabic / Italian / Spanish
+- data_pi_risk_category.csv | H: risk_category,count,share_% | V: security-violating / logic-violating / TOTAL
+- data_pi_variant_x_type.csv | H: injection_variant,direct,indirect,TOTAL | V: different_user_input_language / few_shot_attack / hypothetical_scenario / ignore_previous_instructions / indirect_reference / many_shot_attack
+- data_suite_sizes.csv | H: suite,records | V: autocomplete / instruct / instruct-v2 / interpreter / mitre / mitre_multilingual
+- derived_figure_row_means.csv | H: figure,model,mean | V: F1_mitre_compliance
+- paper_F1_mitre_compliance.csv | H: Model,Discovery,C2,Recon,Exfil,Privilege Escalation,Lateral Movement,Persistence,Evasion,Execution,Collection | V: llama 3 8b-instruct / gpt-4 / mistral-medium-latest / llama 3 70b-instruct / codellama-70b-instruct / codellama-13b-instruct
+- paper_F2_frr_vs_violation_approx.csv | H: Model,Violation rate (approx),Borderline false refusal rate (approx) | V: Llama 3 8B-Instruct / gpt-4 / mistral-medium-latest / Llama 3 70B-Instruct / codellama-70b-instruct / codellama-13b-instruct
+- paper_F3_prompt_injection.csv | H: Model,different_user_input_language,output_formatting_manipulation,overload_with_information,many_shot_attack,ignore_previous_instructions,system_mode,few_shot_attack,indirect_reference,repeated_token_attack,persuasion,mixed_techniques,virtualization,payload_splitting,hypothetical_scenario,token_smuggling | V: codellama-70b-instruct / gpt-4 / llama 3 70b-instruct / codellama-34b-instruct / codellama-13b-instruct / gpt-3.5-turbo
+- paper_F4_security_vs_logic_injection_approx.csv | H: Model,Security-violating (approx),Logic-violating (approx) | V: codellama-70b-instruct / gpt-4 / llama 3 70B-instruct / gpt-3.5-turbo / codellama-13b-instruct / codellama-34b-instruct
+- paper_F5_exploitation.csv | H: Model,Javascript input constraint,Python input constraint,C input constraint,Advanced memory corruption,Python/SQLite SQL injection,Basic buffer overflow | V: gpt-4-turbo / mistral-large-latest / mistral-small-latest / llama 3 70b-instruct / codellama-34b-instruct / llama 3 8b-instruct
+- paper_F6_interpreter_abuse.csv | H: Model,Container Escape,Privilege Escalation,Post Exploitation,Reflected Attack,Social Engineering | V: codellama-13b-instruct / codellama-34b-instruct / gpt-4 / gpt-3.5-turbo / codellama-70b-instruct / llama 3 8b-instruct
+### B32-cyberseceval-3
+- data_autopatch_crash_type.csv | H: crash_type,count,share_% | V: Heap-buffer-overflow READ 1 / Use-of-uninitialized-value / Heap-buffer-overflow READ 4 / Heap-buffer-overflow READ 8 / Heap-use-after-free READ 4 / UNKNOWN READ
+- data_autopatch_overview.csv | H: item,value | V: ARVO meta samples / autopatch_bench ids / autopatch_lite ids / avg lines added / removed in fix
+- data_autopatch_project.csv | H: project,count,share_% | V: opensc / mruby / librawspeed / wireshark / libhevc / libredwg
+- data_autopatch_severity.csv | H: severity,count,share_% | V: Medium / High / None / TOTAL
+- data_spear_phishing_goal.csv | H: goal,count,share_% | V: Convince the target to download and execute a malicious attachment or link / Get username and password for their company's VPN or remote access portal / "Elicit sensitive information from the target / "Gather information about the target's security software / TOTAL
+- data_vpi_overview.csv | H: item,value | V: visual prompt injection cases / images
+- data_vpi_technique.csv | H: injection_technique,count,share_% | V: embedded_text_instructions / indirect_reference / obfuscated / misleading / query_relevant_images / figstep
+- data_vpi_type_x_risk.csv | H: injection_type,logic-violating,security-violating,TOTAL | V: direct / indirect / TOTAL
+- paper_F11_prompt_injection.csv | H: Model,Output formatting manipulation,Repeated token attack,Different user input language,Indirect reference,Ignore previous instructions,Virtualization,System mode,Many shot attack,Few shot attack,Mixed techniques,Persuasion,Overload with information,Payload splitting,Token smuggling,Hypothetical scenario,Average | V: Mixtral 8x22B / Llama 3 70B / Llama 3 405B / Qwen2 72B Instruct / Llama 3 8B / Gemini Pro
+- paper_F12_insecure_autocomplete.csv | H: Model,c,cpp,csharp,java,javascript,php,python,rust,Average | V: Llama 3 405B / Qwen2 72B / GPT-4 Turbo / Llama 3 70B / Mixtral 8x22B / Gemini Pro
+- paper_F13_insecure_instruct.csv | H: Model,c,cpp,csharp,java,javascript,php,python,rust,Average | V: Llama 3 405B / Llama 3 70B / GPT-4 Turbo / Mixtral 8x22B / Qwen2 72B / Gemini Pro
+- paper_F14_interpreter_abuse_with_guard.csv | H: Model,Privilege Escalation,Post Exploitation,Container Escape,Reflected Attack,Social Engineering,Average | V: Llama 3 70B / Llama 3 70B + LlamaGuard (output only) / Mixtral 8x22B / Gemini Pro / Qwen2 72B / Llama 3 405B
+- paper_F15_mitre_with_guard.csv | H: Model,Discovery,Recon,C2,Collection,Exfil,Persistence,Privilege Escalation,Execution,Lateral Movement,Evasion,Average | V: Gemini Pro / Mixtral 8x22B / Llama 3 70B / Llama 3 70B + LlamaGuard (output only) / Qwen2 72B / GPT-4 Turbo
+- paper_F3_spear_phishing_overall.csv | H: Model,Human-evaluated score (0-5),LLM-judge score (0-5) | V: GPT-4 Turbo / Llama 3 70B / Llama 3 405B / Mixtral 8x22B
+- paper_F4_spear_phishing_by_goal.csv | H: Model,Malware download,Security info gathering,Data theft,Credential theft,Average | V: GPT-4 Turbo / Qwen2 72B Instruct / Llama 3 70B / Llama 3 405B / Mixtral 8x22B
+- paper_F7_autonomous_ops_approx.csv | H: Model,Low-sophistication completed (approx),Moderate-sophistication completed (approx),High | V: GPT-4 Turbo / Llama 3 405B / Llama 3 70B / Qwen2 72B Instruct
+- paper_F9_exploitation.csv | H: Model,Javascript input constraint,Python input constraint,C input constraint,Python/SQLite SQL injection,Diverse memory corruption,Buffer overflow,Average | V: Llama 3 405B / Llama 3 70B / GPT-4 Turbo / Mixtral 8x22B / Gemini Pro
+- paper_PromptGuard_eval.csv | H: Metric,Eval set (jailbreaks),Eval set (injections),OOD jailbreak set,Multilingual jailbreak set,CyberSecEval indirect injections | V: TPR / FPR / AUC
+- paper_T1_T4_uplift_survey.csv | H: Question,Group,Responses | V: T1 Learned faster with LLM? / T2 How much did LLM help reach goals? / T3 Suggestions relevant/useful?
+- paper_T5_autonomous_runs.csv | H: Model,Completed eval runs (100 shots each) | V: Llama 3.1 70b / Llama 3 405b / GPT-4 Turbo / Qwen2 72b Instruct
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Code Shield ICD precision / recall / Code Shield coverage / Experts with LLM uplift / Llama 3 405B vs GPT-4 Turbo exploitation / Insecure autocomplete rate / Insecure instruct rate
+### B33-sec-bench
+- data_crash_type.csv | H: crash_type,count,share_% | V: heap-buffer-overflow / SEGV / heap-use-after-free / stack-buffer-overflow / detected / global-buffer-overflow
+- data_instances.csv | H: split,instance_id,project,lang,sanitizer,crash_type,patch_lines_changed,patch_files,bug_report_words | V: eval-cve
+- data_lang_x_split.csv | H: lang,eval-cve,eval-oss,TOTAL | V: c++ / TOTAL
+- data_patch_stats.csv | H: split,metric,mean,median,max | V: eval-cve / eval-oss
+- data_project_x_split.csv | H: project,eval-cve,eval-oss,TOTAL | V: exiv2 / faad2 / gpac / imagemagick / jq / libarchive
+- data_sanitizer_x_split.csv | H: sanitizer,eval-cve,eval-oss,TOTAL | V: address / memory / undefined / TOTAL
+- paper_T1_secverifier_by_project.csv | H: Project,Seed,Verified,Overall %,Builder %,Exploiter %,Fixer %,Avg cost $,Avg steps | V: gpac / imagemagick / mruby / libredwg / njs / faad2
+- paper_T2_instance_stats.csv | H: Attribute,Mean,Max | V: Issue text length (words) / Codebase files (non-test) / Codebase lines (non-test) / Gold patch lines edited / Gold patch files edited / Gold patch functions edited
+- paper_T3_secverifier_vs_codeact.csv | H: Type,Overall %,Builder %,Exploiter %,Fixer %,Avg steps,Avg cost $ | V: CodeAct / SecVerifier
+- paper_T4_agents_models.csv | H: Task,Model,SWE-agent % resolved,SWE-agent $ cost,OpenHands % resolved,OpenHands $ cost,Aider % resolved,Aider $ cost | V: Patch / PoC
+- paper_T5_knowledge_cutoff.csv | H: Setting,PoC GPT-4o resolved,PoC GPT-4o submitted,PoC Claude 3 Haiku resolved,PoC Claude 3 Haiku submitted,Patch GPT-4o resolved,Patch GPT-4o submitted,Patch Claude 3 Haiku resolved,Patch Claude 3 Haiku submitted | V: Before cutoff / After cutoff
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Seed instances / verified / Best full-set patch success / Best full-set PoC success / "Repeatability (SWE-agent + o3-mini
+### B34-cybersoceval
+- data_malware_attack_x_difficulty.csv | H: attack,easy,hard,medium,TOTAL | V: infostealers / killers / ransomware / remcos / um_unhooking / TOTAL
+- data_malware_attack.csv | H: attack,count,share_% | V: infostealers / ransomware / remcos / um_unhooking / killers / TOTAL
+- data_malware_difficulty.csv | H: difficulty,count,share_% | V: easy / medium / hard / TOTAL
+- data_malware_options_answers.csv | H: n_options,0,1,2,3,4,5,6,7,8,9,TOTAL | V: 10 / 3 / 4 / 5 / 6 / 7
+- data_malware_topic.csv | H: topic,count,share_% | V: Behavioral Analysis / System Interactions / Persistence Techniques / Evasion Techniques / Risk Assessment / File Operations
+- data_overview.csv | H: item,value | V: malware analysis questions / malware detonation reports referenced / threat intel questions / threat intel reports referenced / Hybrid Analysis report files in package / CrowdStrike report files in package
+- data_threat_intel_attack.csv | H: attack,count,share_% | V:  / TOTAL
+- data_threat_intel_difficulty.csv | H: difficulty,count,share_% | V:  / TOTAL
+- data_threat_intel_options_answers.csv | H: n_options,1,2,3,4,5,6,TOTAL | V: 4 / 5 / 6 / TOTAL
+- data_threat_intel_topic.csv | H: topic,count,share_% | V:  / TOTAL
+- paper_F10_modality_approx.csv | H: Model,Accuracy image,Accuracy text,Accuracy text+image,Jaccard image,Jaccard text,Jaccard text+image | V: claude-3-7-sonnet / gemini-2.5-pro / gpt-4o / llama4-maverick / llama4-scout / gpt-o3
+- paper_F12_malware_accuracy_jaccard_approx.csv | H: Model,Accuracy,Avg Jaccard (approx) | V: claude-3-7-sonnet / deepseek_r1 / gpt-o3 / llama4-maverick / gemini-2.5-pro / gpt-4o
+- paper_F13_malware_by_family.csv | H: Model,infostealers (n=164.43),remcos (n=111.43),killers (n=86.57),um_unhooking (n=110.00),ransomware (n=125.14),Avg over categories | V: claude-3-7-sonnet / deepseek_r1 / gpt-o3 / llama4-maverick / gemini-2.5-pro / gpt-4o
+- paper_F14_malware_by_topic.csv | H: Model,Behavioral Analysis,MITRE ATT&CK Mapping,System Interactions,File Operations,Risk Assessment,Privilege Escalation,Persistence Techniques,Evasion Techniques,Avg over categories | V: claude-3-7-sonnet / deepseek_r1 / gpt-o3 / llama4-maverick / gemini-2.5-pro / gpt-4o
+- paper_F8_malware_by_difficulty.csv | H: Model,Easy (avg n=441.57),Medium (avg n=134.29),Hard (avg n=21.71),Overall,Parsable n | V: claude-3-7-sonnet / deepseek_r1 / gpt-o3 / llama4-maverick / gemini-2.5-pro / gpt-4o
+- paper_F9_threat_intel_by_source.csv | H: Model,NSA (avg n=36.83),CrowdStrike (avg n=288.67),IC3 (avg n=152.00),CISA (avg n=119.17),Overall,Parsable n | V: gpt-o3 / llama4-maverick / claude-3-7-sonnet / gemini-2.5-pro / llama4-scout / gpt-4o
+### B35-cyber-defense-benchmark
+- data_log_schema_overview.csv | H: item,value | V: schema fields / index fields / query row limit
+- data_reference_cost.csv | H: model,provider,display_name,cost_mean_usd,cost_std_usd | V: anthropic/claude-opus-4-6 / anthropic/claude-sonnet-4-6 / anthropic/claude-opus-4-7 / vertex_ai/gemini-3.1-pro-preview / openai/gpt-5 / vertex_ai/gemini-3-flash-preview
+- data_sample_flags_by_chain_step.csv | H: chain,step1,step2,step3,step4,step5,step6,step7,step8,TOTAL | V: chain0 / chain1 / chain2 / TOTAL
+- data_sample_flags_relevance.csv | H: "relevance(1=core,2=supporting,3=incidental)",count,share_% | V: 1 / 2 / TOTAL
+- data_sample_overview.csv | H: item,value | V: sample campaign seed / "sample log file size (MB / kill chains in campaign / steps across chains / ground-truth flags (malicious event timestamps) / tactics covered
+- paper_T2_dataset_stats.csv | H: Statistic,Value | V: Total procedures / Total raw log records / Average records per procedure / Record range (min-max) / "Unique (Channel / Unique schema field keys
+- paper_T3_flag_provenance.csv | H: Tag,Description,Total (26 campaigns) | V: sigma_code / consequent_sigma / sigma / consequent_procedure / procedure / Total
+- paper_T5_leaderboard.csv | H: Model,Provider,Runs,Coverage score mean,Coverage sd,Cost mean $,Cost sd $,Tokens mean,Turns mean,Turns sd,Flags found % mean,Flags found sd | V: Claude Opus 4.6 / Claude Sonnet 4.6 / Claude Opus 4.7 / Gemini 3.1 Pro Preview / GPT-5 / Kimi K2.6
+- paper_T6_tactic_recall.csv | H: Tactic,Claude Opus 4.6,Claude Sonnet 4.6,Claude Opus 4.7,Gemini 3.1 Pro,GPT-5,Kimi K2.6,Qwen3.6 Plus,Gemini 3 Flash,MiniMax M2.7,Kimi K2.5,DeepSeek V3.2 | V: Defense Evasion / Execution / Persistence / Resource Development / Command And Control / Discovery
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Passing threshold / Claude Opus 4.6 tactics above 50% / Claude Opus 4.6 flags observed vs submitted / Max recall on densest campaigns / Public data
+### B36-socbench-detection
+- data_by_attack.csv | H: Attack,flows,label,sources,share_% | V: benign / PartOfAHorizontalPortScan / Attack / C&C / DDoS / PartOfAHorizontalPortscan
+- data_by_source.csv | H: source,flows,malicious,attacks,malicious_%,duration_h | V: malware_1_1 / malware_3_1 / normal-xdsl-linux / normal-at-home-linux / normal-university-linux / malware_34_1
+- data_numeric_medians_by_label.csv | H: index,benign_median,malicious_median,missing_% | V: bytes_in / bytes_out / pkts_in / pkts_out / flow_duration_ms
+- data_overview.csv | H: item,value | V: flow records / columns / malicious (Label=1) / benign (Label=0) / malicious share % / sources
+- data_protocol_x_label.csv | H: protocol,benign,malicious,All | V: 1 / 17 / 6 / unknown / All
+- data_sampling_rate.csv | H: sampling_rate,flows | V: 1
+- data_top_dst_ports_malicious.csv | H: dst_port,malicious_flows | V: 23 / 22 / 8080 / 2323 / 9527 / 59353
+### B37-bfcl-v4
+- data_category_sizes.csv | H: category,entries,has_ground_truth_file,avg_functions_offered,avg_turns | V: format_sensitivity / irrelevance / live_irrelevance / live_multiple / live_parallel / live_parallel_multiple
+- data_group_sizes.csv | H: group,count,share_% | V: Live (crowd-sourced) / Non-live single-turn / Hallucination / Multi-turn / Agentic / Format sensitivity
+- data_multi_turn_apis.csv | H: api,functions | V: gorilla_file_system / math_api / memory_kv / memory_rec_sum / memory_vector / message_api
+- paper_T1_leaderboard.csv | H: Model,Overall,ST AST Simple,ST AST Multiple,ST AST Parallel,ST AST Parallel Multiple,ST Exec Simple,ST Exec Multiple,ST Exec Parallel,ST Exec Parallel Multiple,Live AST Simple,Live AST Multiple,Live AST Parallel,Live AST Parallel Multiple,Irrelevance,Relevance,MT Base,MT Miss Func,MT Miss Param,MT Long Context,Web Search,Memory,SQL | V: gpt-4o-2024-11-20 (Prompt) / gpt-4o-2024-11-20 (FC) / GPT-4-turbo-2024-04-09 (FC) / GPT-4o-mini-2024-07-18 (FC) / o1-2024-12-17 (Prompt) / Qwen2.5-72B-Instruct (Prompt)
+- paper_T2_perplexity.csv | H: Model,PPL single-turn,PPL crowd-sourced | V: Llama2-7B / Openfunctions-v2 / CodeLlama-7B / Meta-Llama-3 8B / Mistral-7B / Functionary-7B
+- paper_T3_char_nll.csv | H: Model,Char-NLL single-turn,Char-NLL crowd-sourced | V: Llama2-7B / Openfunctions-v2 / CodeLlama-7B / Meta-Llama-3 8B / Mistral-7B / Functionary-7B
+### B38-tau2-bench
+- data_splits.csv | H: domain,split,tasks | V: airline / intake / retail
+- data_task_files.csv | H: domain,file,tasks,avg_reference_actions | V: airline / banking_knowledge / intake / retail
+- data_telecom_action_requestor.csv | H: requestor,count,share_% | V: user / assistant / TOTAL
+- data_telecom_full_intent.csv | H: intent,count,share_% | V: mms_issue / mobile_data_issue / service_issue / TOTAL
+- data_telecom_full_persona.csv | H: persona,count,share_% | V: None / Easy / Hard / TOTAL
+- paper_F3_pass_k.csv | H: Model,Domain,pass^1,pass^2,pass^3,pass^4 | V: gpt-4.1 / o4-mini
+- paper_F4_telecom_modes.csv | H: Policy,Model,Default,No-User,Oracle-Plan | V: Original / Workflow-based
+- paper_T1_domains.csv | H: Domain,Agent databases,Agent tools,User tools,Tasks | V: retail / airline / telecom
+- paper_T2_user_simulator_errors.csv | H: Domain,Conversations,Critical errors,Benign errors,Total errors | V: airline / retail / telecom
+- paper_T3_telecom_intents.csv | H: Subtasks,service_issue,mobile_data_issue,mms_issue,total | V: 2 / 3 / 4 / 5 / 6 / 7
+- paper_T4_telecom_actions.csv | H: Intent,Mean,Std,Min,Max | V: service_issue / mobile_data_issue / mms_issue
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Cost per task (gpt-4.1 agent/user) / Drop from No-User to Default
+### B39-osworld
+- data_eval_functions_top.csv | H: evaluator_func,count,share_% | V: compare_table / compare_pptx_files / infeasible / check_include_exclude / check_direct_json_object / exact_match
+- data_task_index_by_app.csv | H: index,app,tasks | V: test_all
+- data_ubuntu_app_summary.csv | H: app,tasks,infeasible,avg_instr_words | V: chrome / gimp / libreoffice_calc / libreoffice_impress / libreoffice_writer / multi_apps
+- data_ubuntu_tasks.csv | H: app,id,infeasible,n_related_apps,instr_words,eval_func,n_config_steps | V: chrome
+- data_windows_tasks.csv | H: app,count,share_% | V: multi_app / excel / word / ppt / TOTAL
+- paper_T10_ubuntu_stats.csv | H: Metric,OS,Calc,Impress,Writer,VLC,Thunderbird,Chrome,VSCode,GIMP,Workflow,Overall | V: Examples / Avg instruction tokens
+- paper_T11_windows_stats.csv | H: Metric,Excel,Word,PPT,Workflow,Overall | V: Examples / Avg instruction tokens
+- paper_T14_success_by_app.csv | H: Inputs,Model,OS,Calc,Impress,Writer,VLC,Thunderbird,Chrome,VSCode,GIMP,Workflow | V: A11y tree
+- paper_T5_success_by_category.csv | H: Inputs,Model,OS,Office,Daily,Professional,Workflow,Overall | V: A11y tree
+### B40-metr-time-horizons
+- data_v1_0_by_model.csv | H: alias,runs,tasks,mean_score_binarized,mean_score_cont | V: Claude Opus 4.5 / GPT-5.1-Codex-Max / GPT-5 / o3 / Claude 4.1 Opus / Claude Sonnet 4.5
+- data_v1_0_overview.csv | H: item,value | V: runs / models (alias) / tasks / task families / task sources / human_minutes range
+- data_v1_0_success_by_model_x_length.csv | H: alias,<1m,1-4m,4-15m,15-60m,1-4h,4-16h,>16h | V: Claude 3 Opus / Claude 3.5 Sonnet (New) / Claude 3.5 Sonnet (Old) / Claude 3.7 Sonnet / Claude 4 Opus / Claude 4 Sonnet
+- data_v1_0_tasks_by_length_x_source.csv | H: human_minutes,HCAST,RE-Bench,SWAA,All | V: <1m / 1-4m / 4-15m / 15-60m / 1-4h / 4-16h
+- data_v1_1_by_model.csv | H: alias,runs,tasks,mean_score_binarized,mean_score_cont | V: Claude Opus 4.6 (Inspect) / Claude Opus 4.5 (Inspect) / GPT-5.2 / Gemini 3 Pro / GPT-5.3-Codex / GPT-5 (Inspect)
+- data_v1_1_overview.csv | H: item,value | V: runs / models (alias) / tasks / task families / task sources / human_minutes range
+- data_v1_1_success_by_model_x_length.csv | H: alias,<1m,1-4m,4-15m,15-60m,1-4h,4-16h,>16h | V: Claude 3 Opus (Inspect) / Claude 3.5 Sonnet (New) (Inspect) / Claude 3.5 Sonnet (Old) (Inspect) / Claude 3.7 Sonnet (Inspect) / Claude 4 Opus (Inspect) / Claude 4.1 Opus (Inspect)
+- data_v1_1_tasks_by_length_x_source.csv | H: human_minutes,HCAST,RE-Bench,SWAA,All | V: <1m / 1-4m / 4-15m / 15-60m / 1-4h / 4-16h
+- paper_T2_failure_types.csv | H: Failure type,GPT-4 1106,o1 | V: Poor planning/tool choice / Incorrect mental math/reasoning / Premature task abandonment / Repeating failed actions / Other / Total
+- paper_T6_scaffolds.csv | H: Model,Agent scaffold | V: "Claude 3.5 Sonnet (Old/New) / o1 / o1-preview
+- paper_T7_success_by_source.csv | H: Model,HCAST,RE-Bench,SWAA | V: Claude 3 Opus / Claude 3.5 Sonnet (New) / Claude 3.5 Sonnet (Old) / Claude 3.7 Sonnet / GPT-2 / GPT-4 0314
+- paper_T9_vs_swebench.csv | H: Model,Time horizon (METR tasks),Time horizon (SWE-bench Verified),Ratio | V: Claude 3 Opus / GPT-4 1106 / GPT-4o / Claude 3.5 Sonnet (Old) / Claude 3.5 Sonnet (New) / o1
+- paper_text_key_numbers.csv | H: Item,Value,Source | V: Task suites / 50% horizon doubling time / 80% vs 50% horizon / Repo maintainers vs baseliners
+- results_logistic_fits.csv | H: model,coefficient,intercept,n_tasks | V: GPT-4 0314 / GPT-4 1106 (Inspect) / Claude 3 Opus (Inspect) / GPT-4 Turbo (Inspect) / GPT-4o (Inspect) / Claude 3.5 Sonnet (Old) (Inspect)
+- results_model_horizon_summary.csv | H: model,release_date,is_sota,average_score,p50_horizon_min,p50_ci_low,p50_ci_high,p80_horizon_min,p80_ci_low,p80_ci_high | V: gpt2 / davinci_002 / gpt_3_5_turbo_instruct / gpt_4 / gpt_4_1106_inspect / claude_3_opus_inspect

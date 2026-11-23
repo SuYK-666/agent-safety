@@ -1,0 +1,4 @@
+﻿Domain,Agent databases,Agent tools,User tools,Tasks
+retail,"500 users, 50 products, 1,000 orders","7 write, 6 read",-,115
+airline,"500 users, 300 flights, 2,000 reservations","6 write, 6 read",-,50
+telecom,"5 plans, 9 lines, 4 customers","6 write, 7 read","15 write, 15 read","114 (full: 2,285)"

@@ -1,0 +1,8 @@
+﻿policy_category,gitlab,shopping_admin,suitecrm,TOTAL
+boundary_and_scope_limitation,694,17,409,1120
+error_handling_and_safety_nets,39,6,73,118
+hierarchy_adherence,63,0,89,152
+robustness_and_security,67,2,317,386
+strict_execution,551,17,391,959
+user_consent,120,23,179,322
+TOTAL,1534,65,1458,3057

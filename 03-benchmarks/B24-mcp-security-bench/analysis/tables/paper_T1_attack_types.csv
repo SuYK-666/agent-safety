@@ -1,0 +1,10 @@
+﻿Attack,Stage,Vector
+Name Collision (NC),Planning,malicious tool name = target name + suffix
+Preference Manipulation (PM),Planning,promotional statement prepended to description
+Prompt Injection (PI),Planning,malicious instruction appended to tool description
+Out-of-Scope Parameter (OP),Invocation,"tool parameter requesting out-of-scope info (e.g., llm model name)"
+User Impersonation (UI),Response,tool response imitating a user query + instruction
+False Error (FE),Response,fabricated error message + instruction
+Tool Transfer (TT),Response,"""tool replaced by"" guiding message"
+Retrieval Injection (RI),Response,instruction embedded in external retrieved data
+Mixed Attacks,Multistage,combinations

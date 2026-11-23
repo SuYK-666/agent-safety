@@ -1,0 +1,7 @@
+﻿Tag,Description,Total (26 campaigns)
+sigma_code,Event-code level Sigma rule match,30772
+consequent_sigma,LLM-identified causal neighbor of Sigma event,25799
+sigma,Rule-level Sigma match,8495
+consequent_procedure,Procedure-derived consequence event,7612
+procedure,Original procedure marker,1057
+Total,,73735

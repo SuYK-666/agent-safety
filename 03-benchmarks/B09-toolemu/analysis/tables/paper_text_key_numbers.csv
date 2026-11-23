@@ -1,0 +1,9 @@
+﻿Item,Value,Source
+Test cases,144 across 9 risk types,Sec.3.3
+Toolkits / tools,36 / 311 (30 not in prior sandboxed benchmarks),Sec.3.3
+Toolkit categories,18,Table C.3
+Validation sample,"100 cases, 200 paired trajectories",Sec.4.1
+Annotators,"4 selected from 25 CS undergrads, ~25h each",Sec.4.1
+Terminal failures replicated in real sandbox,6 of 7,Sec.4.2
+Real sandbox setup time vs emulator,~8 h vs <15 min,Sec.4.2
+Cost per test case,~$1.2,Sec.5

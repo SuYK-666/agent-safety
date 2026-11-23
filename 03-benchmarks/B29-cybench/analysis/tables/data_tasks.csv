@@ -1,0 +1,44 @@
+﻿organizer,competition,category,in_official_40,task,difficulty_label,difficulty_num,n_subtasks,internet_useful,stateful_shell,has_target_host
+hackthebox,cyber-apocalypse-2024,crypto,True,Permuted,Hard,3,6,False,True,False
+hackthebox,cyber-apocalypse-2024,crypto,True,Partial Tenacity,Medium,3,4,False,False,False
+hackthebox,cyber-apocalypse-2024,crypto,True,Dynastic,Very Easy,1,3,False,False,False
+hackthebox,cyber-apocalypse-2024,crypto,False,Makeshift,Very Easy,1,3,False,False,False
+hackthebox,cyber-apocalypse-2024,crypto,True,Primary Knowledge,Very Easy,1,5,False,False,False
+hackthebox,cyber-apocalypse-2024,forensics,True,Data Siege,Medium,2,7,True,True,False
+hackthebox,cyber-apocalypse-2024,forensics,True,It Has Begun,Very Easy,0,3,False,False,False
+hackthebox,cyber-apocalypse-2024,forensics,True,Urgent,Very Easy,0,3,False,False,False
+hackthebox,cyber-apocalypse-2024,misc,False,Maze [Very Easy],,2,1,False,False,False
+hackthebox,cyber-apocalypse-2024,misc,True,Unbreakable,Easy,1,5,False,False,True
+hackthebox,cyber-apocalypse-2024,crypto,False,Path of Survival,Hard,4,3,False,False,True
+hackthebox,cyber-apocalypse-2024,misc,True,Were Pickle Phreaks Revenge,Medium,3,4,False,False,True
+hackthebox,cyber-apocalypse-2024,misc,False,Character,Very Easy,1,3,False,False,True
+hackthebox,cyber-apocalypse-2024,misc,False,Stop Drop and Roll,Very Easy,1,1,False,False,False
+hackthebox,cyber-apocalypse-2024,pwn,True,Delulu,Very Easy,1,3,False,False,True
+hackthebox,cyber-apocalypse-2024,reverse,True,Crushing,Easy,1,4,False,False,False
+hackthebox,cyber-apocalypse-2024,reverse,True,FlecksOfGold,Hard,4,5,False,False,False
+hackthebox,cyber-apocalypse-2024,reverse,False,QuickScan,Medium,3,1,False,False,True
+hackthebox,cyber-apocalypse-2024,reverse,False,BoxCutter,Very Easy,0,1,False,False,False
+hackthebox,cyber-apocalypse-2024,reverse,True,LootStash,Very Easy,0,3,False,False,False
+hackthebox,cyber-apocalypse-2024,reverse,True,PackedAway,Very Easy,0,3,False,False,False
+hackthebox,cyber-apocalypse-2024,web,True,Labyrinth Linguist,Easy,1,6,False,False,True
+hackthebox,cyber-apocalypse-2024,web,True,LockTalk,Medium,3,4,True,False,True
+hackthebox,cyber-apocalypse-2024,web,True,Flag Command,Very Easy,0,4,False,False,True
+hkcert-ctf,CTF-Challenges,web,True,05-motp,,2,5,False,False,True
+hkcert-ctf,CTF-Challenges,crypto,False,21-elgamal,,1,4,False,False,True
+hkcert-ctf,CTF-Challenges,misc;web,True,22-back-to-the-past,,1,4,False,False,True
+project-sekai-ctf,sekaictf-2022,crypto,True,diffecient,,3,5,False,False,False
+project-sekai-ctf,sekaictf-2022,crypto,True,ezmaze,,3,4,False,False,True
+project-sekai-ctf,sekaictf-2022,crypto,True,failproof,,4,2,False,False,True
+project-sekai-ctf,sekaictf-2022,crypto,True,robust-cbc,,4,4,False,False,True
+project-sekai-ctf,sekaictf-2022,reverse,False,matrix-lab-2,,2,5,False,False,False
+project-sekai-ctf,sekaictf-2023,crypto,True,noisier-crc,,4,4,False,False,True
+project-sekai-ctf,sekaictf-2023,crypto,True,noisy-crc,,3,4,False,True,True
+project-sekai-ctf,sekaictf-2023,crypto,True,randsubware,,5,3,False,False,False
+project-sekai-ctf,sekaictf-2023,forensics,True,eval-me,,1,3,False,False,True
+project-sekai-ctf,sekaictf-2023,misc,True,just-another-pickle-jail,,5,3,False,False,True
+project-sekai-ctf,sekaictf-2023,pwn,False,algorithm-multitool,,4,3,False,False,True
+project-sekai-ctf,sekaictf-2023,pwn,True,network-tools,,2,4,False,False,True
+project-sekai-ctf,sekaictf-2023,pwn,False,text-sender,,3,1,False,False,True
+project-sekai-ctf,sekaictf-2023,reverse,False,guardians-of-the-kernel,,2,1,False,False,False
+project-sekai-ctf,sekaictf-2023,web,True,chunky,,3,6,True,False,True
+project-sekai-ctf,sekaictf-2023,web,True,frog-waf,,3,6,False,True,True

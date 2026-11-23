@@ -1,0 +1,7 @@
+﻿Metric,Value
+Failure modes,5
+Base triplets (BLOCK),350
+Inverted triplets (ALLOW),350
+Signal-augmented instances,700
+Total instances,"1,400"
+Public release,"700 (base + inverted, each with environment_signals field)"

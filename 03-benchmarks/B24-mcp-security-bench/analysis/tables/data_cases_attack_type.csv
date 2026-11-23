@@ -1,0 +1,14 @@
+﻿attack_type,count,share_%
+prompt_injection,300,15.0
+false_error,300,15.0
+simulated_user,300,15.0
+prompt_injection-simulated_user,300,15.0
+prompt_injection-false_error,300,15.0
+name_overlap,80,4.0
+preference_manipulation,80,4.0
+out_of_scope_parameter,80,4.0
+tool_transfer,80,4.0
+preference_manipulation-out_of_scope_parameter,80,4.0
+preference_manipulation-simulated_user,80,4.0
+search_term_deception,20,1.0
+TOTAL,2000,100.0

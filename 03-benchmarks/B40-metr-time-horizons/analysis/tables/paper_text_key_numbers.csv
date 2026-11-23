@@ -1,0 +1,5 @@
+﻿Item,Value,Source
+Task suites,"HCAST 97 tasks (1 min-30 h), RE-Bench 7 (8 h each), SWAA 66 (1-30 s)",Sec.2.1
+50% horizon doubling time,~7 months (207 days); 80% horizon 204 days,Sec.3.2.1
+80% vs 50% horizon,80% horizons are 4-6x shorter,Sec.3.2.1
+Repo maintainers vs baseliners,5-18x faster on internal PRs,App.C

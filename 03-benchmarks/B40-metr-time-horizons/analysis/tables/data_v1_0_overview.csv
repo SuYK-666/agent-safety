@@ -1,0 +1,7 @@
+﻿item,value
+runs,41629
+models (alias),34
+tasks,170
+task families,50
+task sources,HCAST=97; SWAA=66; RE-Bench=7
+human_minutes range,0.0199 - 1112

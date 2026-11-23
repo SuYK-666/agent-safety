@@ -1,0 +1,10 @@
+﻿category,benign_test_public,benign_validation,chat_test_public,chat_validation,harmful_test_public,harmful_validation,TOTAL
+Copyright,24,4,6,1,24,4,63
+Cybercrime,20,4,5,1,20,4,54
+Disinformation,20,4,5,1,20,4,54
+Drugs,20,4,5,1,20,4,54
+Fraud,24,4,6,1,24,4,63
+Harassment,24,4,6,1,24,4,63
+Hate,20,4,5,1,20,4,54
+Sexual,24,4,6,1,24,4,63
+TOTAL,176,32,44,8,176,32,468

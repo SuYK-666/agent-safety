@@ -1,0 +1,6 @@
+﻿Reduced endpoint,Utility source,Runs,TSR %,False refusal %,API err %
+GPT-5.5,GPT-5.4,168,33.3,0.0,0.0
+Claude Opus 4.7,Claude Opus 4.6,168,49.4,0.0,0.0
+Qwen3.6-Plus,Qwen3-235B,168,46.4,0.6,0.0
+GLM-5.1,GLM-5,168,52.4,0.0,0.0
+Kimi K2.5,Kimi K2.5,168,50.0,0.0,0.0

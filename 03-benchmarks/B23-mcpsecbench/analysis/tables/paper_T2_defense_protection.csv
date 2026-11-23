@@ -1,0 +1,10 @@
+﻿Attack,MCIP protected probability,FAN protected probability
+ATT-1 Prompt Injection,26.7%,62.2%
+ATT-2 Tool Misuse via Confused AI,22.2%,N/A
+ATT-7 Tool Shadowing,2.2%,44.4%
+ATT-8 Data Exfiltration,4.4%,4.4%
+ATT-9 Package Name Squatting (tool),20%,11.1%
+ATT-10 Indirect Prompt Injection,55.6%,64.4%
+ATT-11 Package Name Squatting (server),2.2%,33.3%
+ATT-13 Rug Pull,4.4%,13.3%
+ATT-12 Tool Poisoning,4.4%,N/A

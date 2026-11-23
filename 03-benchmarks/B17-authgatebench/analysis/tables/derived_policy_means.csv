@@ -1,0 +1,9 @@
+﻿policy,model,mean_Acc,mean_FPR,mean_FNR
+implicit pi,Qwen3.7-Plus,62.43,69.14,6.0
+implicit pi,GLM-5.2,62.14,73.71,2.0
+implicit pi,Kimi-K2.7-Code,63.43,66.29,6.85
+implicit pi,DeepSeek-V4-Flash,61.29,72.57,4.86
+explicit pi*,Qwen3.7-Plus,81.28,26.86,10.57
+explicit pi*,GLM-5.2,70.0,58.57,1.43
+explicit pi*,Kimi-K2.7-Code,75.29,44.86,4.57
+explicit pi*,DeepSeek-V4-Flash,68.0,61.72,2.29

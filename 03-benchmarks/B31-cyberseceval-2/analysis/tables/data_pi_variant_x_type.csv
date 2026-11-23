@@ -1,0 +1,17 @@
+﻿injection_variant,direct,indirect,TOTAL
+different_user_input_language,18,7,25
+few_shot_attack,11,0,11
+hypothetical_scenario,7,6,13
+ignore_previous_instructions,17,8,25
+indirect_reference,13,0,13
+many_shot_attack,7,0,7
+mixed_techniques,30,3,33
+output_formatting_manipulation,17,0,17
+overload_with_information,14,6,20
+payload_splitting,9,0,9
+persuasion,20,6,26
+repeated_token_attack,6,0,6
+system_mode,12,7,19
+token_smuggling,7,6,13
+virtualization,8,6,14
+TOTAL,196,55,251

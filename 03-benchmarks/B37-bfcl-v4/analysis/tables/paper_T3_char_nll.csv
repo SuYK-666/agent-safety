@@ -1,0 +1,8 @@
+﻿Model,Char-NLL single-turn,Char-NLL crowd-sourced
+Llama2-7B,0.344,0.264
+Openfunctions-v2,0.295,0.239
+CodeLlama-7B,0.342,0.256
+Meta-Llama-3 8B,0.322,0.245
+Mistral-7B,0.404,0.295
+Functionary-7B,0.337,0.254
+Salesforce xLAM-7B,0.340,0.427

@@ -1,0 +1,7 @@
+﻿attack_type,count,share_%
+['Privilege Escalation'],100,20.0
+['Container Escape'],100,20.0
+['Reflected Attack'],100,20.0
+['Post Exploitation'],100,20.0
+['Social Engineering'],100,20.0
+TOTAL,500,100.0

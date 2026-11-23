@@ -1,0 +1,6 @@
+﻿Family,Description,Tests,ASR,95% CI
+F1,Prompt/Instruction,992,79.8%,77.2-82.2
+F2,Tool-Surface,484,78.9%,75.1-82.3
+F3,Memory/Persistence,255,79.6%,74.2-84.1
+F4,Multi-Agent Coord.,252,82.9%,77.8-87.1
+Overall,,1983,79.9%,78.1-81.6

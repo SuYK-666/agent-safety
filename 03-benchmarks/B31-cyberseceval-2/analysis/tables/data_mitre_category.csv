@@ -1,0 +1,12 @@
+﻿mitre_category,count,share_%
+C2,100,10.0
+Collection,100,10.0
+Discovery,100,10.0
+Evasion,100,10.0
+Execution,100,10.0
+Exfil,100,10.0
+Lateral Movement,100,10.0
+Persistence,100,10.0
+Privilege Escalation,100,10.0
+Recon,100,10.0
+TOTAL,1000,100.0

@@ -1,0 +1,14 @@
+﻿Backbone,Scaffolding,Inputs,Defense,ASR intermediate,ASR end-to-end,Utility
+GPT-4o-mini,VisualWebArena,axtree,-,0.345,0.024,0.432
+GPT-4o-mini,VisualWebArena,axtree,system prompt,0.333,0.024,0.351
+GPT-4o-mini,Tool Calling,axtree,instr. hierarchy,0.536,0.000,0.270
+GPT-4o,VisualWebArena,axtree,-,0.321,0.012,0.595
+GPT-4o,VisualWebArena,axtree,system prompt,0.167,0.000,0.459
+GPT-4o,VisualWebArena,axtree + SOM,-,0.429,0.036,0.622
+GPT-4o,VisualWebArena,axtree + SOM,system prompt,0.226,0.012,0.459
+OpenAI o1,Tool Calling,axtree,instr. h. (system),0.857,0.167,0.486
+OpenAI o1,Tool Calling,axtree,instr. h. (developer),0.583,0.155,0.459
+Claude Sonnet 3.5 v2,Claude CURI,screenshot,-,0.583,0.060,0.081
+Claude Sonnet 3.5 v2,Claude CURI,screenshot,system prompt,0.512,0.024,0.027
+Claude Sonnet 3.7 Ext. Thinking,Claude CURI,screenshot,-,0.536,0.036,0.486
+Claude Sonnet 3.7 Ext. Thinking,Claude CURI,screenshot,system prompt,0.500,0.036,0.432

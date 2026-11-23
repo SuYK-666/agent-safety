@@ -1,0 +1,9 @@
+﻿injection_technique,count,share_%
+embedded_text_instructions,400,40.0
+indirect_reference,400,40.0
+obfuscated,200,20.0
+misleading,100,10.0
+query_relevant_images,100,10.0
+figstep,100,10.0
+virtualization,100,10.0
+TOTAL,1400,100.0

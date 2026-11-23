@@ -1,0 +1,7 @@
+﻿Backbone,URL ASR interm.,URL ASR e2e,Plain-text ASR interm.,Plain-text ASR e2e
+GPT-4o (axtree+SOM),0.619,0.071,0.238,0.000
+GPT-4o-mini (axtree),0.405,0.048,0.286,0.000
+"o1 (axtree, system)",0.976,0.095,0.738,0.238
+"o1 (axtree, developer)",0.571,0.095,0.595,0.294
+Claude-3.5-sonnet,0.857,0.048,0.310,0.071
+Claude-3.7-sonnet,0.810,0.000,0.262,0.071

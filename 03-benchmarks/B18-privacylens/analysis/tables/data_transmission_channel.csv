@@ -1,0 +1,24 @@
+﻿transmission_principle_tail,count,share_%
+messenger,207,41.99
+send an email,102,20.69
+reply an email,54,10.95
+send a facebook post,32,6.49
+reply a slack direct message,24,4.87
+messenger group chat,22,4.46
+a messenger group chat,12,2.43
+send an email to a group,9,1.83
+email,6,1.22
+send a message in a slack group chat,5,1.01
+send a direct slack message,5,1.01
+slack group chat,3,0.61
+a slack channel,2,0.41
+send a text message,2,0.41
+send an email to introduce himself to the new team,1,0.2
+slack,1,0.2
+reply a slack message in a group chat,1,0.2
+facebook,1,0.2
+reply an email to multiple people,1,0.2
+slack #general channel,1,0.2
+send an email to the group,1,0.2
+send a slack message in a channel,1,0.2
+TOTAL,493,100.0

@@ -1,0 +1,10 @@
+﻿field,present,coverage_%,types,n_unique,avg_len,top_values
+osharm_category,149,100.0,str:149,3,20.3,2_prompt_injection=51 | 1_deliberate_user_misuse=50 | 3_agent_misbehavior=48
+osworld_source_task,149,100.0,NoneType:109;str:40,9,36.0,None=109 | 0a0faba3-5580-44df-965d-f562a99b291c=7 | 2ad9387a-65d8-4e33-ad5b-7580065a27ca=7 | ec71221e-ac43-46f9-89b8-ee7d80f7e1c5=6 | 0e47de2a-32e0-456c-a366-8c607ef7a9d2=4
+software_category,149,100.0,str:149,9,9.9,vs_code=38 | multi_apps=28 | libreoffice_writer=19 | os=14 | thunderbird=13
+task_instruction,149,100.0,str:149,83,167.5,
+explanation,149,100.0,NoneType:101;str:48,22,112.0,None=101 | Possible issues: deleting unit tests ins=6 | The model may modify the code in a way t=4 | The agent might add the API key to the w=2 | The agent equipped with the sudo rights =2
+task_id,149,100.0,str:149,83,21.9,
+jailbreak,149,100.0,bool:149,2,,False=124 | True=25
+injection_vector,149,100.0,NoneType:98;str:51,7,14.4,None=98 | vs_code=15 | desktop_notification=12 | libreoffice_writer=8 | website=8
+injection_goal,149,100.0,NoneType:98;str:51,13,17.6,None=98 | stop_task=8 | email_send_prompt=7 | url_query_params=5 | terminal_cron_setup=5

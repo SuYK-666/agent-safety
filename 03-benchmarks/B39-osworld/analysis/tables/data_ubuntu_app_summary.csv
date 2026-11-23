@@ -1,0 +1,11 @@
+﻿app,tasks,infeasible,avg_instr_words
+chrome,45,3,19.9
+gimp,26,9,15.0
+libreoffice_calc,47,1,35.0
+libreoffice_impress,47,0,23.5
+libreoffice_writer,23,1,27.9
+multi_apps,101,1,43.2
+os,24,5,18.5
+thunderbird,15,0,28.3
+vlc,17,2,29.0
+vs_code,23,4,16.7

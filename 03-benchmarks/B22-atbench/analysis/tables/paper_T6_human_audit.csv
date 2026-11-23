@@ -1,0 +1,11 @@
+﻿Audit item,Value
+Reviewers,5
+Audited trajectories,1000
+Unsafe -> safe corrections,4
+Safe -> unsafe corrections,1
+Unsafe trajectories with taxonomy revision,129
+Revised risk-source labels,64
+Revised failure-mode labels,67
+Revised real-world-harm labels,34
+Revised fine-grained labels total,165
+Final safe / unsafe,503 / 497

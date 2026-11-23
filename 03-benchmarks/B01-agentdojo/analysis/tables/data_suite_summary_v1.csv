@@ -1,0 +1,6 @@
+﻿suite,user_tasks_v1,injection_tasks_v1,security_pairs_user_x_injection,injection_vectors,difficulty_EASY,difficulty_MEDIUM,difficulty_HARD
+workspace,40,6,240,16,11,16,6
+slack,21,5,105,6,3,8,6
+travel,20,7,140,13,2,4,1
+banking,16,9,144,4,0,0,0
+TOTAL,97,27,629,39,16,28,13

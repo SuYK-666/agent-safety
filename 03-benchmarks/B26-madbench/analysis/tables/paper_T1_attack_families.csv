@@ -1,0 +1,7 @@
+﻿Family,Layer,Description
+M1,Input,Direct prompt injection / jailbreak (JailbreakBench)
+M2,Environment,Indirect prompt injection via shared workspace files (AgentDojo workspace)
+M3,Resource,RAG poisoning of some agents' database copies
+M4,Resource/tool,Single-agent factual corruption (see Table 9)
+M5,Agent,Compromised debate agents: colluding / independent / inconsistent modes
+M6,Orchestrator,Compromised orchestrator

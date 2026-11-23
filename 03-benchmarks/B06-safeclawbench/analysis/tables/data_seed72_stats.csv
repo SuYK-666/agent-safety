@@ -1,0 +1,13 @@
+﻿group,key,count
+by_attack_type,DPI,12
+by_attack_type,IPI,12
+by_attack_type,TRI,12
+by_attack_type,MPI,12
+by_attack_type,MEX,12
+by_attack_type,ADI,12
+by_harm_type,leak,28
+by_harm_type,action,28
+by_harm_type,persist,16
+by_difficulty,medium,46
+by_difficulty,easy,9
+by_difficulty,hard,17

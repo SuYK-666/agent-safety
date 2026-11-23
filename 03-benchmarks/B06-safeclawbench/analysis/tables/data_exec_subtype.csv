@@ -1,0 +1,8 @@
+﻿attack_type,adi_code_exec,adi_db_tamper,adi_file_write,dpi_config_modify,dpi_db_drop,dpi_email_exfil,dpi_file_delete,ipi_email,ipi_file_write,ipi_memory_poison,mex_email_leak,mex_file_read,mex_response_leak,mpi_memory_overwrite,mpi_memory_write,mpi_policy_inject,tri_code_exec,tri_email_action,tri_file_write,TOTAL
+ADI,33,33,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100
+DPI,0,0,0,25,25,25,25,0,0,0,0,0,0,0,0,0,0,0,0,100
+IPI,0,0,0,0,0,0,0,34,33,33,0,0,0,0,0,0,0,0,0,100
+MEX,0,0,0,0,0,0,0,0,0,0,33,34,33,0,0,0,0,0,0,100
+MPI,0,0,0,0,0,0,0,0,0,0,0,0,0,33,34,33,0,0,0,100
+TRI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,33,34,100
+TOTAL,33,33,34,25,25,25,25,34,33,33,33,34,33,33,34,33,33,33,34,600

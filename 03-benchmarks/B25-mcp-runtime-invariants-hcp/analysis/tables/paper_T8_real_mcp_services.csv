@@ -1,0 +1,16 @@
+﻿Workflow,Direct,ACL / HCP,Budget,ChainCaps,Pipe / sealed
+Internal note to file,Done,Done,Done,Done,Done
+Public page to HTTP sink,Done,Done,Done,Done,Done
+Secret to permitted private file,Done,Done,Ref.,Ref.,Done
+"Secret read, unrelated note to file",Done,Done,Ref.,Ref.,Done
+"Secret read, unrelated note to HTTP",Done,Done,Ref.,Ref.,Done
+Secret to file,Leak,Leak,Blk.,Blk.,Blk.
+Secret to HTTP sink,Leak,Leak,Blk.,Blk.,Blk.
+Known plaintext to HTTP sink,Leak,Leak,Blk.,Blk.,Leak
+Unlabelled secret to file,Leak,Leak,Leak,Leak,Leak
+Mislabelled secret to file,Leak,Leak,Leak,Leak,Leak
+Write after handle revocation,-,-,-,-,Blk.
+Write to ungranted file,Leak,Blk.,Blk.,Blk.,Blk.
+Browser: secret to HTTP sink,Leak,Leak,Blk.,n/r,Blk.
+"Browser: secret read, unrelated note",Done,Done,Ref.,n/r,Done
+Browser: known plaintext,Leak,Leak,Blk.,n/r,Leak

@@ -1,0 +1,10 @@
+﻿Defense,Added policy chars,Total policy chars
+D0 (None),0,28
+B1 (Naive),198,226
+B2 (Sandwich),212 + input wrap,240 + input
+B3 (Reminder+Filter),245 + conditional,273 + conditional
+B4 (StruQ),832,860
+D1 (Prompt-Layer),643,671
+D2 (Partial Stack),1016,1044
+D3 (baseline stack),1968,1996
+D4/LongPolicy,6670,6698

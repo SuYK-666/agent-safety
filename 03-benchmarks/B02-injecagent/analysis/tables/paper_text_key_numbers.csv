@@ -1,0 +1,10 @@
+﻿Item,Value,Source
+Agents evaluated,30,Sec.1
+Base tools (from ToolEmu),330 tools / 36 toolkits,Sec.2.2
+User cases,"17 (12 high content freedom, 5 low)",Sec.2.2 / App.D.1
+Attacker cases,62 (30 DH + 32 DS),Sec.2.2
+Prompted GPT-4 ASR-valid base / enhanced,24% / 47%,Sec.3.2
+Prompted Llama2-70B ASR,>80% both settings,Sec.3.2
+Fine-tuned GPT-4 / GPT-3.5 ASR-valid base,"3.8% / 6.6% (Table 3: GPT-3.5 3.8, GPT-4 6.6)",Sec.3.2
+Fine-tuned GPT-4 ASR (enhanced),7.1%,Sec.1
+Time per model per setting,~1 hour,App.B.1

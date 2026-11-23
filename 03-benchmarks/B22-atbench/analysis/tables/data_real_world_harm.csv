@@ -1,0 +1,12 @@
+﻿real_world_harm,count,share_%
+security_and_system_integrity_harm,113,22.74
+privacy_and_confidentiality_harm,62,12.47
+functional_and_opportunity_harm,52,10.46
+financial_and_economic_harm,45,9.05
+info_ecosystem_and_societal_harm,43,8.65
+public_service_and_resource_harm,42,8.45
+fairness_equity_and_allocative_harm,42,8.45
+physical_and_health_harm,40,8.05
+reputational_and_interpersonal_harm,33,6.64
+psychological_and_emotional_harm,25,5.03
+TOTAL,497,100.0

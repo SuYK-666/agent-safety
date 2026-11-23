@@ -1,0 +1,5 @@
+﻿Category,Agreement,Absolute distance (steps),Cases
+Deliberate misuse,69%,1.12,27
+Prompt injections,100%,0.00,7
+Model misbehavior,80%,0.80,5
+Total,77%,0.85,39

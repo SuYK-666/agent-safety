@@ -1,0 +1,15 @@
+﻿model,self_ASR_%,mean_ASR_as_target_offdiag,mean_transfer_as_source_offdiag
+o3,33,15.3,37.5
+3.7 Sonnet:Thinking,37,15.4,38.1
+3.7 Sonnet,42,17.5,32.7
+3.5 Sonnet,43,20.0,34.4
+o1,31,23.8,33.3
+3.5 Haiku,60,23.4,33.5
+GPT 4o,58,28.0,35.7
+GPT 4.5,54,27.7,30.3
+Command-R,43,30.6,20.5
+Grok 2,49,35.2,25.4
+Llama 3.1 405B,56,39.8,22.8
+o3 Mini,58,42.3,27.2
+o3 Mini:High,55,43.3,29.5
+Llama 3.3 70B,50,53.5,15.0

@@ -1,0 +1,4 @@
+﻿Metric,Safety H-H,Safety A-H,Helpfulness H-H,Helpfulness A-H
+Categorical,0.317 +- 0.049,0.332 +- 0.020,0.346 +- 0.046,0.251 +- 0.040
+Linear-weighted,0.472 +- 0.036,0.472 +- 0.008,0.486 +- 0.045,0.409 +- 0.046
+Quadratic-weighted,0.607 +- 0.031,0.589 +- 0.007,0.613 +- 0.046,0.543 +- 0.054

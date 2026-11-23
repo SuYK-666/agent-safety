@@ -1,0 +1,6 @@
+﻿Defense,CoreFail rows,Audited,Missing,HarmEvidence,SemOnly,NullAudit,OtherNoHarm
+D0,840,840,0,504,336,0,0
+B2/Sandwich,445,445,0,176,269,0,0
+D3,272,272,0,119,152,1,0
+D4/LongPolicy,277,277,0,160,116,0,1
+Total,1834,1834,0,959,873,1,1

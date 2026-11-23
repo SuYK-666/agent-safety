@@ -1,0 +1,4 @@
+﻿Comparison,D0 harm,Target harm,D0-only,Target-only,Holm p
+D0 vs B2,124,76,79,31,1.05e-4
+D0 vs D3,124,76,77,29,8.0e-5
+D0 vs D4,124,71,88,35,5.1e-5

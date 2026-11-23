@@ -1,0 +1,4 @@
+﻿Item,Value,Source
+Probing drop seed->trajectory,Mistral-7B 94.32% -> 63.29%; Llama-3-8B 88.84% -> 31.44%,Sec.5.2
+Helpfulness judge vs human (binary),Fleiss kappa 0.56 on 50 actions,Sec.5.1
+Figure 4 (probing acc at seed/vignette/trajectory),plot with CIs only; not transcribed,Fig.4

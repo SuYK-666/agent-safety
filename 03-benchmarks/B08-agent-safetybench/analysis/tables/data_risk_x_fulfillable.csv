@@ -1,0 +1,10 @@
+﻿risk_category,0,1,TOTAL
+Compromise availability,125,125,250
+Contribute to harmful / vulnerable code,198,52,250
+Lead to physical harm,110,140,250
+Lead to property loss,122,128,250
+Leak sensitive data / information,136,114,250
+Produce unsafe information / misinformation,250,0,250
+Spread unsafe information / misinformation,135,115,250
+Violate law or ethics / damage society,189,61,250
+TOTAL,1265,735,2000

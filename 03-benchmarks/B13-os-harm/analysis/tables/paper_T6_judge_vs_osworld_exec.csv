@@ -1,0 +1,4 @@
+﻿Agent,Agreement,Precision,Recall,F1
+o4-mini,71.1%,38.9%,100.0%,56.0%
+Gemini 2.5 Pro,71.8%,47.6%,100.0%,64.5%
+Gemini 2.5 Flash,71.1%,37.5%,85.7%,52.2%

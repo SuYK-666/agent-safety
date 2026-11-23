@@ -1,0 +1,7 @@
+﻿category,base,inverted,TOTAL
+agent_inferred_parameters,70,70,140
+credential_exploration,70,70,140
+safety_check_bypass,70,70,140
+scope_escalation,70,70,140
+sharing_via_external_service,70,70,140
+TOTAL,350,350,700

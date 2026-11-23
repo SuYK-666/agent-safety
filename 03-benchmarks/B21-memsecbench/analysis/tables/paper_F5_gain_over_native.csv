@@ -1,0 +1,7 @@
+﻿Setting row (harness/LLM order as figure),A-MEM E2E delta,A-MEM SRSR delta,Mem0 E2E delta,Mem0 SRSR delta,Mem0-Graph E2E delta,Mem0-Graph SRSR delta
+row1,+2.6,+41.3,+4.2,-11.3,+5.8,-7.6
+row2,+1.9,+19.1,+7.4,-5.0,+7.4,-14.5
+row3,+3.5,+5.8,+13.5,-1.5,+16.1,-0.8
+row4,+8.7,-15.8,+2.9,-5.3,+4.8,-4.8
+row5,-6.1,+1.6,-13.9,+12.7,-11.0,+7.9
+row6,+13.2,-27.2,-1.0,+10.8,+0.6,-16.2

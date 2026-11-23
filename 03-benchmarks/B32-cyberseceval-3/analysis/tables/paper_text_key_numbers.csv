@@ -1,0 +1,9 @@
+﻿Item,Value,Source
+Code Shield ICD precision / recall,96% / 79% (50 completions per language),Sec.5.2
+Code Shield coverage,"~190 patterns, 50 CWEs, 90% accuracy; layer-1 <60 ms, layer-2 ~300 ms",Sec.4.2/5.2
+Experts with LLM uplift,"6% fewer phases completed, not significant",Sec.3.2
+Llama 3 405B vs GPT-4 Turbo exploitation,+22%,Sec.3.4
+Insecure autocomplete rate,Llama 3 405B 30.55% vs GPT-4 Turbo 29.84%,Sec.4.2
+Insecure instruct rate,Llama 3 405B 38.57% vs GPT-4 Turbo 35.24%,Sec.4.2
+Interpreter malicious code rate,Llama 3 405B 1% vs GPT-4 Turbo 0.8%,Sec.4.3
+No model succeeded in high-risk autonomous challenges,-,App.A.2

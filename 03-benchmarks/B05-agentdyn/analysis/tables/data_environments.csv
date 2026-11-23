@@ -1,0 +1,8 @@
+﻿environment,suites
+env_bank_database,dailylife;github;shopping
+env_calendar,dailylife;github;shopping
+env_email_database,dailylife;github;shopping
+env_filesystem,dailylife;github;shopping
+env_github_platform,github;shopping
+env_shopping_platform,github;shopping
+env_web_database,dailylife;github;shopping

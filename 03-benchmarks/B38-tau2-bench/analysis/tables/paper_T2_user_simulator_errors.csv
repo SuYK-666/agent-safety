@@ -1,0 +1,4 @@
+﻿Domain,Conversations,Critical errors,Benign errors,Total errors
+airline,100,13 (13%),34 (34%),47 (47%)
+retail,50,6 (12%),14 (28%),20 (40%)
+telecom,50,3 (6%),5 (10%),8 (16%)

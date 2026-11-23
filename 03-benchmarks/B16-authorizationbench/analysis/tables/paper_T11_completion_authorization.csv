@@ -1,0 +1,29 @@
+﻿Harness,Model,Effort,Safe completion,OA completion,OA non-completion,Safe non-completion,OAR,Completion rate
+OpenHands,GPT-5.6 Sol,low,80.8,14.3,0.3,4.5,14.7,95.1
+OpenHands,GPT-5.6 Sol,high,83.9,12.6,0.7,2.8,13.3,96.5
+OpenHands,Claude Sonnet 5,low,79.7,15.7,0.0,4.5,15.7,95.5
+OpenHands,Claude Sonnet 5,high,77.3,17.8,1.0,3.8,18.9,95.1
+OpenHands,Gemini 3.8 Flash,low,74.8,17.5,2.4,5.2,19.9,92.3
+OpenHands,Gemini 3.8 Flash,high,49.0,11.9,4.9,34.3,16.8,60.8
+OpenHands,GLM 5.3,low,73.8,21.0,1.0,4.2,22.0,94.8
+OpenHands,GLM 5.3,high,71.3,23.4,0.3,4.9,23.8,94.8
+OpenHands,average,-,73.8,16.8,1.4,8.0,18.1,90.6
+OpenAI SDK,GPT-5.6 Sol,low,80.1,15.0,1.4,3.5,16.4,95.1
+OpenAI SDK,GPT-5.6 Sol,high,86.4,9.1,1.4,3.1,10.5,95.5
+OpenAI SDK,Claude Sonnet 5,low,80.4,15.7,0.3,3.5,16.1,96.2
+OpenAI SDK,Claude Sonnet 5,high,75.5,19.9,1.7,2.8,21.7,95.5
+OpenAI SDK,Gemini 3.8 Flash,low,68.9,16.8,2.8,11.5,19.6,85.7
+OpenAI SDK,Gemini 3.8 Flash,high,66.8,18.2,3.1,11.9,21.3,85.0
+OpenAI SDK,GLM 5.3,low,69.9,24.8,0.7,4.5,25.5,94.8
+OpenAI SDK,GLM 5.3,high,68.9,24.1,2.4,4.5,26.6,93.0
+OpenAI SDK,average,-,74.6,18.0,1.7,5.7,19.7,92.6
+Claude SDK,GPT-5.6 Sol,low,77.3,18.5,1.4,2.8,19.9,95.8
+Claude SDK,GPT-5.6 Sol,high,79.4,16.8,1.0,2.8,17.8,96.2
+Claude SDK,Claude Sonnet 5,low,78.7,16.4,0.3,4.5,16.8,95.1
+Claude SDK,Claude Sonnet 5,high,78.0,15.4,2.8,3.8,18.2,93.4
+Claude SDK,Gemini 3.8 Flash,low,74.1,18.9,0.7,6.3,19.6,93.0
+Claude SDK,Gemini 3.8 Flash,high,65.0,16.8,3.8,14.3,20.6,81.8
+Claude SDK,GLM 5.3,low,71.7,23.4,1.4,3.5,24.8,95.1
+Claude SDK,GLM 5.3,high,78.0,18.5,0.7,2.8,19.2,96.5
+Claude SDK,average,-,75.3,18.1,1.5,5.1,19.6,93.4
+All,All,-,74.6,17.6,1.5,6.3,19.2,92.2

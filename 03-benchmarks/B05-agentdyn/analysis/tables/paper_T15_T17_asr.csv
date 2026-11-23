@@ -1,0 +1,75 @@
+﻿defense,model,overall,shopping,github,dailylife
+None,GPT-4o mini,50.00,28.89,41.11,80.00
+None,GPT-4o,37.80,25.00,18.89,69.50
+None,GPT-5.1,4.96,1.67,2.22,11.00
+None,GPT-5-mini,0.37,0.00,1.11,0.00
+None,Gemini-2.5 Pro,20.61,15.00,13.33,33.50
+None,Gemini-2.5 Flash,37.61,14.44,23.89,74.50
+None,Claude-Sonnet-3.5,11.89,2.78,13.89,19.00
+None,Claude-Sonnet-4.5,0.87,0.00,1.11,1.50
+None,Qwen3 235B-A22B,22.67,5.00,20.00,43.00
+None,Llama 3.3 70B,11.91,2.22,5.00,28.50
+None,Qwen3-Coder,14.61,10.00,13.33,20.50
+None,Kimi-K2.5,11.65,7.22,17.22,10.50
+Prompt Sandwiching,GPT-4o mini,33.80,15.56,18.33,67.50
+Prompt Sandwiching,GPT-4o,31.17,19.44,15.56,58.50
+Prompt Sandwiching,GPT-5.1,1.20,0.00,1.11,2.50
+Prompt Sandwiching,GPT-5-mini,0.37,0.00,1.11,0.00
+Prompt Sandwiching,Gemini-2.5 Pro,23.94,20.00,18.33,33.50
+Prompt Sandwiching,Gemini-2.5 Flash,18.22,6.11,15.56,33.00
+Prompt Sandwiching,Claude-Sonnet-3.5,11.26,5.00,12.78,16.00
+Prompt Sandwiching,Claude-Sonnet-4.5,0.37,0.00,0.00,1.11
+Prompt Sandwiching,Qwen3 235B-A22B,25.70,11.11,20.00,46.00
+Prompt Sandwiching,Llama 3.3 70B,9.96,1.67,2.22,26.00
+Prompt Sandwiching,Qwen3-Coder,17.70,11.11,15.00,27.00
+Prompt Sandwiching,Kimi-K2.5,5.43,3.89,8.89,3.50
+Spotlighting,GPT-4o mini,47.33,27.78,42.22,72.00
+Spotlighting,GPT-4o,27.61,24.44,18.89,39.50
+Spotlighting,GPT-5.1,3.43,1.11,1.67,7.50
+Spotlighting,GPT-5-mini,0.56,0.56,1.11,0.00
+Spotlighting,Gemini-2.5 Pro,16.87,11.67,14.44,24.50
+Spotlighting,Gemini-2.5 Flash,17.74,7.22,10.00,36.00
+Spotlighting,Claude-Sonnet-3.5,3.80,0.56,8.33,2.50
+Spotlighting,Claude-Sonnet-4.5,0.37,0.00,0.00,1.11
+Spotlighting,Qwen3 235B-A22B,27.72,12.78,23.89,46.50
+Spotlighting,Llama 3.3 70B,14.85,2.78,7.78,34.00
+Spotlighting,Qwen3-Coder,13.28,4.44,13.89,21.50
+Spotlighting,Kimi-K2.5,5.68,2.22,8.33,6.50
+ProtectAI,GPT-4o mini,1.37,0.00,1.11,3.00
+ProtectAI,GPT-4o,0.85,0.00,0.56,2.00
+ProtectAI,GPT-5.1,0.00,0.00,0.00,0.00
+ProtectAI,GPT-5-mini,0.00,0.00,0.00,0.00
+ProtectAI,Gemini-2.5 Pro,0.69,0.00,0.56,1.50
+ProtectAI,Gemini-2.5 Flash,1.04,0.00,1.11,2.00
+ProtectAI,Claude-Sonnet-3.5,0.00,0.00,0.00,0.00
+ProtectAI,Claude-Sonnet-4.5,0.00,0.00,0.00,0.00
+ProtectAI,Qwen3 235B-A22B,1.07,0.00,2.22,1.00
+ProtectAI,Llama 3.3 70B,0.56,0.00,1.67,0.00
+ProtectAI,Qwen3-Coder,0.89,0.00,1.67,1.00
+ProtectAI,Kimi-K2.5,0.00,0.00,0.00,0.00
+PIGuard,GPT-4o mini,1.33,0.00,0.00,4.00
+PIGuard,GPT-4o,1.67,0.00,0.00,5.00
+PIGuard,GPT-5.1,1.17,0.00,0.00,3.50
+PIGuard,GPT-5-mini,0.00,0.00,0.00,0.00
+PIGuard,Gemini-2.5 Pro,1.83,0.00,0.00,5.50
+PIGuard,Gemini-2.5 Flash,2.00,0.00,0.00,6.00
+PIGuard,Claude-Sonnet-3.5,1.33,0.00,0.00,4.00
+PIGuard,Claude-Sonnet-4.5,0.67,0.00,0.00,2.00
+PIGuard,Qwen3 235B-A22B,1.83,0.00,0.00,5.50
+PIGuard,Llama 3.3 70B,0.67,0.00,0.00,2.00
+PIGuard,Qwen3-Coder,1.67,0.00,0.00,5.00
+PIGuard,Kimi-K2.5,0.83,0.00,0.00,2.50
+PromptGuard2,GPT-4o mini,28.54,6.11,0.00,79.50
+PromptGuard2,GPT-4o,27.15,9.44,10.00,62.00
+PromptGuard2,GPT-5.1,3.71,0.56,0.56,10.00
+PromptGuard2,GPT-5-mini,0.00,0.00,0.00,0.00
+PromptGuard2,Gemini-2.5 Pro,14.50,2.22,7.78,33.50
+PromptGuard2,Gemini-2.5 Flash,23.87,2.78,8.33,60.50
+PromptGuard2,Claude-Sonnet-3.5,8.20,0.00,6.11,18.50
+PromptGuard2,Claude-Sonnet-4.5,0.67,0.00,0.00,2.00
+PromptGuard2,Qwen3 235B-A22B,22.00,8.89,16.11,41.00
+PromptGuard2,Llama 3.3 70B,11.07,2.78,4.44,26.00
+PromptGuard2,Qwen3-Coder,12.17,2.22,12.78,21.50
+PromptGuard2,Kimi-K2.5,5.24,0.00,7.22,8.50
+Meta-SecAlign,Meta-SecAlign 8B,5.26,0.00,2.78,13.00
+Meta-SecAlign,Meta-SecAlign 70B,8.98,10.00,4.44,12.50

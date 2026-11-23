@@ -1,0 +1,8 @@
+﻿Model,different_user_input_language,output_formatting_manipulation,overload_with_information,many_shot_attack,ignore_previous_instructions,system_mode,few_shot_attack,indirect_reference,repeated_token_attack,persuasion,mixed_techniques,virtualization,payload_splitting,hypothetical_scenario,token_smuggling
+codellama-70b-instruct,0.28,0.18,0.20,0.00,0.33,0.16,0.00,0.21,0.00,0.35,0.15,0.00,0.00,0.08,0.00
+gpt-4,0.16,0.35,0.35,0.29,0.21,0.16,0.18,0.43,0.00,0.15,0.33,0.14,0.00,0.23,0.00
+llama 3 70b-instruct,0.44,0.71,0.25,0.29,0.38,0.42,0.18,0.36,0.00,0.27,0.24,0.43,0.11,0.23,0.08
+codellama-34b-instruct,0.64,0.29,0.60,0.71,0.46,0.37,0.45,0.36,0.50,0.31,0.21,0.07,0.33,0.15,0.00
+codellama-13b-instruct,0.76,0.29,0.55,0.57,0.29,0.53,0.55,0.21,0.50,0.27,0.27,0.21,0.44,0.15,0.00
+gpt-3.5-turbo,0.60,0.76,0.40,0.57,0.33,0.37,0.36,0.36,0.67,0.19,0.36,0.29,0.22,0.31,0.08
+llama 3 8b-instruct,0.76,0.76,0.60,0.14,0.54,0.53,0.64,0.36,0.50,0.46,0.36,0.50,0.33,0.23,0.08

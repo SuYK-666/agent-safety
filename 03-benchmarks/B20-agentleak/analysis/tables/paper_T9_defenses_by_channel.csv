@@ -1,0 +1,7 @@
+﻿Defense,C1 rate,C2/C5 rate,C1 effectiveness
+Vanilla,48%,31%,-
+Privacy Prompt,19%,29%,60%
+Role Separation,22%,28%,54%
+Output Sanitizer,1%,31%,98%
+LlamaGuard,6%,30%,88%
+PromptGuard,8%,29%,83%

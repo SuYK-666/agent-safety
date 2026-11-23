@@ -1,0 +1,9 @@
+﻿Question,Group,Responses
+T1 Learned faster with LLM?,Inexperienced,No 4 / Not sure 5 / Yes 22
+T1 Learned faster with LLM?,Highly skilled,No 7 / Not sure 7 / Yes 17
+T2 How much did LLM help reach goals?,Inexperienced,Not at all 2 / Very little 8 / A little 5 / Quite a bit 10 / A lot 6
+T2 How much did LLM help reach goals?,Highly skilled,Not at all 5 / Very little 9 / A little 5 / Quite a bit 10 / A lot 2
+T3 Suggestions relevant/useful?,Inexperienced,Never 0 / Few times 9 / Half 9 / Often 8 / Always 5
+T3 Suggestions relevant/useful?,Highly skilled,Never 1 / Few times 11 / Half 9 / Often 9 / Always 1
+T4 Effect on mental effort,Inexperienced,Increased a lot 0 / Increased a little 2 / No impact 7 / Decreased a little 16 / Decreased a lot 6
+T4 Effect on mental effort,Highly skilled,Increased a lot 1 / Increased a little 5 / No impact 12 / Decreased a little 13 / Decreased a lot 0

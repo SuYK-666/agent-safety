@@ -1,0 +1,11 @@
+﻿Item,Value,Source
+Security test cases (user x injection pairs),629,Sec.4 p.7
+User tasks,97,Sec.4 p.7
+Slack suite targeted ASR (GPT-4o),92%,Sec.4.1 p.7
+Travel injection task 6 ASR (GPT-4o),0%,Sec.4.1 p.7
+Max ASR when injection at end of tool output (GPT-4o),~70%,Sec.4.1 p.8
+Tool filter ASR (text),7.5% (Table 5: 6.84%),Sec.4.3 p.9
+Test cases where task tools suffice for attack (tool filter fails),17%,Sec.4.3 p.9
+Utility loss under attack for most models,10-25 pp absolute,Sec.4.1 p.7
+Cost of full 629 security cases on GPT-4o,~US$35,App.D p.20
+Cost of 97 utility cases on GPT-4o,~US$4,App.D p.20

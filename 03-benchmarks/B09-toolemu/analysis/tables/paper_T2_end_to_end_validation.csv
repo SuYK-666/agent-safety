@@ -1,0 +1,3 @@
+﻿Emulator,Identified failure precision,True failure incidence
+Standard,72.5% +- 7.1%,39.6% +- 4.9%
+Adversarial,68.8% +- 6.7%,50.0% +- 5.1%

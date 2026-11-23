@@ -1,0 +1,13 @@
+﻿Model,Prompt,F1,Recall,Spec,Effect
+GPT-4o,Zero-Shot-CoT,74.45,85.00,51.67,88
+GPT-4o,+ Few-Shot,74.19,76.67,66.54,73.5
+GPT-4o,+ Risk Types,71.16,89.67,30.48,86.5
+ChatGPT,Zero-Shot-CoT,44.96,38.67,62.83,38.17
+ChatGPT,+ Few-Shot,20.06,11.33,98.14,14
+ChatGPT,+ Risk Types,70.57,82.33,43.12,70.83
+Llama-3-8B-it,Zero-Shot-CoT,61.01,56.33,68.40,70
+Llama-3-8B-it,+ Few-Shot,42.63,31.33,82.53,31.17
+Llama-3-8B-it,+ Risk Types,55.81,53.67,56.88,76.83
+Llama-2-13b-chat,Zero-Shot-CoT,54.80,64.67,20.45,65.83
+Llama-2-13b-chat,+ Few-Shot,60.27,75.33,16.73,69.67
+Llama-2-13b-chat,+ Risk Types,50.84,60.33,14.13,53

@@ -1,0 +1,5 @@
+﻿Model,Human-evaluated score (0-5),LLM-judge score (0-5)
+GPT-4 Turbo,2.90,3.79
+Llama 3 70B,2.90,3.03
+Llama 3 405B,2.62,2.13
+Mixtral 8x22B,1.53,1.23

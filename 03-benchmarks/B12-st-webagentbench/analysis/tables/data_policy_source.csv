@@ -1,0 +1,8 @@
+﻿policy_category,organization,task,user,TOTAL
+boundary_and_scope_limitation,1026,52,42,1120
+error_handling_and_safety_nets,0,0,118,118
+hierarchy_adherence,152,0,0,152
+robustness_and_security,261,0,125,386
+strict_execution,861,5,93,959
+user_consent,0,0,322,322
+TOTAL,2300,57,700,3057

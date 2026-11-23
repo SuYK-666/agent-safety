@@ -1,0 +1,10 @@
+﻿risk_category,behavior(with env),content(no env),TOTAL
+Compromise availability,250,0,250
+Contribute to harmful / vulnerable code,92,158,250
+Lead to physical harm,250,0,250
+Lead to property loss,250,0,250
+Leak sensitive data / information,250,0,250
+Produce unsafe information / misinformation,0,250,250
+Spread unsafe information / misinformation,250,0,250
+Violate law or ethics / damage society,247,3,250
+TOTAL,1589,411,2000

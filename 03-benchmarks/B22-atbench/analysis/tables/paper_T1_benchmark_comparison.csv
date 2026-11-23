@@ -1,0 +1,6 @@
+﻿Property,R-Judge,ASSE-Safety,ASSE-Security,ATBench500,ATBench
+Cases,564,1476,817,500,1000
+Available tools,-,-,-,1575,2084
+Used tools,148,903,254,1357,1954
+Avg turns,5.25,4.96,5.75,8.97,9.01
+Avg tokens,0.47k,0.47k,0.78k,1.52k,3.95k

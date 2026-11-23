@@ -1,0 +1,17 @@
+﻿Dimension,Value,Tasks
+Provenance,Original,44
+Provenance,Expanded,242
+Trigger type,Benign,168
+Trigger type,Malicious,118
+Direct harmful consequences,With,185
+Direct harmful consequences,Without,101
+Domain,Personal life,25
+Domain,Office work,38
+Domain,Software development,32
+Domain,Travel,26
+Domain,E-commerce,34
+Domain,Entertainment,26
+Domain,Finance,28
+Domain,Healthcare,26
+Domain,Legal,24
+Domain,Education,27

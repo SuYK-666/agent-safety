@@ -1,0 +1,12 @@
+﻿agent,user_tasks,normal_tools,attack_tools,attack_tools_aggressive,attack_tools_non_aggressive,pot_tasks,attack_cases_user_task_x_attack_tool
+financial_analyst_agent,5,2,40,20,20,3,200
+legal_consultant_agent,5,2,40,20,20,3,200
+medical_advisor_agent,5,2,40,20,20,3,200
+education_consultant_agent,5,2,40,20,20,0,200
+psychological_counselor_agent,5,2,40,20,20,0,200
+ecommerce_manager_agent,5,2,40,20,20,0,200
+aerospace_engineer_agent,5,2,40,20,20,0,200
+academic_search_agent,6,2,40,20,20,4,240
+autonomous_driving_agent,5,2,40,20,20,0,200
+system_admin_agent,5,2,40,20,20,3,200
+TOTAL,51,20,400,200,200,16,2040

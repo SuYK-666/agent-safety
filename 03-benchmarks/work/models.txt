@@ -1,0 +1,181 @@
+### B02-injecagent
+- paper_T10_response_quality_failed_cases.csv [model] :: Qwen-0.5B | Qwen-1.8B | Qwen-14B | Qwen-72B | Llama2-7B | Nous-Llama2-13b | Mixtral-8x7B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Snorkel-Mistral | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | StripedHyena-7B | Claude-2 | GPT-3.5 | GPT-4
+- paper_T11_asr_valid_simple_react.csv [model] :: Qwen-0.5B | Qwen-1.8B | Qwen-4B | Qwen-7B | Qwen-14B | Qwen-72B | Llama2-7B | Llama2-13B | Llama2-70B | Nous-Llama2-13b | Mixtral-8x7B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Snorkel-Mistral | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | StripedHyena-7B | Capybara-7B | Yi-34B | Nous-Yi-34B | Claude-2 | GPT-3.5 | GPT-4
+- paper_T12_asr_all_simple_react.csv [model] :: Qwen-0.5B | Qwen-1.8B | Qwen-4B | Qwen-7B | Qwen-14B | Qwen-72B | Llama2-7B | Llama2-13B | Llama2-70B | Nous-Llama2-13b | Mixtral-8x7B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Snorkel-Mistral | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | StripedHyena-7B | Capybara-7B | Yi-34B | Nous-Yi-34B | Claude-2 | GPT-3.5 | GPT-4
+- paper_T3_asr_valid_main.csv [model] :: Qwen-1.8B | Qwen-72B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Mixtral-8x7B | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | Capybara-7B | Nous-Llama2-13b | Llama2-70B | Claude-2 | GPT-3.5 | GPT-4
+- paper_T6_valid_rates.csv [model] :: Qwen-0.5B | Qwen-4B | Qwen-7B | Qwen-14B | Snorkel-Mistral | StripedHyena-7B | Capybara-7B | Yi-34B | Nous-Yi-34B | Llama2-7B | Llama2-13B | Qwen-1.8B | Qwen-72B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Mixtral-8x7B | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | Nous-Llama2-13b | Llama2-70B | Claude-2 | GPT-3.5 | GPT-4 | GPT-3.5 (Fine-tuned) | GPT-4 (Fine-tuned)
+- paper_T7_asr_valid_low_valid_agents.csv [model] :: Qwen-0.5B | Qwen-4B | Qwen-7B | Qwen-14B | Snorkel-Mistral | StripedHyena-7B | Yi-34B | Nous-Yi-34B | Llama2-7B | Llama2-13B
+- paper_T8_asr_all.csv [model] :: Qwen-0.5B | Qwen-1.8B | Qwen-4B | Qwen-7B | Qwen-14B | Qwen-72B | Llama2-7B | Llama2-13B | Llama2-70B | Nous-Llama2-13b | Mixtral-8x7B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Snorkel-Mistral | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | StripedHyena-7B | Capybara-7B | Yi-34B | Nous-Yi-34B | Claude-2 | GPT-3.5 | GPT-4 | GPT-3.5 (Fine-tuned) | GPT-4 (Fine-tuned)
+- paper_T9_asr_all_by_attack_type.csv [model] :: Qwen-0.5B | Qwen-1.8B | Qwen-4B | Qwen-7B | Qwen-14B | Qwen-72B | Llama2-7B | Llama2-13B | Llama2-70B | Nous-Llama2-13b | Mixtral-8x7B | Mistral-7B | OpenOrca-Mistral | OpenHermes-2.5-Mistral | OpenHermes-2-Mistral | Snorkel-Mistral | Nous-Mixtral-DPO | Nous-Mixtral-SFT | MythoMax-13b | WizardLM-13B | Platypus2-70B | StripedHyena-7B | Capybara-7B | Yi-34B | Nous-Yi-34B | Claude-2 | GPT-3.5 | GPT-4 | Average
+### B03-agent-security-bench
+- data_agents_summary.csv [agent] :: financial_analyst_agent | legal_consultant_agent | medical_advisor_agent | education_consultant_agent | psychological_counselor_agent | ecommerce_manager_agent | aerospace_engineer_agent | academic_search_agent | autonomous_driving_agent | system_admin_agent | TOTAL
+- data_attack_tools.csv [agent] :: system_admin_agent | financial_analyst_agent | legal_consultant_agent | medical_advisor_agent | education_consultant_agent | psychological_counselor_agent | ecommerce_manager_agent | aerospace_engineer_agent | academic_search_agent | autonomous_driving_agent
+- data_attack_type_by_agent.csv [agent] :: academic_search_agent | aerospace_engineer_agent | autonomous_driving_agent | ecommerce_manager_agent | education_consultant_agent | financial_analyst_agent | legal_consultant_agent | medical_advisor_agent | psychological_counselor_agent | system_admin_agent | TOTAL
+- data_normal_tools.csv [agent] :: system_admin_agent | financial_analyst_agent | legal_consultant_agent | medical_advisor_agent | education_consultant_agent | psychological_counselor_agent | ecommerce_manager_agent | aerospace_engineer_agent | academic_search_agent | autonomous_driving_agent
+- data_user_tasks.csv [agent] :: financial_analyst_agent | legal_consultant_agent | medical_advisor_agent | education_consultant_agent | psychological_counselor_agent | ecommerce_manager_agent | aerospace_engineer_agent | academic_search_agent | autonomous_driving_agent | system_admin_agent
+- paper_T14_attack_combinations.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average | ∆
+- paper_T16_pot_utility.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average
+- paper_T19_defense_utility_no_attack.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average
+- paper_T20_pot_defenses.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average
+- paper_T21_memory_defense_llm_detector.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average
+- paper_T5_attack_results_by_backbone.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average
+- paper_T6_NRP.csv [LLM] :: Claude-3.5 Sonnet | LLaMA3-70B | GPT-4o | GPT-4o-mini | Gemma2-27B | LLaMA3.1-70B | Qwen2-7B | Gemma2-9B | GPT-3.5 Turbo | Qwen2-72B | LLaMA3-8B | LLaMA3.1-8B | Mixtral-8x7B | Average
+- paper_T7_defenses_DPI.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average | ∆
+- paper_T8_defenses_IPI.csv [LLM] :: Gemma2-9B | Gemma2-27B | LLaMA3-8B | LLaMA3-70B | LLaMA3.1-8B | LLaMA3.1-70B | Mixtral-8x7B | Qwen2-7B | Qwen2-72B | Claude-3.5 Sonnet | GPT-3.5 Turbo | GPT-4o | GPT-4o-mini | Average | ∆
+### B04-agent-red-teaming
+- derived_F5_transfer_summary.csv [model] :: o3 | 3.7 Sonnet:Thinking | 3.7 Sonnet | 3.5 Sonnet | o1 | 3.5 Haiku | GPT 4o | GPT 4.5 | Command-R | Grok 2 | Llama 3.1 405B | o3 Mini | o3 Mini:High | Llama 3.3 70B
+- paper_F3_challenge_asr_by_model.csv [Model] :: Llama 3.3 70B | Pixtral Large | Llama 3.1 405B | o3 Mini:High | Nova Lite v1 | Nova Micro v1 | Grok 2 | o3 Mini | Nova Pro v1 | Command-R | o3 | GPT 4.5 | o1 | GPT 4o | 3.5 Haiku | 3.5 Sonnet | 3.7 Sonnet | 3.7 Sonnet:Thinking
+### B05-agentdyn
+- derived_full_matrix_overall.csv [model] :: GPT-4o mini | GPT-4o | GPT-5.1 | GPT-5-mini | Gemini-2.5 Pro | Gemini-2.5 Flash | Claude-Sonnet-3.5 | Claude-Sonnet-4.5 | Qwen3 235B-A22B | Llama 3.3 70B | Qwen3-Coder | Kimi-K2.5 | Meta-SecAlign 8B | Meta-SecAlign 70B
+- paper_T12_T14_utility_under_attack.csv [model] :: GPT-4o mini | GPT-4o | GPT-5.1 | GPT-5-mini | Gemini-2.5 Pro | Gemini-2.5 Flash | Claude-Sonnet-3.5 | Claude-Sonnet-4.5 | Qwen3 235B-A22B | Llama 3.3 70B | Qwen3-Coder | Kimi-K2.5 | Meta-SecAlign 8B | Meta-SecAlign 70B
+- paper_T15_T17_asr.csv [model] :: GPT-4o mini | GPT-4o | GPT-5.1 | GPT-5-mini | Gemini-2.5 Pro | Gemini-2.5 Flash | Claude-Sonnet-3.5 | Claude-Sonnet-4.5 | Qwen3 235B-A22B | Llama 3.3 70B | Qwen3-Coder | Kimi-K2.5 | Meta-SecAlign 8B | Meta-SecAlign 70B
+- paper_T17_asr_system.csv [model] :: GPT-4o mini | GPT-4o | GPT-5.1 | GPT-5-mini | Gemini-2.5 Pro | Gemini-2.5 Flash | Claude-Sonnet-3.5 | Claude-Sonnet-4.5 | Qwen3 235B-A22B | Llama 3.3 70B | Qwen3-Coder | Kimi-K2.5
+- paper_T3_main_defenses.csv [model] :: GPT-4o | Gemini-2.5 Pro | Claude-Sonnet-3.5 | Llama 3.3 70B | Meta SecAlign    Meta SecAlign 70B
+- paper_T8_other_attacks.csv [Model] :: gpt-5-mini | gpt-5.1 | Claude-Sonnet-4.5
+- paper_T9_T11_benign_utility.csv [model] :: GPT-4o mini | GPT-4o | GPT-5.1 | GPT-5-mini | Gemini-2.5 Pro | Gemini-2.5 Flash | Claude-Sonnet-3.5 | Claude-Sonnet-4.5 | Qwen3 235B-A22B | Llama 3.3 70B | Qwen3-Coder | Kimi-K2.5 | Meta-SecAlign 8B | Meta-SecAlign 70B
+### B06-safeclawbench
+- paper_T22_T24_benign_utility_by_model.csv [Model] :: GPT-5.4 | Claude Opus 4.6 | GPT-4.1 | GPT-4o | Qwen3-235B | GLM-5 | Kimi K2.5 | Average
+- paper_T27_corefail_nine_policies.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Average
+- paper_T3_headline_corefail.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Pooled (5x600)
+- paper_T38_matched_length_control.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Average
+- paper_T4_harm_audit_D0_by_model.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Total
+- paper_T41_exec_observed_harm.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Average
+- paper_T42_exec_metric_hierarchy_D0.csv [Model] :: GPT-5.5 | Claude Opus 4.7 | Qwen3.6-Plus | GLM-5.1 | Kimi K2.5 | Average
+- paper_T43_paired_defense_tests.csv [Model] :: Claude Opus 4.6 | Claude Sonnet 4.6 | GLM-5 | GPT-4.1 | GPT-4o | GPT-5.4 | Kimi K2.5 | Qwen3-235B
+### B07-agentharm
+- derived_T9_pivot_by_model.csv [Model] :: GPT-3.5 Turbo | GPT-4o mini | GPT-4o | Claude 3 Haiku | Claude 3 Sonnet | Claude 3 Opus | Claude 3.5 Sonnet | Mistral Small 2 | Mistral Large 2 | Gemini 1.0 Pro | Gemini 1.5 Flash | Gemini 1.5 Pro | Llama-3.1 8B | Llama-3.1 70B | Llama-3.1 405B
+- paper_T10_private_test.csv [Model] :: GPT-3.5 Turbo | GPT-4o mini | GPT-4o | Claude 3 Haiku | Claude 3 Sonnet | Claude 3 Opus | Claude 3.5 Sonnet
+- paper_T2_best_of_n.csv [Model] :: GPT-4o | Claude 3.5 Sonnet | Mistral Large 2
+- paper_T3_prompting.csv [Model] :: GPT-4o | Sonnet 3.5 | Mistral Large 2
+- paper_T8_agent_vs_chat_refusal.csv [Model] :: GPT-4o | Claude 3 Haiku | Claude 3 Opus | Claude 3.5 Sonnet
+- paper_T9_public_test_main.csv [Model] :: GPT-3.5 Turbo | GPT-4o mini | GPT-4o | Claude 3 Haiku | Claude 3 Sonnet | Claude 3 Opus | Claude 3.5 Sonnet | Mistral Small 2 | Mistral Large 2 | Gemini 1.0 Pro | Gemini 1.5 Flash | Gemini 1.5 Pro | Llama-3.1 8B | Llama-3.1 70B | Llama-3.1 405B
+### B08-agent-safetybench
+- paper_T5_safety_scores_by_risk.csv [Model] :: Claude-3-Opus | Claude-3.5-Sonnet | Claude-3.5-Haiku | GPT-4o | GPT-4-Turbo | Gemini-1.5-Flash | Gemini-1.5-Pro | Qwen2.5-72B-Instruct | GLM4-9B-Chat | Llama3.1-405B-Instruct | DeepSeek-V2.5 | Qwen2.5-14B-Instruct | GPT-4o-mini | Llama3.1-70B-Instruct | Llama3.1-8B-Instruct | Qwen2.5-7B-Instruct | Average
+- paper_T6_safety_scores_by_failure_mode.csv [Model] :: Claude-3-Opus | Claude-3.5-Sonnet | Claude-3.5-Haiku | GPT-4o | GPT-4-Turbo | Gemini-1.5-Flash | Gemini-1.5-Pro | Qwen2.5-72B-Instruct | GLM4-9B-Chat | Llama3.1-405B-Instruct | DeepSeek-V2.5 | Qwen2.5-14B-Instruct | GPT-4o-mini | Llama3.1-70B-Instruct | Llama3.1-8B-Instruct | Qwen2.5-7B-Instruct | Average
+### B09-toolemu
+- paper_T4_agent_evaluation.csv [Model] :: GPT-4 | Claude-2 | ChatGPT-3.5 | Vicuna-1.5-13B | Vicuna-1.5-7B | NoAct
+### B10-wasp
+- paper_T2_main_results.csv [Backbone] :: GPT-4o-mini | GPT-4o | OpenAI o1 | Claude Sonnet 3.5 v2 | Claude Sonnet 3.7 Ext. Thinking
+- paper_T3_url_vs_plaintext.csv [Backbone] :: GPT-4o (axtree+SOM) | GPT-4o-mini (axtree) | o1 (axtree, system) | o1 (axtree, developer) | Claude-3.5-sonnet | Claude-3.7-sonnet
+- paper_T4_task_related_vs_agnostic.csv [Backbone] :: GPT-4o (axtree+SOM) | Claude-3.7-sonnet
+### B11-safearena
+- paper_F3_task_completion.csv [Model] :: GPT-4o | Claude-3.5-Sonnet | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+- paper_F5_aria_llm_judge.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+- paper_T11_full_tcr.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+- paper_T12_full_refusal.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+- paper_T3_normalized_safety.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+- paper_T4_aria_human.csv [Model] :: Claude-3.5-Sonnet | Qwen-2-VL-72B
+- paper_T5_refusal_direct_vs_priming.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-Mini | Llama-3.2-90B | Qwen-2-VL-72B
+### B12-st-webagentbench
+- paper_F2_agent_metrics.csv [Agent] :: AWM | WebVoyager | WorkArena Legacy
+### B13-os-harm
+- paper_F5_jailbreak_template.csv [Agent] :: o4-mini | GPT-4.1 | Claude 3.7 Sonnet | Gemini 2.5 Pro | Gemini 2.5 Flash
+- paper_T2_main_results.csv [Agent] :: o4-mini | GPT-4.1 | Claude 3.7 Sonnet | Gemini 2.5 Pro | Gemini 2.5 Flash
+- paper_T6_judge_vs_osworld_exec.csv [Agent] :: o4-mini | Gemini 2.5 Pro | Gemini 2.5 Flash
+### B14-mma-safetybench
+- derived_model_means.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+- paper_T2_asr.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+- paper_T3_neutral_prompt_asr.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+- paper_T4_clean_task_success.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+- paper_T5_asr_with_safety_prompt.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+- paper_T6_semantic_compromise_rate.csv [Model] :: GPT-5 | Claude 4.5 Sonnet | Gemini 3 Pro | SEED-1.8 | Llama-3.2-11B-Vision | InternVL3-38B | Kimi-K2.5 | Qwen3-VL-32B | GLM-4.6V
+### B16-authorizationbench
+- paper_T11_completion_authorization.csv [Model] :: GPT-5.6 Sol | Claude Sonnet 5 | Gemini 3.8 Flash | GLM 5.3 | average | All
+- paper_T12_reasoning_effort.csv [Model] :: GPT-5.6 Sol | Claude Sonnet 5 | Gemini 3.8 Flash | GLM 5.3 | All
+### B17-authgatebench
+- derived_policy_means.csv [model] :: Qwen3.7-Plus | GLM-5.2 | Kimi-K2.7-Code | DeepSeek-V4-Flash
+- paper_T2_eval_implicit_policy.csv [Model] :: Qwen3.7-Plus | GLM-5.2 | Kimi-K2.7-Code | DeepSeek-V4-Flash
+- paper_T3_invariant_rate_implicit.csv [Model] :: Qwen3.7-Plus | GLM-5.2 | Kimi-K2.7-Code | DeepSeek-V4-Flash
+- paper_T4_invariant_rate_explicit.csv [Model] :: Qwen3.7-Plus | GLM-5.2 | Kimi-K2.7-Code | DeepSeek-V4-Flash
+- paper_T5_eval_explicit_policy.csv [Model] :: Qwen3.7-Plus | GLM-5.2 | Kimi-K2.7-Code | DeepSeek-V4-Flash
+### B18-privacylens
+- paper_T2_probing_and_action.csv [Model] :: ChatGPT-3.5 | GPT-4 | Claude-3-Haiku | Claude-3-Sonnet | Mistral-7B-Instruct-v0.2 | Mixtral-8x7B-Instruct-v0.1 | zephyr-7b-beta | Llama-3-8B-Instruct | Llama-3-70B-Instruct
+- paper_T3_extended_seeds.csv [Model] :: ChatGPT-3.5 | GPT-4 | Claude-3-Haiku | Claude-3-Sonnet | Mistral-7B-Instruct-v0.2 | Mixtral-8x7B-Instruct-v0.1 | zephyr-7b-beta | Llama-3-8B-Instruct | Llama-3-70B-Instruct
+- paper_T5_confaide_culturebank.csv [Model] :: ChatGPT-3.5 | GPT-4 | Claude-3-Haiku | Claude-3-Sonnet | Mistral-7B-Instruct-v0.2 | Mixtral-8x7B-Instruct-v0.1 | zephyr-7b-beta | Llama-3-8B-Instruct | Llama-3-70B-Instruct
+### B19-ci-work
+- paper_T1_main_results.csv [Model] :: GPT-4o | GPT-4.1 | o3 | GPT-5 | Grok-3 | Qwen-2.5 32B | Kimi-K2 | DeepSeek-V3 | DeepSeek-R1
+### B20-agentleak
+- paper_F7_secondary_channels.csv [Model] :: GPT-4o-mini | GPT-4o | Claude 3.5 Sonnet | Mistral Large | Llama 3.3 70B
+- paper_T15_per_model.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-mini | Llama-3.3-70B | Mistral-Large | Global (weighted)
+- paper_T16_sdk_integration.csv [Model] :: Claude-3.5-Sonnet | GPT-4o | GPT-4o-mini | Llama 3.3 70B | Mistral Large | Average
+- results_model_stats.csv [model] :: anthropic/claude-3.5-sonnet | meta-llama/llama-3.3-70b-instruct | mistralai/mistral-large-2512 | openai/gpt-4o | openai/gpt-4o-mini
+### B21-memsecbench
+- derived_pooled_by_llm.csv [llm] :: DeepSeek-V4-Pro | MiniMax-M3 | GPT-5.5
+- paper_T2_lifecycle_24configs.csv [llm] :: DeepSeek-V4-Pro | MiniMax-M3 | GPT-5.5
+### B22-atbench
+- paper_T2_main_results.csv [Model] :: GPT-5.4 | GPT-5.2 | Gemini-3-Flash | Gemini-3.1-Pro | Qwen3.5-397B-A17B | Qwen3.5-4B | Qwen3-4B | QwQ-32B | Qwen3-235B-A22B-Instruct-2507 | Qwen3-4B-Instruct-2507 | Qwen2.5-7B-Instruct | Llama3.1-8B-Instruct | LlamaGuard3-8B | LlamaGuard4-12B | Qwen3-Guard | ShieldAgent | AgentDoG-Qwen3-4B
+### B24-mcp-security-bench
+- data_agents.csv [agent] :: academic_search | information_retrieval | it_development_management | information_gathering | llm_enhancement | travel_mobility | office_assistance | team_management | image_generation | multidisciplinary
+- data_cases_agent_x_attack_type.csv [agent] :: academic_search | image_generation | information_gathering | information_retrieval | it_development_management | llm_enhancement | multidisciplinary | office_assistance | team_management | travel_mobility | TOTAL
+- paper_T11_single_attacks_full.csv [LLM] :: Llama3.1 8B | Llama3.1 70B | Llama3.3 70B | Qwen3 8B | Qwen3 30B | Gemini 2.5 Flash | DeepSeek-V3.1 | Claude4 Sonnet | GPT-4o-mini | GPT-5 | Average
+- paper_T12_mixed_attacks_full.csv [LLM] :: Llama3.1 8B | Llama3.1 70B | Llama3.3 70B | Qwen3 8B | Qwen3 30B | Gemini 2.5 Flash | DeepSeek-V3.1 | Claude4 Sonnet | GPT-4o-mini | GPT-5 | Average
+- paper_T3_asr.csv [LLM] :: Llama3.1 8B | Llama3.1 70B | Llama3.3 70B | Qwen3 8B | Qwen3 30B | Gemini 2.5 Flash | DeepSeek-V3.1 | Claude4 Sonnet | GPT-4o-mini | GPT-5 | Average
+- paper_T4_defense_mcip.csv [LLM] :: Llama3.1 8B | Llama3.1 70B | Llama3.3 70B | Qwen3 8B | Qwen3 30B | Gemini 2.5 Flash | DeepSeek-V3.1 | Claude4 Sonnet | GPT-4o-mini | GPT-5 | Average | Delta
+### B26-madbench
+- paper_T4b_M5_model.csv [Model] :: gpt-4o | GPT-5 | GPT-6 Astra
+### B27-duma-bench
+- paper_T4_model_asr.csv [Model] :: Claude Haiku 4.5 | Claude Opus 4.5 | Claude Sonnet 4.5 | GPT-4.1 | GPT-4.1-mini | GPT-4o | GPT-4o-mini | GPT-5 | GPT-5-mini | GPT-5-nano | DeepSeek V3.2 | Qwen3.5-Flash | Qwen3.5-Plus | GLM-4.7
+### B28-r-judge
+- paper_T1_main_results.csv [Model] :: GPT-4o | ChatGPT | Meta-Llama-3-8B-Instruct | Llama-2-13b-chat-hf | Llama-2-7b-chat-hf | Random | Vicuna-13b-v1.5 | Vicuna-13b-v1.5-16k | Vicuna-7b-v1.5 | Vicuna-7b-v1.5-16k | Mistral-7B-Instruct-v0.2 | Mistral-7B-Instruct-v0.3
+- paper_T2_prompting.csv [Model] :: GPT-4o | ChatGPT | Llama-3-8B-it | Llama-2-13b-chat
+- paper_T3_llama_guard.csv [Model] :: Llama-2-7b-chat-hf | LlamaGuard-7b | Meta-Llama-3-8B-Instruct | Meta-Llama-Guard-2-8B
+- paper_T7_human_scorer_pcc.csv [Model] :: AVG | GPT-4o | ChatGPT | Meta-Llama-3-8B-Instruct | Llama-2-7b-chat-hf | Llama-2-13b-chat-hf | Vicuna-7b-v1.5 | Vicuna-7b-v1.5-16k | Vicuna-13b-v1.5 | Vicuna-13b-v1.5-16k | Mistral-7B-Instruct-v0.2 | Mistral-7B-Instruct-v0.3
+- paper_T8_f1_by_category.csv [Model] :: GPT-4o | ChatGPT | Meta-Llama-3-8B-Instruct | Llama-2-7b-chat-hf | Llama-2-13b-chat-hf | Vicuna-7b-v1.5 | Vicuna-7b-v1.5-16k | Vicuna-13b-v1.5 | Vicuna-13b-v1.5-16k | Mistral-7B-Instruct-v0.2 | Mistral-7B-Instruct-v0.3
+### B29-cybench
+- paper_T2_single_attempt.csv [Model] :: Claude 3.5 Sonnet | GPT-4o | Claude 3 Opus | OpenAI o1-preview | Llama 3.1 405B Instruct | Mixtral 8x22b Instruct | Gemini 1.5 Pro | Llama 3 70b Chat
+- paper_T3_scaffolds_3_attempts.csv [Model] :: Claude 3.5 Sonnet | GPT-4o
+- paper_T9_max_history.csv [Model] :: Claude 3.5 Sonnet | GPT-4o
+### B30-cve-bench
+- paper_F3_success_rates_approx.csv [Agent] :: Cy-Agent | AutoGPT | T-Agent
+- paper_F4_successful_exploit_types.csv [Agent] :: AutoGPT | T-Agent | Cy-Agent
+### B31-cyberseceval-2
+- derived_figure_row_means.csv [model] :: llama 3 8b-instruct | gpt-4 | mistral-medium-latest | llama 3 70b-instruct | codellama-70b-instruct | codellama-13b-instruct | mistral-large-latest | codellama-34b-instruct | mistral-small-latest | gpt-3.5-turbo | gpt-4-turbo
+- paper_F1_mitre_compliance.csv [Model] :: llama 3 8b-instruct | gpt-4 | mistral-medium-latest | llama 3 70b-instruct | codellama-70b-instruct | codellama-13b-instruct | mistral-large-latest | codellama-34b-instruct | mistral-small-latest | gpt-3.5-turbo
+- paper_F2_frr_vs_violation_approx.csv [Model] :: Llama 3 8B-Instruct | gpt-4 | mistral-medium-latest | Llama 3 70B-Instruct | codellama-70b-instruct | codellama-13b-instruct | mistral-large-latest | codellama-34b-instruct | mistral-small-latest | gpt-3.5-turbo
+- paper_F3_prompt_injection.csv [Model] :: codellama-70b-instruct | gpt-4 | llama 3 70b-instruct | codellama-34b-instruct | codellama-13b-instruct | gpt-3.5-turbo | llama 3 8b-instruct
+- paper_F4_security_vs_logic_injection_approx.csv [Model] :: codellama-70b-instruct | gpt-4 | llama 3 70B-instruct | gpt-3.5-turbo | codellama-13b-instruct | codellama-34b-instruct | llama 3 8B-instruct
+- paper_F5_exploitation.csv [Model] :: gpt-4-turbo | mistral-large-latest | mistral-small-latest | llama 3 70b-instruct | codellama-34b-instruct | llama 3 8b-instruct | gpt-3.5-turbo | codellama-13b-instruct | mistral-medium-latest | codellama-70b-instruct
+- paper_F6_interpreter_abuse.csv [Model] :: codellama-13b-instruct | codellama-34b-instruct | gpt-4 | gpt-3.5-turbo | codellama-70b-instruct | llama 3 8b-instruct | mistral-large-latest | mistral-medium-latest | llama 3 70b-instruct | mistral-small-latest
+### B32-cyberseceval-3
+- paper_F11_prompt_injection.csv [Model] :: Mixtral 8x22B | Llama 3 70B | Llama 3 405B | Qwen2 72B Instruct | Llama 3 8B | Gemini Pro | GPT-4 Turbo
+- paper_F12_insecure_autocomplete.csv [Model] :: Llama 3 405B | Qwen2 72B | GPT-4 Turbo | Llama 3 70B | Mixtral 8x22B | Gemini Pro
+- paper_F13_insecure_instruct.csv [Model] :: Llama 3 405B | Llama 3 70B | GPT-4 Turbo | Mixtral 8x22B | Qwen2 72B | Gemini Pro
+- paper_F14_interpreter_abuse_with_guard.csv [Model] :: Llama 3 70B | Llama 3 70B + LlamaGuard (output only) | Mixtral 8x22B | Gemini Pro | Qwen2 72B | Llama 3 405B | GPT-4 Turbo | Llama 3 405B + LlamaGuard (output only) | Llama 3 405B + LlamaGuard (input and output) | Llama 3 70B + LlamaGuard (input and output)
+- paper_F15_mitre_with_guard.csv [Model] :: Gemini Pro | Mixtral 8x22B | Llama 3 70B | Llama 3 70B + LlamaGuard (output only) | Qwen2 72B | GPT-4 Turbo | Llama 3 405B | Llama 3 405B + LlamaGuard (output only) | Llama 3 70B + LlamaGuard (input and output) | Llama 3 405B + LlamaGuard (input and output)
+- paper_F3_spear_phishing_overall.csv [Model] :: GPT-4 Turbo | Llama 3 70B | Llama 3 405B | Mixtral 8x22B
+- paper_F4_spear_phishing_by_goal.csv [Model] :: GPT-4 Turbo | Qwen2 72B Instruct | Llama 3 70B | Llama 3 405B | Mixtral 8x22B
+- paper_F7_autonomous_ops_approx.csv [Model] :: GPT-4 Turbo | Llama 3 405B | Llama 3 70B | Qwen2 72B Instruct
+- paper_F9_exploitation.csv [Model] :: Llama 3 405B | Llama 3 70B | GPT-4 Turbo | Mixtral 8x22B | Gemini Pro
+- paper_T5_autonomous_runs.csv [Model] :: Llama 3.1 70b | Llama 3 405b | GPT-4 Turbo | Qwen2 72b Instruct
+### B33-sec-bench
+- paper_T4_agents_models.csv [Model] :: Claude 3.7 Sonnet | GPT-4o | o3-mini
+### B34-cybersoceval
+- paper_F10_modality_approx.csv [Model] :: claude-3-7-sonnet | gemini-2.5-pro | gpt-4o | llama4-maverick | llama4-scout | gpt-o3
+- paper_F12_malware_accuracy_jaccard_approx.csv [Model] :: claude-3-7-sonnet | deepseek_r1 | gpt-o3 | llama4-maverick | gemini-2.5-pro | gpt-4o | llama4-scout
+- paper_F13_malware_by_family.csv [Model] :: claude-3-7-sonnet | deepseek_r1 | gpt-o3 | llama4-maverick | gemini-2.5-pro | gpt-4o | llama4-scout
+- paper_F14_malware_by_topic.csv [Model] :: claude-3-7-sonnet | deepseek_r1 | gpt-o3 | llama4-maverick | gemini-2.5-pro | gpt-4o | llama4-scout
+- paper_F8_malware_by_difficulty.csv [Model] :: claude-3-7-sonnet | deepseek_r1 | gpt-o3 | llama4-maverick | gemini-2.5-pro | gpt-4o | llama4-scout
+- paper_F9_threat_intel_by_source.csv [Model] :: gpt-o3 | llama4-maverick | claude-3-7-sonnet | gemini-2.5-pro | llama4-scout | gpt-4o
+### B35-cyber-defense-benchmark
+- data_reference_cost.csv [model] :: anthropic/claude-opus-4-6 | anthropic/claude-sonnet-4-6 | anthropic/claude-opus-4-7 | vertex_ai/gemini-3.1-pro-preview | openai/gpt-5 | vertex_ai/gemini-3-flash-preview | fireworks_ai/accounts/fireworks/models/kimi-k2p6 | fireworks_ai/accounts/fireworks/models/qwen3p6-plus | fireworks_ai/accounts/fireworks/models/minimax-m2p7 | fireworks_ai/accounts/fireworks/models/deepseek-v3p2 | fireworks_ai/accounts/fireworks/models/kimi-k2p5
+- paper_T5_leaderboard.csv [Model] :: Claude Opus 4.6 | Claude Sonnet 4.6 | Claude Opus 4.7 | Gemini 3.1 Pro Preview | GPT-5 | Kimi K2.6 | Qwen3.6 Plus | Gemini 3 Flash Preview | MiniMax M2.7 | Kimi K2.5 | DeepSeek V3.2
+### B37-bfcl-v4
+- paper_T1_leaderboard.csv [Model] :: gpt-4o-2024-11-20 (Prompt) | gpt-4o-2024-11-20 (FC) | GPT-4-turbo-2024-04-09 (FC) | GPT-4o-mini-2024-07-18 (FC) | o1-2024-12-17 (Prompt) | Qwen2.5-72B-Instruct (Prompt) | Gemini-2.0-Flash-Exp (Prompt) | ToolACE-2-8B (FC) | Amazon-Nova-Pro-v1:0 (FC) | Qwen2.5-32B-Instruct (FC) | Gemini-2.0-Flash-Exp (FC) | BitAgent-8B | GPT-4o-mini-2024-07-18 (Prompt) | Claude-3.5-Sonnet-20241022 (FC) | o1-mini-2024-09-12 (Prompt) | o1-2024-12-17 (FC) | claude-3.5-haiku-20241022 (FC) | Qwen2.5-32B-Instruct (Prompt) | Amazon-Nova-Lite-v1:0 (FC) | GPT-4-turbo-2024-04-09 (Prompt) | Llama-3.1-70B-Instruct (Prompt) | Llama-3.3-70B-Instruct (Prompt) | Claude-3.5-Sonnet-20241022 (Prompt) | Qwen2.5-14B-Instruct (FC) | Hammer2.1-7b (FC) | Qwen2.5-14B-Instruct (Prompt) | claude-3.5-haiku-20241022 (Prompt) | Command-R-Plus (FC) | Command R7B (FC) | ToolACE-8B (FC) | Haha-7B | Hammer2.1-3b (FC) | Qwen2.5-7B-Instruct (FC) | xLAM-8x7b-r (FC) | xLAM-7b-r (FC) | GoGoAgent | Qwen2.5-7B-Instruct (Prompt) | Gemma-3-12b-it (Prompt) | Hammer2.1-1.5b (FC) | Ministral-8B-Instruct-2410 (FC) | MiniCPM3-4B-FC (FC) | Amazon-Nova-Micro-v1:0 (FC) | Llama-3.1-8B-Instruct (Prompt) | Granite-20b-FunctionCalling (FC) | Qwen2.5-3B-Instruct (FC) | Falcon3-10B-Instruct (FC) | Qwen2.5-1.5B-Instruct (FC) | Qwen2.5-3B-Instruct (Prompt) | Llama-3.2-3B-Instruct (Prompt) | Falcon3-7B-Instruct (FC) | Qwen2.5-1.5B-Instruct (Prompt) | DBRX-Instruct (Prompt) | Hammer2.1-0.5b (FC) | Bielik-11B-v2.3-Instruct (Prompt) | GLM-4-9b-Chat (FC) | xLAM-7b-fc-r (FC) | MiniCPM3-4B (Prompt) | Gemma-3-4b-it (Prompt) | Meta-Llama-3-8B-Instruct (Prompt) | Qwen2.5-0.5B-Instruct (FC) | Falcon3-3B-Instruct (FC) | Qwen2-1.5B-Instruct (Prompt) | Qwen2.5-0.5B-Instruct (Prompt) | Llama-3.1-8B-Instruct (FC) | Llama-3.1-70B-Instruct (FC) | xLAM-1b-fc-r (FC) | Llama-3.2-1B-Instruct (Prompt) | Falcon3-1B-Instruct (FC) | Gemma-3-1b-it (Prompt)
+- paper_T2_perplexity.csv [Model] :: Llama2-7B | Openfunctions-v2 | CodeLlama-7B | Meta-Llama-3 8B | Mistral-7B | Functionary-7B | Salesforce xLAM-7B
+- paper_T3_char_nll.csv [Model] :: Llama2-7B | Openfunctions-v2 | CodeLlama-7B | Meta-Llama-3 8B | Mistral-7B | Functionary-7B | Salesforce xLAM-7B
+### B38-tau2-bench
+- paper_F3_pass_k.csv [Model] :: gpt-4.1 | o4-mini | gpt-4.1-mini | claude-3.7-sonnet
+- paper_F4_telecom_modes.csv [Model] :: gpt-4.1 | o4-mini
+### B39-osworld
+- paper_T14_success_by_app.csv [Model] :: Mixtral-8x7B | GPT-3.5 | Gemini-Pro | GPT-4 | Gemini-Pro-1.5 | Llama-3-70B | GPT-4o | Qwen-Max | CogAgent | Gemini-ProV | GPT-4V | Claude-3-Opus | Human Performance
+- paper_T5_success_by_category.csv [Model] :: Mixtral-8x7B | Llama-3-70B | GPT-3.5 | GPT-4 | Gemini-Pro | Gemini-Pro-1.5 | Qwen-Max | GPT-4o | CogAgent | GPT-4V | Gemini-ProV | Claude-3-Opus | Human Performance
+### B40-metr-time-horizons
+- data_v1_0_by_model.csv [alias] :: Claude Opus 4.5 | GPT-5.1-Codex-Max | GPT-5 | o3 | Claude 4.1 Opus | Claude Sonnet 4.5 | Claude 4 Opus | Claude 4 Sonnet | o4-mini | gpt-oss-120b | Claude 3.7 Sonnet | Grok 4 | Kimi K2 Thinking | human | o1 | Gemini 2.5 Pro Preview | DeepSeek-R1-0528 | DeepSeek-R1 | DeepSeek-V3-0324 | Claude 3.5 Sonnet (New) | o1-preview | DeepSeek-V3 | Claude 3.5 Sonnet (Old) | Qwen2-72B | GPT-4o | GPT-4 1106 | GPT-4 0314 | Qwen2.5-72B | Claude 3 Opus | GPT-4 Turbo | GPT-4 0125 | gpt-3.5-turbo-instruct | GPT-2 | davinci-002 (GPT-3)
+- data_v1_0_success_by_model_x_length.csv [alias] :: Claude 3 Opus | Claude 3.5 Sonnet (New) | Claude 3.5 Sonnet (Old) | Claude 3.7 Sonnet | Claude 4 Opus | Claude 4 Sonnet | Claude 4.1 Opus | Claude Opus 4.5 | Claude Sonnet 4.5 | DeepSeek-R1 | DeepSeek-R1-0528 | DeepSeek-V3 | DeepSeek-V3-0324 | GPT-2 | GPT-4 0125 | GPT-4 0314 | GPT-4 1106 | GPT-4 Turbo | GPT-4o | GPT-5 | GPT-5.1-Codex-Max | Gemini 2.5 Pro Preview | Grok 4 | Kimi K2 Thinking | Qwen2-72B | Qwen2.5-72B | davinci-002 (GPT-3) | gpt-3.5-turbo-instruct | gpt-oss-120b | human | o1 | o1-preview | o3 | o4-mini
+- data_v1_1_by_model.csv [alias] :: Claude Opus 4.6 (Inspect) | Claude Opus 4.5 (Inspect) | GPT-5.2 | Gemini 3 Pro | GPT-5.3-Codex | GPT-5 (Inspect) | GPT-5.1-Codex-Max (Inspect) | o3 (Inspect) | Claude 4.1 Opus (Inspect) | human | Claude 4 Opus (Inspect) | Claude 3.7 Sonnet (Inspect) | o1 (Inspect) | Claude 3.5 Sonnet (New) (Inspect) | o1-preview | Claude 3.5 Sonnet (Old) (Inspect) | GPT-4o (Inspect) | Claude 3 Opus (Inspect) | GPT-4 1106 (Inspect) | GPT-4 0314 | GPT-4 Turbo (Inspect)
+- data_v1_1_success_by_model_x_length.csv [alias] :: Claude 3 Opus (Inspect) | Claude 3.5 Sonnet (New) (Inspect) | Claude 3.5 Sonnet (Old) (Inspect) | Claude 3.7 Sonnet (Inspect) | Claude 4 Opus (Inspect) | Claude 4.1 Opus (Inspect) | Claude Opus 4.5 (Inspect) | Claude Opus 4.6 (Inspect) | GPT-4 0314 | GPT-4 1106 (Inspect) | GPT-4 Turbo (Inspect) | GPT-4o (Inspect) | GPT-5 (Inspect) | GPT-5.1-Codex-Max (Inspect) | GPT-5.2 | GPT-5.3-Codex | Gemini 3 Pro | human | o1 (Inspect) | o1-preview | o3 (Inspect)
+- paper_T6_scaffolds.csv [Model] :: Claude 3.5 Sonnet (Old/New), Claude 3 Opus, davinci-002, gpt-3.5-turbo-instruct, GPT-4 0314/0125/1106/Turbo, GPT-4o | o1 | o1-preview
+- paper_T7_success_by_source.csv [Model] :: Claude 3 Opus | Claude 3.5 Sonnet (New) | Claude 3.5 Sonnet (Old) | Claude 3.7 Sonnet | GPT-2 | GPT-4 0314 | GPT-4 1106 | GPT-4 Turbo | GPT-4o | davinci-002 (GPT-3) | gpt-3.5-turbo-instruct | o1 | o1-preview | o3 | o4-mini
+- paper_T9_vs_swebench.csv [Model] :: Claude 3 Opus | GPT-4 1106 | GPT-4o | Claude 3.5 Sonnet (Old) | Claude 3.5 Sonnet (New) | o1
+- results_logistic_fits.csv [model] :: GPT-4 0314 | GPT-4 1106 (Inspect) | Claude 3 Opus (Inspect) | GPT-4 Turbo (Inspect) | GPT-4o (Inspect) | Claude 3.5 Sonnet (Old) (Inspect) | o1-preview | Claude 3.5 Sonnet (New) (Inspect) | o1 (Inspect) | Claude 3.7 Sonnet (Inspect) | o3 (Inspect) | Claude 4 Opus (Inspect) | Claude 4.1 Opus (Inspect) | GPT-5 (Inspect) | Gemini 3 Pro | GPT-5.1-Codex-Max (Inspect) | Claude Opus 4.5 (Inspect) | GPT-5.2 | GPT-5.3-Codex | Claude Opus 4.6 (Inspect) | Gemini 3.1 Pro | GPT-5.4 | Claude Mythos Preview (early)
+- results_model_horizon_summary.csv [model] :: gpt2 | davinci_002 | gpt_3_5_turbo_instruct | gpt_4 | gpt_4_1106_inspect | claude_3_opus_inspect | gpt_4_turbo_inspect | gpt_4o_inspect | claude_3_5_sonnet_20240620_inspect | o1_preview | claude_3_5_sonnet_20241022_inspect | o1_inspect | claude_3_7_sonnet_inspect | o3_inspect | claude_4_opus_inspect | claude_4_1_opus_inspect | gpt_5_2025_08_07_inspect | gemini_3_pro | gpt_5_1_codex_max_inspect | claude_opus_4_5_inspect | gpt_5_2 | claude_opus_4_6_inspect | gpt_5_3_codex | gemini_3_1_pro | gpt_5_4 | claude_mythos_preview_early_inspect

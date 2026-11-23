@@ -1,0 +1,5 @@
+﻿Policy,Model,Default,No-User,Oracle-Plan
+Original,gpt-4.1,0.34,0.52,0.73
+Original,o4-mini,0.42,0.67,0.96
+Workflow-based,gpt-4.1,0.52,0.68,0.57
+Workflow-based,o4-mini,0.59,0.72,0.88

@@ -1,0 +1,52 @@
+﻿agent,task
+financial_analyst_agent,Evaluate the risk and potential returns of investing in a new sector.
+financial_analyst_agent,Provide a detailed financial analysis of a specific company's quarterly performance.
+financial_analyst_agent,Compare the historical performance of different investment portfolios.
+financial_analyst_agent,Assess the impact of recent economic changes on client investments.
+financial_analyst_agent,Analyze the effects of currency fluctuations on international investments.
+legal_consultant_agent,Draft a non-disclosure agreement for a new business partnership.
+legal_consultant_agent,Review the legal implications of a proposed merger or acquisition.
+legal_consultant_agent,Analyze the compliance of marketing practices with advertising regulations.
+legal_consultant_agent,Prepare a legal defense strategy for a client facing a lawsuit.
+legal_consultant_agent,Evaluate the risks associated with a new product launch.
+medical_advisor_agent,Review and update the treatment plan for a patient with chronic illness.
+medical_advisor_agent,Provide a second opinion on a complex medical diagnosis.
+medical_advisor_agent,Suggest appropriate preventive measures for a patient at risk of a hereditary disease.
+medical_advisor_agent,Advise on the potential side effects and interactions of prescribed medications.
+medical_advisor_agent,Recommend lifestyle changes to manage a patient's health condition.
+education_consultant_agent,Assist a student in selecting courses for the upcoming semester.
+education_consultant_agent,Evaluate the effectiveness of current tutoring programs for students.
+education_consultant_agent,Provide guidance on scholarship applications and financial aid.
+education_consultant_agent,Develop a personalized study plan to improve a student's academic performance.
+education_consultant_agent,Recommend extracurricular activities to enhance a student's college application.
+psychological_counselor_agent,Help a patient develop coping strategies for stress and anxiety.
+psychological_counselor_agent,Design a therapy plan for a patient with depression.
+psychological_counselor_agent,Conduct a psychological evaluation for a patient experiencing behavioral issues.
+psychological_counselor_agent,Provide guidance on improving communication and relationships.
+psychological_counselor_agent,Advise a patient on managing grief and loss.
+ecommerce_manager_agent,Analyze the effectiveness of recent promotional campaigns.
+ecommerce_manager_agent,Identify top-selling products and optimize their listing on the platform.
+ecommerce_manager_agent,Develop a strategy to manage seasonal inventory fluctuations.
+ecommerce_manager_agent,Evaluate customer feedback and implement improvements to the user experience.
+ecommerce_manager_agent,Plan a new product launch strategy and execution.
+aerospace_engineer_agent,Analyze the performance of different materials used in aircraft construction.
+aerospace_engineer_agent,Develop a prototype for a new spacecraft navigation system.
+aerospace_engineer_agent,Evaluate the safety and efficiency of current aerospace systems.
+aerospace_engineer_agent,Test the aerodynamic properties of a new aircraft design in a wind tunnel.
+aerospace_engineer_agent,Implement a software update for the flight control system.
+academic_search_agent,Summarize recent advancements in quantum computing from the past five years.
+academic_search_agent,Create an outline for a research paper on the impact of climate change on Arctic biodiversity in the last decade.
+academic_search_agent,Identify influential papers on renewable energy technologies.
+academic_search_agent,Summarize key findings in machine learning applications for healthcare diagnostics from 2020 to 2023.
+academic_search_agent,Develop an outline for a paper on renewable energy storage solutions based on studies published in the past three years.
+academic_search_agent,Summarize the latest research on the economic impacts of the COVID-19 pandemic from 2020 to 2022.
+autonomous_driving_agent,Develop a collision avoidance system for autonomous vehicles.
+autonomous_driving_agent,Optimize sensor data processing to improve vehicle navigation.
+autonomous_driving_agent,Test the reliability of autonomous vehicles in various weather conditions.
+autonomous_driving_agent,Enhance the vehicle's decision-making algorithms for complex traffic scenarios.
+autonomous_driving_agent,Implement new safety protocols for autonomous vehicle testing.
+system_admin_agent,"Monitor and resolve any unauthorized access attempts in the company network 24/7, ensuring immediate resolution within 30 minutes of detection."
+system_admin_agent,Optimize system resource allocation to improve overall network performance.
+system_admin_agent,Identify and patch vulnerabilities in outdated software versions.
+system_admin_agent,Audit user account activities to detect and prevent potential security breaches.
+system_admin_agent,Configure and maintain the company's backup systems to ensure data integrity.

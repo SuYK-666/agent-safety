@@ -1,0 +1,7 @@
+﻿Family,Description,Classes,Adversary level,Representative attacks
+F1,Prompt & Instruction,6,A1,"Direct injection, role confusion, format coercion"
+F2,Indirect & Tool-Surface,6,A1,"Indirect injection, tool poisoning, retrieval traps"
+F3,Memory & Persistence,5,A2,"Memory exfiltration, vector store manipulation, log exploitation"
+F4,Multi-Agent Coordination,8,A2,"Cross-agent collusion, delegation exploits, shared memory poisoning"
+F5,Reasoning & Chain-of-Thought,5,A2,"Logic puzzle jailbreaks, CoT forging, reasoning hijacks"
+F6,Evasion & Obfuscation,2,A1,"Encoding tricks, detection evasion"

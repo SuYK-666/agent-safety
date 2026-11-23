@@ -1,0 +1,5 @@
+﻿Model,No attack: agent,No attack: chat-only,Template: agent,Template: chat-only
+GPT-4o,50.0%,72.7%,9.1%,31.8%
+Claude 3 Haiku,81.8%,88.6%,90.9%,72.7%
+Claude 3 Opus,86.4%,93.2%,68.2%,100%
+Claude 3.5 Sonnet,88.6%,95.5%,29.5%,72.7%

@@ -1,0 +1,12 @@
+﻿tool,count,share_%
+write_file,292,20.99
+read_file,275,19.77
+send_email,193,13.87
+memory_write,133,9.56
+memory_read,133,9.56
+web_browse,100,7.19
+execute_code,99,7.12
+database_write,58,4.17
+database_query,58,4.17
+delete_file,50,3.59
+TOTAL,1391,100.0

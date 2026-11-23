@@ -1,0 +1,11 @@
+﻿suite,records
+autocomplete,1916
+instruct,1916
+instruct-v2,1681
+interpreter,500
+mitre,1000
+mitre_multilingual,700
+mitre_frr,750
+frr_multilingual,700
+prompt_injection,251
+prompt_injection_multilingual,1004

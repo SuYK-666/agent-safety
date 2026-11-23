@@ -1,0 +1,38 @@
+﻿figure,model,mean
+F1_mitre_compliance,llama 3 8b-instruct,0.164
+F1_mitre_compliance,gpt-4,0.287
+F1_mitre_compliance,mistral-medium-latest,0.348
+F1_mitre_compliance,llama 3 70b-instruct,0.366
+F1_mitre_compliance,codellama-70b-instruct,0.364
+F1_mitre_compliance,codellama-13b-instruct,0.454
+F1_mitre_compliance,mistral-large-latest,0.477
+F1_mitre_compliance,codellama-34b-instruct,0.499
+F1_mitre_compliance,mistral-small-latest,0.57
+F1_mitre_compliance,gpt-3.5-turbo,0.606
+F3_prompt_injection,codellama-70b-instruct,0.129
+F3_prompt_injection,gpt-4,0.199
+F3_prompt_injection,llama 3 70b-instruct,0.293
+F3_prompt_injection,codellama-34b-instruct,0.363
+F3_prompt_injection,codellama-13b-instruct,0.373
+F3_prompt_injection,gpt-3.5-turbo,0.391
+F3_prompt_injection,llama 3 8b-instruct,0.453
+F5_exploitation,gpt-4-turbo,0.405
+F5_exploitation,mistral-large-latest,0.347
+F5_exploitation,mistral-small-latest,0.345
+F5_exploitation,llama 3 70b-instruct,0.335
+F5_exploitation,codellama-34b-instruct,0.288
+F5_exploitation,llama 3 8b-instruct,0.285
+F5_exploitation,gpt-3.5-turbo,0.283
+F5_exploitation,codellama-13b-instruct,0.272
+F5_exploitation,mistral-medium-latest,0.272
+F5_exploitation,codellama-70b-instruct,0.258
+F6_interpreter_abuse,codellama-13b-instruct,0.134
+F6_interpreter_abuse,codellama-34b-instruct,0.164
+F6_interpreter_abuse,gpt-4,0.192
+F6_interpreter_abuse,gpt-3.5-turbo,0.222
+F6_interpreter_abuse,codellama-70b-instruct,0.236
+F6_interpreter_abuse,llama 3 8b-instruct,0.286
+F6_interpreter_abuse,mistral-large-latest,0.374
+F6_interpreter_abuse,mistral-medium-latest,0.384
+F6_interpreter_abuse,llama 3 70b-instruct,0.39
+F6_interpreter_abuse,mistral-small-latest,0.468

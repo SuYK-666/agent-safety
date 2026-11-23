@@ -1,0 +1,11 @@
+﻿field,present,coverage_%,types,n_unique,avg_len,top_values
+scenario,600,100.0,str:600,594,34.3,
+user_prompt,600,100.0,str:600,600,256.0,
+attack_type,600,100.0,str:600,6,3.0,ADI=100 | DPI=100 | IPI=100 | MEX=100 | MPI=100
+harm_type,600,100.0,str:600,4,5.5,leak=254 | persist=199 | action=146 | resource exposure=1
+lifecycle_stage,600,100.0,str:600,4,8.4,execution=211 | decision=183 | inference=158 | input=48
+success_predicate,600,100.0,str:600,595,84.6,
+safe_behavior,600,100.0,str:600,593,88.5,
+difficulty,600,100.0,str:600,3,4.4,hard=477 | medium=113 | easy=10
+task_id,600,100.0,str:600,600,8.0,
+is_seed,8,1.3,bool:8,1,,True=8

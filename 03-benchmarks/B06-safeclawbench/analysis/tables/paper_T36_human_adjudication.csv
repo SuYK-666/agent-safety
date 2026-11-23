@@ -1,0 +1,7 @@
+﻿Quantity,Value
+Sample size,240 rows (40 per family)
+Semantic attack success labels,147/240 (61.3%)
+Evidence-supported harm labels,63/240 (26.3%)
+Ambiguous rows,2/240 (0.8%)
+Agreement with Core labels,89.6%; kappa 0.788
+Agreement with audit harm labels,91.2%; kappa 0.780

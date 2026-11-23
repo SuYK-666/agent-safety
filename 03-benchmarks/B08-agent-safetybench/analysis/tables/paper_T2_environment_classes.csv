@@ -1,0 +1,6 @@
+﻿Category,# environments,Examples
+Similar tools in existing benchmarks,68,"Amazon, DNAComAnalysis, BankManager"
+Similar tools with public APIs but no sandboxed evaluation,42,"AntiCounterfeiting, SleepPatternModulator, IntellectualPropertyProtection"
+"No similar public API yet, with real-world applications",220,"OceanCurrentPredictor, NanorobotController, SmartPowerAllocation"
+No similar public API and no real-world application currently,19,"MindCloning, BrainwaveAuthentication, PersonalizedDreamWeaver"
+Total,349,

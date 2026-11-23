@@ -1,0 +1,24 @@
+﻿model,coefficient,intercept,n_tasks
+GPT-4 0314,-0.641,1.278,213
+GPT-4 1106 (Inspect),-0.585,1.18,228
+Claude 3 Opus (Inspect),-0.527,1.046,228
+GPT-4 Turbo (Inspect),-0.69,1.312,228
+GPT-4o (Inspect),-0.563,1.578,228
+Claude 3.5 Sonnet (Old) (Inspect),-0.501,1.757,223
+o1-preview,-0.63,2.737,213
+Claude 3.5 Sonnet (New) (Inspect),-0.465,2.026,226
+o1 (Inspect),-0.565,2.983,228
+Claude 3.7 Sonnet (Inspect),-0.597,3.535,228
+o3 (Inspect),-0.694,4.791,228
+Claude 4 Opus (Inspect),-0.604,4.014,228
+Claude 4.1 Opus (Inspect),-0.661,4.393,228
+GPT-5 (Inspect),-0.576,4.417,228
+Gemini 3 Pro,-0.676,5.279,228
+GPT-5.1-Codex-Max (Inspect),-0.647,5.048,228
+Claude Opus 4.5 (Inspect),-0.54,4.425,228
+GPT-5.2,-0.574,4.855,228
+GPT-5.3-Codex,-0.518,4.379,228
+Claude Opus 4.6 (Inspect),-0.412,3.912,228
+Gemini 3.1 Pro,-0.661,5.676,228
+GPT-5.4,-0.52,4.378,228
+Claude Mythos Preview (early),-0.557,5.582,228

@@ -1,0 +1,197 @@
+﻿source,target,transfer_asr_%,diagonal
+o3,o3,33,True
+o3,3.7 Sonnet:Thinking,28,False
+o3,3.7 Sonnet,23,False
+o3,3.5 Sonnet,29,False
+o3,o1,39,False
+o3,3.5 Haiku,31,False
+o3,GPT 4o,31,False
+o3,GPT 4.5,36,False
+o3,Command-R,28,False
+o3,Grok 2,34,False
+o3,Llama 3.1 405B,42,False
+o3,o3 Mini,57,False
+o3,o3 Mini:High,54,False
+o3,Llama 3.3 70B,56,False
+3.7 Sonnet:Thinking,o3,21,False
+3.7 Sonnet:Thinking,3.7 Sonnet:Thinking,37,True
+3.7 Sonnet:Thinking,3.7 Sonnet,36,False
+3.7 Sonnet:Thinking,3.5 Sonnet,37,False
+3.7 Sonnet:Thinking,o1,34,False
+3.7 Sonnet:Thinking,3.5 Haiku,39,False
+3.7 Sonnet:Thinking,GPT 4o,37,False
+3.7 Sonnet:Thinking,GPT 4.5,34,False
+3.7 Sonnet:Thinking,Command-R,30,False
+3.7 Sonnet:Thinking,Grok 2,37,False
+3.7 Sonnet:Thinking,Llama 3.1 405B,43,False
+3.7 Sonnet:Thinking,o3 Mini,50,False
+3.7 Sonnet:Thinking,o3 Mini:High,47,False
+3.7 Sonnet:Thinking,Llama 3.3 70B,50,False
+3.7 Sonnet,o3,19,False
+3.7 Sonnet,3.7 Sonnet:Thinking,23,False
+3.7 Sonnet,3.7 Sonnet,42,True
+3.7 Sonnet,3.5 Sonnet,25,False
+3.7 Sonnet,o1,28,False
+3.7 Sonnet,3.5 Haiku,29,False
+3.7 Sonnet,GPT 4o,36,False
+3.7 Sonnet,GPT 4.5,31,False
+3.7 Sonnet,Command-R,29,False
+3.7 Sonnet,Grok 2,33,False
+3.7 Sonnet,Llama 3.1 405B,41,False
+3.7 Sonnet,o3 Mini,40,False
+3.7 Sonnet,o3 Mini:High,40,False
+3.7 Sonnet,Llama 3.3 70B,51,False
+3.5 Sonnet,o3,17,False
+3.5 Sonnet,3.7 Sonnet:Thinking,18,False
+3.5 Sonnet,3.7 Sonnet,24,False
+3.5 Sonnet,3.5 Sonnet,43,True
+3.5 Sonnet,o1,31,False
+3.5 Sonnet,3.5 Haiku,29,False
+3.5 Sonnet,GPT 4o,37,False
+3.5 Sonnet,GPT 4.5,33,False
+3.5 Sonnet,Command-R,36,False
+3.5 Sonnet,Grok 2,37,False
+3.5 Sonnet,Llama 3.1 405B,43,False
+3.5 Sonnet,o3 Mini,46,False
+3.5 Sonnet,o3 Mini:High,48,False
+3.5 Sonnet,Llama 3.3 70B,48,False
+o1,o3,18,False
+o1,3.7 Sonnet:Thinking,16,False
+o1,3.7 Sonnet,18,False
+o1,3.5 Sonnet,20,False
+o1,o1,31,True
+o1,3.5 Haiku,26,False
+o1,GPT 4o,32,False
+o1,GPT 4.5,33,False
+o1,Command-R,30,False
+o1,Grok 2,40,False
+o1,Llama 3.1 405B,43,False
+o1,o3 Mini,51,False
+o1,o3 Mini:High,52,False
+o1,Llama 3.3 70B,54,False
+3.5 Haiku,o3,20,False
+3.5 Haiku,3.7 Sonnet:Thinking,18,False
+3.5 Haiku,3.7 Sonnet,19,False
+3.5 Haiku,3.5 Sonnet,27,False
+3.5 Haiku,o1,29,False
+3.5 Haiku,3.5 Haiku,60,True
+3.5 Haiku,GPT 4o,34,False
+3.5 Haiku,GPT 4.5,33,False
+3.5 Haiku,Command-R,31,False
+3.5 Haiku,Grok 2,38,False
+3.5 Haiku,Llama 3.1 405B,45,False
+3.5 Haiku,o3 Mini,43,False
+3.5 Haiku,o3 Mini:High,44,False
+3.5 Haiku,Llama 3.3 70B,55,False
+GPT 4o,o3,19,False
+GPT 4o,3.7 Sonnet:Thinking,19,False
+GPT 4o,3.7 Sonnet,20,False
+GPT 4o,3.5 Sonnet,26,False
+GPT 4o,o1,30,False
+GPT 4o,3.5 Haiku,30,False
+GPT 4o,GPT 4o,58,True
+GPT 4o,GPT 4.5,38,False
+GPT 4o,Command-R,36,False
+GPT 4o,Grok 2,42,False
+GPT 4o,Llama 3.1 405B,46,False
+GPT 4o,o3 Mini,49,False
+GPT 4o,o3 Mini:High,51,False
+GPT 4o,Llama 3.3 70B,58,False
+GPT 4.5,o3,14,False
+GPT 4.5,3.7 Sonnet:Thinking,13,False
+GPT 4.5,3.7 Sonnet,16,False
+GPT 4.5,3.5 Sonnet,20,False
+GPT 4.5,o1,21,False
+GPT 4.5,3.5 Haiku,24,False
+GPT 4.5,GPT 4o,35,False
+GPT 4.5,GPT 4.5,54,True
+GPT 4.5,Command-R,30,False
+GPT 4.5,Grok 2,42,False
+GPT 4.5,Llama 3.1 405B,44,False
+GPT 4.5,o3 Mini,39,False
+GPT 4.5,o3 Mini:High,42,False
+GPT 4.5,Llama 3.3 70B,54,False
+Command-R,o3,11,False
+Command-R,3.7 Sonnet:Thinking,10,False
+Command-R,3.7 Sonnet,10,False
+Command-R,3.5 Sonnet,12,False
+Command-R,o1,13,False
+Command-R,3.5 Haiku,15,False
+Command-R,GPT 4o,13,False
+Command-R,GPT 4.5,16,False
+Command-R,Command-R,43,True
+Command-R,Grok 2,30,False
+Command-R,Llama 3.1 405B,31,False
+Command-R,o3 Mini,25,False
+Command-R,o3 Mini:High,29,False
+Command-R,Llama 3.3 70B,51,False
+Grok 2,o3,14,False
+Grok 2,3.7 Sonnet:Thinking,13,False
+Grok 2,3.7 Sonnet,13,False
+Grok 2,3.5 Sonnet,15,False
+Grok 2,o1,17,False
+Grok 2,3.5 Haiku,18,False
+Grok 2,GPT 4o,21,False
+Grok 2,GPT 4.5,20,False
+Grok 2,Command-R,33,False
+Grok 2,Grok 2,49,True
+Grok 2,Llama 3.1 405B,40,False
+Grok 2,o3 Mini,33,False
+Grok 2,o3 Mini:High,35,False
+Grok 2,Llama 3.3 70B,58,False
+Llama 3.1 405B,o3,9,False
+Llama 3.1 405B,3.7 Sonnet:Thinking,10,False
+Llama 3.1 405B,3.7 Sonnet,10,False
+Llama 3.1 405B,3.5 Sonnet,14,False
+Llama 3.1 405B,o1,14,False
+Llama 3.1 405B,3.5 Haiku,16,False
+Llama 3.1 405B,GPT 4o,21,False
+Llama 3.1 405B,GPT 4.5,19,False
+Llama 3.1 405B,Command-R,28,False
+Llama 3.1 405B,Grok 2,29,False
+Llama 3.1 405B,Llama 3.1 405B,56,True
+Llama 3.1 405B,o3 Mini,35,False
+Llama 3.1 405B,o3 Mini:High,37,False
+Llama 3.1 405B,Llama 3.3 70B,55,False
+o3 Mini,o3,11,False
+o3 Mini,3.7 Sonnet:Thinking,12,False
+o3 Mini,3.7 Sonnet,14,False
+o3 Mini,3.5 Sonnet,13,False
+o3 Mini,o1,20,False
+o3 Mini,3.5 Haiku,16,False
+o3 Mini,GPT 4o,28,False
+o3 Mini,GPT 4.5,28,False
+o3 Mini,Command-R,29,False
+o3 Mini,Grok 2,34,False
+o3 Mini,Llama 3.1 405B,37,False
+o3 Mini,o3 Mini,58,True
+o3 Mini,o3 Mini:High,59,False
+o3 Mini,Llama 3.3 70B,53,False
+o3 Mini:High,o3,16,False
+o3 Mini:High,3.7 Sonnet:Thinking,15,False
+o3 Mini:High,3.7 Sonnet,17,False
+o3 Mini:High,3.5 Sonnet,16,False
+o3 Mini:High,o1,22,False
+o3 Mini:High,3.5 Haiku,24,False
+o3 Mini:High,GPT 4o,27,False
+o3 Mini:High,GPT 4.5,27,False
+o3 Mini:High,Command-R,33,False
+o3 Mini:High,Grok 2,38,False
+o3 Mini:High,Llama 3.1 405B,38,False
+o3 Mini:High,o3 Mini,58,False
+o3 Mini:High,o3 Mini:High,55,True
+o3 Mini:High,Llama 3.3 70B,53,False
+Llama 3.3 70B,o3,10,False
+Llama 3.3 70B,3.7 Sonnet:Thinking,5,False
+Llama 3.3 70B,3.7 Sonnet,8,False
+Llama 3.3 70B,3.5 Sonnet,6,False
+Llama 3.3 70B,o1,12,False
+Llama 3.3 70B,3.5 Haiku,7,False
+Llama 3.3 70B,GPT 4o,12,False
+Llama 3.3 70B,GPT 4.5,12,False
+Llama 3.3 70B,Command-R,25,False
+Llama 3.3 70B,Grok 2,24,False
+Llama 3.3 70B,Llama 3.1 405B,25,False
+Llama 3.3 70B,o3 Mini,24,False
+Llama 3.3 70B,o3 Mini:High,25,False
+Llama 3.3 70B,Llama 3.3 70B,50,True

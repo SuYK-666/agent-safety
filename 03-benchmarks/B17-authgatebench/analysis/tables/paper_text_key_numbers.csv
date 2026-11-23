@@ -1,0 +1,5 @@
+﻿Item,Value,Source
+Signals correct initially-wrong vs mislead initially-correct (Scope Escalation),25.2% vs 7.6%,Sec.5.2 / Fig.3
+Same for Inferred Parameters,24.3% vs 10.5%,Sec.5.2
+Average IR Credential Explore / External Sharing (implicit),87.14% / 95.36%,Sec.5.2
+Human check of inverted (ALLOW) labels,100% agreement on sample,Sec.4.3

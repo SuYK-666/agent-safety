@@ -1,0 +1,10 @@
+﻿risk_source,count,share_%
+inherent_agent_failures,135,27.16
+indirect_prompt_injection,77,15.49
+unreliable_or_misinformation,64,12.88
+malicious_user_instruction_or_jailbreak,61,12.27
+tool_description_injection,52,10.46
+corrupted_tool_feedback,44,8.85
+direct_prompt_injection,39,7.85
+malicious_tool_execution,25,5.03
+TOTAL,497,100.0

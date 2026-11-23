@@ -1,0 +1,3 @@
+﻿Mode,Trials,Successes,Pass^1,ASR
+Solo (passive user),1960,1432,0.731,0.269
+Dual-control,1960,1154,0.589,0.411

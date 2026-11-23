@@ -1,0 +1,9 @@
+﻿Scenario,B2 HCP,B3 ACL
+"PII pipe, rejecting target",No content,No content
+"PII pipe, accepting target",Content written,Content written
+Classified-handle plaintext peek,Peek denied,Peek denied
+Handle literal as ordinary parameter,Handle only,Handle only
+Known plaintext as ordinary parameter,Content written,Content written
+"Ordinary parameter, missing target grant",No content,No content
+Ordinary parameter after internal read,Content written,Content written
+Legitimate sensitive direct display,Display denied,Display denied

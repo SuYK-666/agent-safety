@@ -1,0 +1,24 @@
+﻿agent_type,model,base_relevance,base_clarity,enh_relevance,enh_clarity
+Prompted (ReAct),Qwen-0.5B,1.13,1.16,1.41,1.25
+Prompted (ReAct),Qwen-1.8B,1.38,1.32,1.26,1.30
+Prompted (ReAct),Qwen-14B,1.83,1.47,1.80,1.73
+Prompted (ReAct),Qwen-72B,1.84,1.58,1.85,1.79
+Prompted (ReAct),Llama2-7B,1.40,1.63,1.12,1.70
+Prompted (ReAct),Nous-Llama2-13b,1.84,1.49,1.85,1.46
+Prompted (ReAct),Mixtral-8x7B,1.85,1.46,1.83,1.46
+Prompted (ReAct),Mistral-7B,1.84,1.76,1.32,1.74
+Prompted (ReAct),OpenOrca-Mistral,1.84,1.64,1.63,1.48
+Prompted (ReAct),OpenHermes-2.5-Mistral,1.75,1.57,1.75,1.54
+Prompted (ReAct),OpenHermes-2-Mistral,1.80,1.57,1.83,1.52
+Prompted (ReAct),Snorkel-Mistral,1.94,1.72,1.68,1.85
+Prompted (ReAct),Nous-Mixtral-DPO,1.80,1.48,1.88,1.37
+Prompted (ReAct),Nous-Mixtral-SFT,1.87,1.51,1.89,1.41
+Prompted (ReAct),MythoMax-13b,1.75,1.50,1.77,1.43
+Prompted (ReAct),WizardLM-13B,1.84,1.43,1.87,1.46
+Prompted (ReAct),Platypus2-70B,1.74,1.49,1.80,1.45
+Prompted (ReAct),StripedHyena-7B,1.77,1.43,1.60,1.44
+Prompted (ReAct),Claude-2,1.73,1.86,1.45,1.92
+Prompted (ReAct),GPT-3.5,1.74,1.46,1.83,1.52
+Prompted (ReAct),GPT-4,1.77,1.42,1.87,1.66
+Fine-tuned,GPT-4,1.80,1.42,1.78,1.33
+Fine-tuned,GPT-3.5,1.78,1.45,1.77,1.49

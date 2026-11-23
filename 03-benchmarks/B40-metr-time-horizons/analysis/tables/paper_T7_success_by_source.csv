@@ -1,0 +1,16 @@
+﻿Model,HCAST,RE-Bench,SWAA
+Claude 3 Opus,0.25,0.00,0.98
+Claude 3.5 Sonnet (New),0.46,0.11,0.99
+Claude 3.5 Sonnet (Old),0.38,0.05,1.00
+Claude 3.7 Sonnet,0.58,0.04,1.00
+GPT-2,-,-,0.40
+GPT-4 0314,0.23,0.00,0.98
+GPT-4 1106,0.30,0.02,0.97
+GPT-4 Turbo,0.23,0.00,1.00
+GPT-4o,0.30,0.00,0.98
+davinci-002 (GPT-3),0.00,0.00,0.65
+gpt-3.5-turbo-instruct,0.01,0.00,0.95
+o1,0.54,0.07,1.00
+o1-preview,0.44,0.02,1.00
+o3,0.65,0.40,-
+o4-mini,0.61,0.27,-

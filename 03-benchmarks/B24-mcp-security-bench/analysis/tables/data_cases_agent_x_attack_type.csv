@@ -1,0 +1,12 @@
+﻿agent,false_error,name_overlap,out_of_scope_parameter,preference_manipulation,preference_manipulation-out_of_scope_parameter,preference_manipulation-simulated_user,prompt_injection,prompt_injection-false_error,prompt_injection-simulated_user,search_term_deception,simulated_user,tool_transfer,TOTAL
+academic_search,25,15,15,15,15,15,25,25,25,0,25,15,215
+image_generation,10,0,0,0,0,0,10,10,10,0,10,0,50
+information_gathering,40,10,10,10,10,10,40,40,40,0,40,10,260
+information_retrieval,0,0,0,0,0,0,0,0,0,20,0,0,20
+it_development_management,50,15,15,15,15,15,50,50,50,0,50,15,340
+llm_enhancement,40,10,10,10,10,10,40,40,40,0,40,10,260
+multidisciplinary,20,0,0,0,0,0,20,20,20,0,20,0,100
+office_assistance,30,30,30,30,30,30,30,30,30,0,30,30,330
+team_management,40,0,0,0,0,0,40,40,40,0,40,0,200
+travel_mobility,45,0,0,0,0,0,45,45,45,0,45,0,225
+TOTAL,300,80,80,80,80,80,300,300,300,20,300,80,2000

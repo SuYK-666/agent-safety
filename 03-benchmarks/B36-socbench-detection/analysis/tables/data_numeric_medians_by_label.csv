@@ -1,0 +1,6 @@
+﻿index,benign_median,malicious_median,missing_%
+bytes_in,0.0,0.0,0.0
+bytes_out,60.0,370.0,0.0
+pkts_in,0.0,0.0,3.63
+pkts_out,1.0,5.0,3.63
+flow_duration_ms,0.0,15.028685,0.0

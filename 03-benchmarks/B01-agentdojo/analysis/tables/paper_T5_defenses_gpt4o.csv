@@ -1,0 +1,6 @@
+﻿Defense,Benign utility %,CI95,Utility w. attack %,CI95,Targeted ASR %,CI95
+No defense,69.0,3.6,50.01,3.9,57.69,3.9
+Delimiting,72.66,3.5,55.64,3.9,41.65,3.9
+PI detector,41.49,3.9,21.14,3.2,7.95,2.1
+Repeat prompt,85.53,2.8,67.25,3.7,27.82,3.5
+Tool filter,73.13,3.5,56.28,3.9,6.84,2.0

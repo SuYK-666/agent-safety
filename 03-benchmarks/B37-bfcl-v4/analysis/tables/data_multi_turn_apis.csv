@@ -1,0 +1,13 @@
+﻿api,functions
+gorilla_file_system,18
+math_api,17
+memory_kv,15
+memory_rec_sum,5
+memory_vector,12
+message_api,10
+posting_api,14
+ticket_api,9
+trading_bot,20
+travel_booking,18
+vehicle_control,22
+web_search,2

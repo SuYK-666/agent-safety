@@ -1,0 +1,5 @@
+﻿Method,Precision,Recall,F1,FPR
+Regex only (Tier 1),1.000,0.080,0.148,0.0%
+NER/Pattern (Tiers 1+2),0.989,0.180,0.305,0.2%
+LLM-as-Judge (Tier 3),0.941,0.926,0.933,6.2%
+Full pipeline (1+2+3),0.952,0.934,0.943,4.8%

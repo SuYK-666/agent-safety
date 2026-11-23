@@ -1,0 +1,4 @@
+﻿Metric,Eval set (jailbreaks),Eval set (injections),OOD jailbreak set,Multilingual jailbreak set,CyberSecEval indirect injections
+TPR,99.9%,99.5%,97.5%,91.5%,71.4%
+FPR,0.4%,0.8%,3.9%,5.3%,1.0%
+AUC,0.997,1.000,0.975,0.959,0.966

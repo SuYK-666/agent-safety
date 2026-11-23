@@ -1,0 +1,6 @@
+﻿Bucket,Criterion,N,%,Family concentration
+Easy,>=5 successes,150,7.1,MPI 123/150
+Medium,2-4 successes,668,31.4,"MPI 212, DPI 127, TRI 113, ADI 97, MEX 73, IPI 46"
+Hard,1 success,528,24.8,"ADI 155, DPI 145, MEX 104, IPI 70, TRI 39, MPI 15"
+Unsolved,0 successes,779,36.7,"IPI 231, TRI 198, MEX 173, ADI 99, DPI 74, MPI 4"
+Total,-,2125,100.0,354-355 items per family

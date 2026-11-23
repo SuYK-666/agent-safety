@@ -1,0 +1,6 @@
+﻿Model,Harmful TCR %,Safe TCR %
+GPT-4o,22.8,34.4
+Claude-3.5-Sonnet,7.6,21.2
+GPT-4o-Mini,14.0,18.4
+Llama-3.2-90B,11.2,8.4
+Qwen-2-VL-72B,26.0,24.4

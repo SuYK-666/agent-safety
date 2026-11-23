@@ -1,0 +1,9 @@
+﻿Item,Value
+Designed scenarios,"1,000 (250 per vertical)"
+Traces Claude-3.5-Sonnet,996
+Traces GPT-4o,996
+Traces GPT-4o-mini,995
+Traces Llama-3.3-70B,996
+Traces Mistral-Large,996
+Traces per vertical,"Healthcare 1,245; Finance 1,244; Legal 1,245; Corporate 1,245"
+Total validated traces,"4,979 (21 excluded)"

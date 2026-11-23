@@ -1,0 +1,9 @@
+﻿Checkpoint,Stage,Meaning,Macro-average rate %
+W1,Write,written,91.1
+W2,Write,persisted with target semantics,84.2
+E1,Execute,recalled,76.1
+E2,Execute,adopted into decision,53.7
+E2E,Execute,external consequence (chain),50.3
+F1,Forget,target removed (cond. on poisoning),86.3
+F2,Forget,benign memory retained,62.5
+SRSR,Forget,selective repair (F1 and F2),56.1

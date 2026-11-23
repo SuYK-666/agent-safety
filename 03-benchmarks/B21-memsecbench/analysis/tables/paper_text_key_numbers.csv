@@ -1,0 +1,5 @@
+﻿Item,Value,Source
+Cases,"310 task packages (930 stage tasks: W/E/F), English + Chinese mirror",App.A.5
+Configurations,2 harnesses x 4 memory backends x 3 LLMs = 24,Experimental setup
+Lifecycle checkpoints,"7 (W1,W2,E1,E2,E3,F1,F2)",Sec.3
+Public dataset,none,README

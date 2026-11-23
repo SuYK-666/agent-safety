@@ -1,0 +1,7 @@
+﻿Attack,flows,label,sources,share_%
+benign,475046,0,8,62.701
+PartOfAHorizontalPortScan,202940,1,2,26.786
+Attack,70495,1,1,9.305
+C&C,8843,1,4,1.167
+DDoS,211,1,1,0.028
+PartOfAHorizontalPortscan,106,1,1,0.014

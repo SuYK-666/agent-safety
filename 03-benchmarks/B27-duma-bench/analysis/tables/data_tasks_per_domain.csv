@@ -1,0 +1,10 @@
+﻿domain,count,share_%
+mail_rag_phishing,7,20.0
+collab,6,17.14
+infra_loadshed,6,17.14
+crm_leak,4,11.43
+auth_spoof_support,3,8.57
+mktg_phishing,3,8.57
+output_handling,3,8.57
+tool_shadow_poison,3,8.57
+TOTAL,35,100.0

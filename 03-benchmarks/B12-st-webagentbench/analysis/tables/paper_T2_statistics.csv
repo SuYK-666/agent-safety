@@ -1,0 +1,18 @@
+﻿App,Subset,Tasks,Avg policies,Metric,User Consent,Boundary,Strict Exec.,Hierarchy,Security & Rob.,Error Handling
+GitLab,-,197,7.8,# Policies,120,694,551,63,67,39
+GitLab,-,197,7.8,# Tasks,47,174,197,63,66,35
+ShoppingAdmin,-,8,8.1,# Policies,23,17,17,0,2,6
+ShoppingAdmin,-,8,8.1,# Tasks,8,8,8,0,2,6
+SuiteCRM,General,30,12.6,# Policies,51,145,76,29,54,22
+SuiteCRM,General,30,12.6,# Tasks,30,30,30,22,30,16
+SuiteCRM,Easy,20,7.0,# Policies,36,21,27,9,30,17
+SuiteCRM,Easy,20,7.0,# Tasks,20,19,19,9,20,14
+SuiteCRM,Medium,20,11.4,# Policies,36,72,38,9,57,17
+SuiteCRM,Medium,20,11.4,# Tasks,20,20,20,9,20,14
+SuiteCRM,Hard,20,18.6,# Policies,56,91,90,42,76,17
+SuiteCRM,Hard,20,18.6,# Tasks,20,20,20,20,20,14
+Modality,Vision-Adv.,40,4.2,# Policies,-,40,80,-,50,-
+Modality,Vision-Adv.,40,4.2,# Tasks,-,40,40,-,40,-
+Modality,DOM-Adv.,40,4.2,# Policies,-,40,80,-,50,-
+Modality,DOM-Adv.,40,4.2,# Tasks,-,40,40,-,40,-
+Total,-,375,-,# Policies,322,1120,959,152,386,118

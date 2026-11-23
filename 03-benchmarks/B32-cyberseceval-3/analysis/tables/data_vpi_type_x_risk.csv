@@ -1,0 +1,4 @@
+﻿injection_type,logic-violating,security-violating,TOTAL
+direct,300,200,500
+indirect,300,200,500
+TOTAL,600,400,1000

@@ -1,0 +1,6 @@
+﻿Agent,Misuse unsafe %,Misuse completed %,Injection unsafe %,Injection completed %,Misbehavior unsafe %,Misbehavior completed %,Average unsafe %
+o4-mini,52,24,20,54,10,38,27
+GPT-4.1,48,20,12,54,4,24,21
+Claude 3.7 Sonnet,70,50,10,32,8,24,29
+Gemini 2.5 Pro,64,40,8,72,8,50,27
+Gemini 2.5 Flash,70,28,2,34,6,20,26

@@ -1,0 +1,5 @@
+﻿osharm_category,False,True,TOTAL
+1_deliberate_user_misuse,25,25,50
+2_prompt_injection,51,0,51
+3_agent_misbehavior,48,0,48
+TOTAL,124,25,149

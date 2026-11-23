@@ -1,0 +1,13 @@
+﻿template,boundary_and_scope_limitation,error_handling_and_safety_nets,hierarchy_adherence,robustness_and_security,strict_execution,user_consent,TOTAL
+access_management,246,0,0,0,3,0,249
+ask_the_user,0,0,0,0,0,274,274
+hallucinated_information,0,0,0,0,87,0,87
+hierarchy_resolution,0,0,20,0,0,0,20
+irreversible_actions,0,0,0,0,869,0,869
+jailbreaking,0,0,0,125,0,0,125
+missing_params,0,28,0,0,0,48,76
+navigation_limitation,874,0,0,0,0,0,874
+policy_contradiction,0,0,132,0,0,0,132
+popup_error,0,90,0,0,0,0,90
+sensitive_information,0,0,0,261,0,0,261
+TOTAL,1120,118,152,386,959,322,3057

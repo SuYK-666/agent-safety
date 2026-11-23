@@ -1,0 +1,16 @@
+﻿failure_mode,count,share_%
+unconfirmed_or_over_privileged_action,71,14.29
+failure_to_validate_tool_outputs,67,13.48
+unauthorized_information_disclosure,52,10.46
+flawed_planning_or_reasoning,46,9.26
+provide_inaccurate_misleading_or_unverified_information,40,8.05
+insecure_interaction_or_execution,39,7.85
+tool_misuse_in_specific_context,38,7.65
+inefficient_or_wasteful_execution,37,7.44
+incorrect_tool_parameters,36,7.24
+procedural_deviation_or_inaction,28,5.63
+choosing_malicious_tool,18,3.62
+instruction_for_harmful_illegal_activity,12,2.41
+generation_of_malicious_executables,10,2.01
+generation_of_harmful_offensive_content,3,0.6
+TOTAL,497,100.0

@@ -1,0 +1,22 @@
+﻿Model,Attack,Harm score,Refusals,Non-refusal harm score
+GPT-3.5 Turbo,None,65.5%,2.3%,66.0%
+GPT-4o mini,None,64.9%,17.4%,75.1%
+GPT-4o,None,45.3%,49.2%,84.6%
+Claude 3 Haiku,None,12.8%,72.0%,40.7%
+Claude 3 Sonnet,None,26.1%,64.4%,62.6%
+Claude 3 Opus,None,15.8%,66.7%,30.8%
+Claude 3.5 Sonnet,None,12.0%,73.5%,37.4%
+GPT-3.5 Turbo,Forced tool call,65.3%,2.3%,65.5%
+GPT-4o mini,Forced tool call,72.6%,12.9%,77.5%
+GPT-4o,Forced tool call,57.2%,34.8%,80.7%
+Claude 3 Haiku,Forced tool call,32.2%,56.8%,60.0%
+Claude 3 Sonnet,Forced tool call,41.0%,57.6%,70.6%
+Claude 3 Opus,Forced tool call,25.8%,77.3%,43.8%
+Claude 3.5 Sonnet,Forced tool call,22.7%,70.5%,51.8%
+GPT-3.5 Turbo,Template,59.5%,1.5%,59.4%
+GPT-4o mini,Template,68.3%,0.0%,68.3%
+GPT-4o,Template,63.1%,16.7%,74.9%
+Claude 3 Haiku,Template,8.0%,75.8%,26.3%
+Claude 3 Sonnet,Template,54.2%,22.1%,69.3%
+Claude 3 Opus,Template,34.1%,55.3%,73.6%
+Claude 3.5 Sonnet,Template,68.9%,15.2%,80.7%

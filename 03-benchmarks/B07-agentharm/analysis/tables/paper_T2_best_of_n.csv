@@ -1,0 +1,4 @@
+﻿Model,Attack,Greedy avg score,tau=1 avg score,tau=1 best-of-5
+GPT-4o,Template,72.7%,70.7%+-0.7%,83.7%
+Claude 3.5 Sonnet,Template,68.7%,65.1%+-1.3%,79.7%
+Mistral Large 2,Template,80.5%,67.4%+-8.5%,90.8%

@@ -1,0 +1,4 @@
+﻿trigger_type,count,share_%
+benign,168,58.74
+malicious,118,41.26
+TOTAL,286,100.0

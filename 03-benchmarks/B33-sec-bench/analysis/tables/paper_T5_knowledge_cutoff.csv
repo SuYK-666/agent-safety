@@ -1,0 +1,3 @@
+﻿Setting,PoC GPT-4o resolved,PoC GPT-4o submitted,PoC Claude 3 Haiku resolved,PoC Claude 3 Haiku submitted,Patch GPT-4o resolved,Patch GPT-4o submitted,Patch Claude 3 Haiku resolved,Patch Claude 3 Haiku submitted
+Before cutoff,6.7,100,0,33.3,33.3,100.0,20.0,86.7
+After cutoff,0,100,0,26.7,40.0,93.3,13.3,93.3

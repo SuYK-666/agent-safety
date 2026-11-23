@@ -1,0 +1,6 @@
+﻿Configuration,GPT-4.1,GPT-4o,Qwen3-235B
+D3 baseline stack,34.1,19.6,33.2
+D4-SIA (MIG+TCA),32.2,17.6,33.3
+D4-MIG (SIA+TCA),23.1,15.5,33.3
+D4-TCA (SIA+MIG),28.7,18.4,32.2
+D4 full (SIA+MIG+TCA),25.8,19.2,29.4

@@ -1,0 +1,5 @@
+﻿osharm_category,chrome,gimp,libreoffice_calc,libreoffice_impress,libreoffice_writer,multi_apps,os,thunderbird,vs_code,TOTAL
+1_deliberate_user_misuse,2,6,4,4,8,8,8,2,8,50
+2_prompt_injection,11,0,0,0,11,4,0,11,14,51
+3_agent_misbehavior,0,0,4,6,0,16,6,0,16,48
+TOTAL,13,6,8,10,19,28,14,13,38,149

@@ -1,0 +1,3 @@
+﻿Type,Overall %,Builder %,Exploiter %,Fixer %,Avg steps,Avg cost $
+CodeAct,14.0,72.0,33.3,58.3,60.5,0.72
+SecVerifier,26.0,90.0,35.6,81.2,64.4,0.82

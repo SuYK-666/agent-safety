@@ -1,0 +1,8 @@
+﻿Model,Security-violating (approx),Logic-violating (approx)
+codellama-70b-instruct,0.16,0.20
+gpt-4,0.22,0.22
+llama 3 70B-instruct,0.40,0.11
+gpt-3.5-turbo,0.40,0.34
+codellama-13b-instruct,0.35,0.42
+codellama-34b-instruct,0.28,0.56
+llama 3 8B-instruct,0.56,0.30

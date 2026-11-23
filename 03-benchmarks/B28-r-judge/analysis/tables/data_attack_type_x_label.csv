@@ -1,0 +1,4 @@
+﻿attack_type,safe,unsafe,TOTAL
+injection,214,200,414
+unintended,56,101,157
+TOTAL,270,301,571

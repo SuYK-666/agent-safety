@@ -1,0 +1,7 @@
+﻿criteria_field,count,share_%
+actions,35,100.0
+env_assertions,35,100.0
+reward_basis,35,100.0
+nl_assertions,22,62.86
+output_eval_prompt,12,34.29
+TOTAL,139,100.0

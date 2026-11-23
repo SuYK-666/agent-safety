@@ -1,0 +1,7 @@
+﻿Task,Model,SWE-agent % resolved,SWE-agent $ cost,OpenHands % resolved,OpenHands $ cost,Aider % resolved,Aider $ cost
+Patch,Claude 3.7 Sonnet,33.8,1.29,31.2,0.61,20.0,0.44
+Patch,GPT-4o,26.2,0.48,15.0,1.53,11.2,0.29
+Patch,o3-mini,31.2,0.13,12.5,0.15,17.5,0.15
+PoC,Claude 3.7 Sonnet,12.5,1.52,8.8,1.56,1.2,0.21
+PoC,GPT-4o,3.8,0.56,2.5,1.51,0.0,0.22
+PoC,o3-mini,10.0,0.13,5.0,0.19,1.2,0.04

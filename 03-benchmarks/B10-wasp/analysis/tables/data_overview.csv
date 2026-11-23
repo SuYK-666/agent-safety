@@ -1,0 +1,7 @@
+﻿item,value
+attacker goals (gitlab / reddit),21 (12 / 9)
+user goals per environment,2
+test scenarios = attacker goals x 2 user goals,42
+"tasks = scenarios x 2 injection templates (URL, plain-text)",84
+utility tasks,37
+attacker goals with exfiltration,5

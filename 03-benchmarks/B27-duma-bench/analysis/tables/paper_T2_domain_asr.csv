@@ -1,0 +1,9 @@
+﻿Domain,Solo ASR,Dual ASR,Delta ASR
+mktg_phishing,0.022,0.615,+0.593
+collab,0.043,0.249,+0.206
+crm_leak,0.056,0.249,+0.193
+tool_shadow_poison,0.111,0.264,+0.153
+auth_spoof_support,0.040,0.169,+0.129
+output_handling,0.409,0.484,+0.075
+infra_loadshed,0.489,0.541,+0.052
+mail_rag_phishing,0.610,0.579,-0.031
